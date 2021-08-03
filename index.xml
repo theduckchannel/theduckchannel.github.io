@@ -9,30 +9,10 @@
     <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Install Arch Linux - 2021</title>
-      <link>https://theduckchannel.github.io/post/rich-content/</link>
+      <link>https://theduckchannel.github.io/post/how-to-install-arch-linux-2021/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://theduckchannel.github.io/post/rich-content/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/h5LX9Ilwp7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&#34;info&#34;&gt;Info&lt;/h1&gt;
-&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Connect_to_the_internet&#34;&gt;Arch Linux Wireless Network Config&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Set_the_keyboard_layout&#34;&gt;Arch Linux Keyboard Layout&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Install Arch Linux - 2021</title>
-      <link>https://theduckchannel.github.io/post/template/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/template/</guid>
+      <guid>https://theduckchannel.github.io/post/how-to-install-arch-linux-2021/</guid>
       <description>
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/h5LX9Ilwp7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -50,6 +30,20 @@
       <description>
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/6sC1i1qe2Rk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How To Install Virt Manager on Arch Linux</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-arch-linux/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-arch-linux/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/G1N0lyuDm0Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 </description>

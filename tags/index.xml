@@ -26,11 +26,38 @@
     </item>
     
     <item>
+      <title>kvm</title>
+      <link>https://theduckchannel.github.io/tags/kvm/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/kvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>linux</title>
       <link>https://theduckchannel.github.io/tags/linux/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>qemu</title>
+      <link>https://theduckchannel.github.io/tags/qemu/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/qemu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virt-manager</title>
+      <link>https://theduckchannel.github.io/tags/virt-manager/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/virt-manager/</guid>
       <description></description>
     </item>
     
