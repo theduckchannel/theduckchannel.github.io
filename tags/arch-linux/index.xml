@@ -2,26 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arch Linux on The Duck Channel</title>
-    <link>https://fredcox.github.io/tags/arch-linux/</link>
+    <link>https://theduckchannel.github.io/tags/arch-linux/</link>
     <description>Recent content in Arch Linux on The Duck Channel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fredcox.github.io/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Install Arch Linux - 2021</title>
-      <link>https://fredcox.github.io/post/rich-content/</link>
+      <link>https://theduckchannel.github.io/post/rich-content/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fredcox.github.io/post/rich-content/</guid>
+      <guid>https://theduckchannel.github.io/post/rich-content/</guid>
       <description>   Info Links  Arch Linux Wireless Network Config Arch Linux Keyboard Layout  </description>
     </item>
     
     <item>
-      <title>How to Install Cinnamon Desktop Environment on Arch Linux</title>
-      <link>https://fredcox.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</link>
+      <title>How to Install Arch Linux - 2021</title>
+      <link>https://theduckchannel.github.io/post/template/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fredcox.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</guid>
+      <guid>https://theduckchannel.github.io/post/template/</guid>
+      <description>   </description>
+    </item>
+    
+    <item>
+      <title>How to Install Cinnamon Desktop Environment on Arch Linux</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</guid>
       <description>   </description>
     </item>
     

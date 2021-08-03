@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on The Duck Channel</title>
-    <link>https://fredcox.github.io/tags/</link>
+    <link>https://theduckchannel.github.io/tags/</link>
     <description>Recent content in Tags on The Duck Channel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fredcox.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arch Linux</title>
-      <link>https://fredcox.github.io/tags/arch-linux/</link>
+      <link>https://theduckchannel.github.io/tags/arch-linux/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fredcox.github.io/tags/arch-linux/</guid>
+      <guid>https://theduckchannel.github.io/tags/arch-linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kernel</title>
-      <link>https://fredcox.github.io/tags/kernel/</link>
+      <link>https://theduckchannel.github.io/tags/kernel/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fredcox.github.io/tags/kernel/</guid>
+      <guid>https://theduckchannel.github.io/tags/kernel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>https://fredcox.github.io/tags/linux/</link>
+      <link>https://theduckchannel.github.io/tags/linux/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fredcox.github.io/tags/linux/</guid>
+      <guid>https://theduckchannel.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>index</title>
-      <link>https://fredcox.github.io/tags/index/</link>
+      <link>https://theduckchannel.github.io/tags/index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://fredcox.github.io/tags/index/</guid>
+      <guid>https://theduckchannel.github.io/tags/index/</guid>
       <description></description>
     </item>
     

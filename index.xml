@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Duck Channel</title>
-    <link>https://fredcox.github.io/</link>
+    <link>https://theduckchannel.github.io/</link>
     <description>Recent posts from on The Duck Channel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fredcox.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Install Arch Linux - 2021</title>
-      <link>https://fredcox.github.io/post/rich-content/</link>
+      <link>https://theduckchannel.github.io/post/rich-content/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fredcox.github.io/post/rich-content/</guid>
+      <guid>https://theduckchannel.github.io/post/rich-content/</guid>
       <description>
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/h5LX9Ilwp7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -28,11 +28,25 @@
     </item>
     
     <item>
-      <title>How to Install Cinnamon Desktop Environment on Arch Linux</title>
-      <link>https://fredcox.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</link>
+      <title>How to Install Arch Linux - 2021</title>
+      <link>https://theduckchannel.github.io/post/template/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fredcox.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</guid>
+      <guid>https://theduckchannel.github.io/post/template/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/h5LX9Ilwp7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to Install Cinnamon Desktop Environment on Arch Linux</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</guid>
       <description>
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/6sC1i1qe2Rk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
