@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows 10 on The Duck Channel</title>
+    <link>https://theduckchannel.github.io/tags/windows-10/</link>
+    <description>Recent content in Windows 10 on The Duck Channel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/windows-10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install Windows 10 Fastest on Virt-Manager</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-windows-10-fastest-on-virt-manager/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-windows-10-fastest-on-virt-manager/</guid>
+      <description>Link for Windows Virtio Drivers https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md</description>
+    </item>
+    
+  </channel>
+</rss>
