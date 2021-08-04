@@ -13,7 +13,9 @@
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/how-to-install-arch-linux-2021/</guid>
-      <description>   </description>
+      <description>Commands 1. Set the Keyboard Layout $ loadkeys yourKeyboardLayout The default console keymap is US. Available layouts can be listed with:
+$ ls /usr/share/kbd/keymaps/**/*.map.gz 2. Config the Best Mirrors $ reflector -c &amp;quot;BR&amp;quot; -f 12 -n 10 -l 12 \ --save /etc/pacman.d/mirrorlist --verbose $ pacman -Syy 3. Partitioning the Disk $ fdisk /dev/yourDevice Create the root partition and the swap.
+4. Formatting the partitions use mkfs.ext4, mkswap and mkfs.</description>
     </item>
     
     <item>

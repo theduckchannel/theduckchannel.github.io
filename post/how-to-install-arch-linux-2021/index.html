@@ -105,7 +105,7 @@
         
     </div>
     <p class="post-dets">Published on: August 3, 2021
-        | Reading Time: 0 min | Last Modified : August 3, 2021
+        | Reading Time: 2 min | Last Modified : August 3, 2021
         <br>
     </p>
     </span>
@@ -116,7 +116,65 @@
   <iframe src="https://www.youtube.com/embed/h5LX9Ilwp7M" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
+<h1 id="commands">Commands</h1>
+<h3 id="1-set-the-keyboard-layout">1. Set the Keyboard Layout</h3>
+<pre><code class="language-console" data-lang="console">$ loadkeys yourKeyboardLayout
+</code></pre><p>The default console keymap is US. Available layouts can be listed with:</p>
+<pre><code class="language-console" data-lang="console">$ ls /usr/share/kbd/keymaps/**/*.map.gz
+</code></pre><h3 id="2-config-the-best-mirrors">2. Config the Best Mirrors</h3>
+<pre><code class="language-console" data-lang="console">$ reflector -c &quot;BR&quot; -f 12 -n 10 -l 12 \
+--save /etc/pacman.d/mirrorlist --verbose
 
+$ pacman -Syy
+</code></pre><h3 id="3-partitioning-the-disk">3. Partitioning the Disk</h3>
+<pre><code class="language-console" data-lang="console">$ fdisk /dev/yourDevice
+</code></pre><p>Create the root partition and the swap.</p>
+<h4 id="4-formatting-the-partitions">4. Formatting the partitions</h4>
+<p>use <em><strong>mkfs.ext4, mkswap and mkfs.fat</strong></em>.</p>
+<h3 id="5-mounting">5. Mounting</h3>
+<p>use mount and swapon.</p>
+<h3 id="6-install-the-base">6. Install the Base</h3>
+<pre><code class="language-console" data-lang="console">$ pacstrap /mnt base base-devel linux \
+linux-firmware vim sudo networkmanager \
+efibootmgr grub
+</code></pre><h3 id="7-generate-fstab">7. Generate fstab</h3>
+<pre><code class="language-console" data-lang="console">$ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre><h3 id="8-enter-the-install">8. Enter the install</h3>
+<pre><code class="language-console" data-lang="console">$ arch-chroot /mnt
+</code></pre><h3 id="9-timezone">9. Timezone</h3>
+<pre><code class="language-console" data-lang="console">$ ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+</code></pre><h4 id="10-localization">10. Localization</h4>
+<p>Edit /etc/locale.gen and uncomment your locale. After, generate the locales by running:</p>
+<pre><code class="language-console" data-lang="console">$ locale-gen
+</code></pre><p>Create the /etc/locale.conf and set the LANG variable</p>
+<pre><code class="language-console" data-lang="console">LANG=en_US.UTF-8
+</code></pre><p>Create /etc/vconsole.conf with your keyboard layout:</p>
+<pre><code class="language-console" data-lang="console">KEYMAP=de-latin
+</code></pre><h3 id="11-network-configuration">11. Network configuration</h3>
+<p>Create /etc/hostname with the name your host</p>
+<pre><code class="language-console" data-lang="console">nameFromYourHost
+</code></pre><p>Create /etc/hosts</p>
+<pre><code class="language-console" data-lang="console">127.0.0.1   localhost
+::1         localhost
+127.0.0.1   nameFromYourHost.localdomain nameFromYourHost
+</code></pre><pre><code class="language-console" data-lang="console">$ systemctl enable NetworkManager
+</code></pre><h3 id="12-set-the-root-password">12. Set the root password</h3>
+<pre><code class="language-console" data-lang="console">$ passwd
+</code></pre><h3 id="13-install-the-bootloader">13. Install the Bootloader</h3>
+<pre><code class="language-console" data-lang="console">$ grub-install --target=x86_64-efi \
+--efi-directory=/boot/efi \
+--bootloader-id=GRUB
+
+$ grub-mkconfig -o \
+/boot/grub/grub.cfg
+</code></pre><h3 id="14-umount-and-reboot">14. Umount and Reboot</h3>
+<pre><code class="language-console" data-lang="console">$ exit
+$ umount -a
+$ reboot
+</code></pre><h3 id="15-create-a-new-user">15. Create a new user</h3>
+<pre><code class="language-console" data-lang="console">$ useradd -m -G wheel yourUsername
+$ passwd yourUsername
+</code></pre>
     </div>
     
 </section>
