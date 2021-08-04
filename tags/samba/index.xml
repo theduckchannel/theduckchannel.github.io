@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>samba on The Duck Channel</title>
+    <link>https://theduckchannel.github.io/tags/samba/</link>
+    <description>Recent content in samba on The Duck Channel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/samba/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux Samba Server 2021</title>
+      <link>https://theduckchannel.github.io/post/arch-linux-samba-server-2021/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/arch-linux-samba-server-2021/</guid>
+      <description>Hi all, in this video i will show how to install Samba Server on Arch Linux.
+I hope you enjoy!
+Links smb.conf Link git smb.conf
+Commands 1. Install Samba $ sudo pacman -S samba wget 2. smb.conf $ sudo wget -O /etc/samba/smb.conf LinkToSmb.ConfAboveEdit /etc/samba/smb.conf and change:
+ Line 26  workgroup = WORKGROUP Create Samba Share In the end off file.  [sambashare]comment = My Samba Sharepath = /sambawritable = yesbrowsable = yescreate mask = 0700directory mask 0700read only = noguest ok = no3.</description>
+    </item>
+    
+  </channel>
+</rss>

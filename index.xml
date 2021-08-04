@@ -94,6 +94,65 @@ $ reboot
     </item>
     
     <item>
+      <title>Arch Linux Samba Server 2021</title>
+      <link>https://theduckchannel.github.io/post/arch-linux-samba-server-2021/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/arch-linux-samba-server-2021/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/h5LX9Ilwp7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hi all, in this video i will show how to install Samba Server on Arch Linux.&lt;/p&gt;
+&lt;p&gt;I hope you enjoy!&lt;/p&gt;
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+&lt;h3 id=&#34;smbconf-link&#34;&gt;smb.conf Link&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://git.samba.org/samba.git/?p=samba.git;a=blob_plain;f=examples/smb.conf.default;hb=HEAD&#34;&gt;git smb.conf&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;commands&#34;&gt;Commands&lt;/h1&gt;
+&lt;h3 id=&#34;1-install-samba&#34;&gt;1. Install Samba&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S samba wget 
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;2-smbconf&#34;&gt;2. smb.conf&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo wget -O /etc/samba/smb.conf LinkToSmb.ConfAbove
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/samba/smb.conf and change:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Line 26&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;workgroup = WORKGROUP   
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Create Samba Share
+In the end off file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;[sambashare]
+comment = My Samba Share
+path = /samba
+writable = yes
+browsable = yes
+create mask = 0700
+directory mask 0700
+read only = no
+guest ok = no
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-directory-and-sambausers-group&#34;&gt;3. Directory and sambausers group&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo groupadd -r sambausers
+$ sudo usermod -aG sambausers yourUsername
+$ sudo smbpasswd -a yourUsername
+$ sudo mkdir /samba
+$ sudo chown -R :sambausers /samba
+$ sudo chmod 1770 /samba
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4-start-the-services&#34;&gt;4. Start the Services&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo systemctl enable --now smb
+$ sudo systemctl enable --now nmb  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;5-test-the-server&#34;&gt;5. Test the Server&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ smbclient -L //127.0.0.1/share -U yourUserName
+smb&amp;gt; l
+smb&amp;gt; exit
+
+$ sudo chown -R g+rwx /samba
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;6-connect-from-windows&#34;&gt;6. Connect from Windows&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to Install Arch Linux - 2021</title>
       <link>https://theduckchannel.github.io/post/how-to-install-arch-linux-2021/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
