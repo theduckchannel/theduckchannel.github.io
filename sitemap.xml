@@ -3,12 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://theduckchannel.github.io/</loc>
-    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/about/</loc>
-    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/arch-linux/</loc>
+    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</loc>
+    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/kernel/</loc>
+    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/linux/</loc>
+    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/post/</loc>
+    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/</loc>
+    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/windows-10/</loc>
+    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/about/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/post/how-to-install-arch-linux-2021/</loc>
@@ -23,28 +41,13 @@
     <loc>https://theduckchannel.github.io/post/how-to-install-windows-10-fastest-on-virt-manager/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theduckchannel.github.io/tags/kernel/</loc>
-    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://theduckchannel.github.io/tags/kvm/</loc>
-    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/linux/</loc>
-    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/post/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/qemu/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theduckchannel.github.io/tags/</loc>
-    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://theduckchannel.github.io/tags/virt-manager/</loc>
-    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/windows-10/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/archives/</loc>

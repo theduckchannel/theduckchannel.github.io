@@ -6,7 +6,93 @@
     <description>Recent posts from on The Duck Channel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux Dual Boot Windows 10</title>
+      <link>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wRcs6KxdJv8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hi all, in this video i will show how to install Arch Linux Dual Boot with Windows 10.&lt;/p&gt;
+&lt;p&gt;The bootloader utilized is Grub and boot mode is uefi.&lt;/p&gt;
+&lt;p&gt;The Arch Linux installation will be only the base system with network and bootloader.&lt;/p&gt;
+&lt;p&gt;I will use virtual machine, but the procedure is the same and it does not affect.&lt;/p&gt;
+&lt;p&gt;I hope you enjoy!&lt;/p&gt;
+&lt;h1 id=&#34;bios&#34;&gt;Bios&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Boot the PC and press the manufacturers key to open the BIOS. Common keys used: 
+Esc, Delete, F1, F2, F9, F10, F11, or F12.&lt;/li&gt;
+&lt;li&gt;Disable fastboot in BIOS settings.&lt;/li&gt;
+&lt;li&gt;Disable fastboot in BIOS settings.&lt;/li&gt;
+&lt;li&gt;Go to security &amp;gt; secure Boot and disable secure boot in BIOS settings.&lt;/li&gt;
+&lt;li&gt;Make sure that SATA controller is set to AHCI mode in BIOS settings.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+&lt;h3 id=&#34;wireless-network-config&#34;&gt;Wireless Network Config&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Connect_to_the_internet&#34;&gt;https://wiki.archlinux.org/title/installation_guide#Connect_to_the_internet&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;keyboard-layout&#34;&gt;Keyboard Layout&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Set_the_keyboard_layout&#34;&gt;https://wiki.archlinux.org/title/installation_guide#Set_the_keyboard_layout&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;commands&#34;&gt;Commands&lt;/h1&gt;
+&lt;h3 id=&#34;1-preparing-windows&#34;&gt;1. Preparing Windows&lt;/h3&gt;
+&lt;h3 id=&#34;2-boot&#34;&gt;2. Boot&lt;/h3&gt;
+&lt;h3 id=&#34;3-install-arch-linux&#34;&gt;3. Install Arch Linux&lt;/h3&gt;
+&lt;h4 id=&#34;31-keymap&#34;&gt;3.1 Keymap&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ loadkeys yourKeyboardLayout
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;32-internet&#34;&gt;3.2 Internet&lt;/h3&gt;
+&lt;p&gt;I use wired ethernet, if you use wireless see the links in description.&lt;/p&gt;
+&lt;h3 id=&#34;33-mirrors&#34;&gt;3.3 Mirrors&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ reflector -c &amp;quot;BR&amp;quot; -f 12 -n 10 -l 12 \
+--save /etc/pacman.d/mirrorlist
+$ pacman -Syy
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;34-partitioning&#34;&gt;3.4 Partitioning&lt;/h3&gt;
+&lt;h3 id=&#34;35-formatting&#34;&gt;3.5 Formatting&lt;/h3&gt;
+&lt;h3 id=&#34;36-mounting&#34;&gt;3.6 Mounting&lt;/h3&gt;
+&lt;h3 id=&#34;37-base-install&#34;&gt;3.7 Base Install&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ pacstrap /mnt base base-devel \
+linux linux-firmware vim sudo networkmanager
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;38-fstab&#34;&gt;3.8 Fstab&lt;/h3&gt;
+&lt;h3 id=&#34;39-enter-install-arch-chroot&#34;&gt;3.9 Enter Install (arch-chroot)&lt;/h3&gt;
+&lt;h3 id=&#34;310-time-zone&#34;&gt;3.10 Time Zone&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ ln -sf /usr/share/zoneinfo/Region/City \
+/etc/localtime
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;311-locales&#34;&gt;3.11 Locales&lt;/h3&gt;
+&lt;p&gt;Edit /etc/locale.gen and uncomment the line for your language.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ locale-gen
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/locale.conf and put your language&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;LANG=yourLanguage
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/vconsole.conf and put your keyboard layout.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ KEYMAP=yourKeyboardLayout
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;312-network-config&#34;&gt;3.12 Network Config&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ echo &amp;quot;yourHostName&amp;quot;&amp;gt;/etc/hostname
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/hosts&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;127.0.0.1	localhost
+::1			localhost
+127.0.0.1	yourHostname.localdomain	yourHostName
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;313-install-grub&#34;&gt;3.13 Install Grub&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ pacman -S grub os-prober efibootmgr ntfs-3g dosfstools mtools
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/default/grub and put this in the end off file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;GRUB_DISABLE_OS_PROBER=false
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;314-root-password&#34;&gt;3.14 Root Password&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;315-exit-umount-and-reboot&#34;&gt;3.15 Exit, umount and reboot&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ exit
+$ umount -a
+$ reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;316-create-new-user&#34;&gt;3.16 create new user&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ useradd -m -G wheel yourUserName
+$ passwd yourUserName
+$ export EDITOR=vim
+$ visudo
+$ reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;317-finish&#34;&gt;3.17 Finish&lt;/h3&gt;
+</description>
+    </item>
+    
     <item>
       <title>How to Install Arch Linux - 2021</title>
       <link>https://theduckchannel.github.io/post/how-to-install-arch-linux-2021/</link>
