@@ -6,7 +6,20 @@
     <description>Recent content in Arch Linux on The Duck Channel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install Manjaro with Windows 10 Dual Boot</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</guid>
+      <description>Hi all, in this video i will show how to install Manjaro Linux with Windows Dual Boot.
+The boot mode in this case is EFI.
+I&amp;rsquo;m assuming you installed windows 10 first.
+I hope you enjoy!
+Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</description>
+    </item>
+    
     <item>
       <title>Arch Linux Dual Boot Windows 10</title>
       <link>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</link>

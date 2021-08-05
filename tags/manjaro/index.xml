@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>manjaro on The Duck Channel</title>
+    <link>https://theduckchannel.github.io/tags/manjaro/</link>
+    <description>Recent content in manjaro on The Duck Channel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install Manjaro with Windows 10 Dual Boot</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</guid>
+      <description>Hi all, in this video i will show how to install Manjaro Linux with Windows Dual Boot.
+The boot mode in this case is EFI.
+I&amp;rsquo;m assuming you installed windows 10 first.
+I hope you enjoy!
+Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</description>
+    </item>
+    
+  </channel>
+</rss>

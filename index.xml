@@ -6,7 +6,46 @@
     <description>Recent posts from on The Duck Channel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install Manjaro with Windows 10 Dual Boot</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Dl9YffchhTA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hi all, in this video i will show how to install Manjaro Linux with Windows
+Dual Boot.&lt;/p&gt;
+&lt;p&gt;The boot mode in this case is EFI.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m assuming you installed windows 10 first.&lt;/p&gt;
+&lt;p&gt;I hope you enjoy!&lt;/p&gt;
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://manjaro.org/&#34;&gt;Manjaro Site for Download&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
+&lt;h3 id=&#34;1-prepare-the-bios&#34;&gt;1. Prepare the Bios&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.&lt;/li&gt;
+&lt;li&gt;Disable fastboot in BIOS settings.&lt;/li&gt;
+&lt;li&gt;Go to security -&amp;gt; secure Boot and disable secure boot in BIOS settings.&lt;/li&gt;
+&lt;li&gt;Make sure that SATA controller is set to AHCI mode in BIOS settings.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-prepare-windows-10&#34;&gt;2. Prepare Windows 10&lt;/h3&gt;
+&lt;p&gt;You will need to reduce the space occupied by windows 10 to free up space for
+installing manjaro.&lt;/p&gt;
+&lt;p&gt;I allocated 30gb to install manjaro.&lt;/p&gt;
+&lt;h3 id=&#34;3-install-manjaro&#34;&gt;3. Install Manjaro&lt;/h3&gt;
+&lt;p&gt;I am assuming you have the Manjaro USB boot disk, if you dont have, please go
+to site in description this video, make iso download from manjaro and prepare usb
+disk.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Arch Linux Dual Boot Windows 10</title>
       <link>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</link>
