@@ -20,5 +20,16 @@ I hope you enjoy!
 Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</description>
     </item>
     
+    <item>
+      <title>How to Install Virt-Manager on Manjaro</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-manjaro/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-manjaro/</guid>
+      <description>Hi all, in this video i will show how to install Virt-Manager on Man.
+I hope you enjoy!
+Links  Manjaro Site for Download  1 Minimum Hardware Requirements  Your system should have &amp;lsquo;virtualization parameters&amp;rsquo; enabled on BIOS. Check the RAM and verify that is at least 4GB. At least 20 Gb of available disk space.  2 Install Virt-Manager $ sudo pacman -S dmidecode inxi virt-manager vde2 ebtables dnsmasq bridge-utilsopenbsd-netcat 3.</description>
+    </item>
+    
   </channel>
 </rss>

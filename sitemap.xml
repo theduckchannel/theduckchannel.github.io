@@ -14,6 +14,12 @@
     <loc>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</loc>
     <lastmod>2021-08-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-manjaro/</loc>
+    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/kvm/</loc>
+    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://theduckchannel.github.io/tags/linux/</loc>
     <lastmod>2021-08-05T00:00:00+00:00</lastmod>
   </url><url>
@@ -24,6 +30,9 @@
     <lastmod>2021-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/</loc>
+    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/virt-manager/</loc>
     <lastmod>2021-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</loc>
@@ -59,13 +68,7 @@
     <loc>https://theduckchannel.github.io/post/how-to-install-windows-10-fastest-on-virt-manager/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theduckchannel.github.io/tags/kvm/</loc>
-    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://theduckchannel.github.io/tags/qemu/</loc>
-    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/virt-manager/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/archives/</loc>

@@ -3,9 +3,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     
-        <title>How to Install Cinnamon Desktop Environment on Arch Linux | The Duck Channel</title>
-        <meta name="description" content="How to Install Cinnamon Desktop Environment on Arch Linux">
-        <meta property="og:site_name" content="How to Install Cinnamon Desktop Environment on Arch Linux" />
+        <title>How to Install Virt-Manager on Manjaro | The Duck Channel</title>
+        <meta name="description" content="How to Install Virt-Manager on Manjaro">
+        <meta property="og:site_name" content="How to Install Virt-Manager on Manjaro" />
         <meta property="og:title" content="The Duck Channel" />
         <meta property="og:description" content="Welcome to my blog. Here you will find a description about every video uploaded to The Duck Channel. Please, save this link in your bookmark."/>
         <meta property="og:image" content="https://theduckchannel.github.io/img/profile.jpg" />
@@ -87,7 +87,7 @@
     
     <div style="display: flex; align-items: center">
     <h1 class="post-title"><a class="go-back" href="https://theduckchannel.github.io/post/">
-	      <i class="far fa-caret-square-left"></i></a> How to Install Cinnamon Desktop Environment on Arch Linux</h1>
+	      <i class="far fa-caret-square-left"></i></a> How to Install Virt-Manager on Manjaro</h1>
 
     <span class="tags" style="margin: 0 10px ">
         
@@ -95,11 +95,15 @@
         
         <h5><a class="tag" href='https://theduckchannel.github.io/tags/Arch%20Linux'>Arch Linux</a></h5>
         
-        <h5><a class="tag" href='https://theduckchannel.github.io/tags/kernel'>kernel</a></h5>
+        <h5><a class="tag" href='https://theduckchannel.github.io/tags/manjaro'>manjaro</a></h5>
+        
+        <h5><a class="tag" href='https://theduckchannel.github.io/tags/kvm'>kvm</a></h5>
+        
+        <h5><a class="tag" href='https://theduckchannel.github.io/tags/virt-manager'>virt-manager</a></h5>
         
     </div>
-    <p class="post-dets">Published on: August 3, 2021
-        | Reading Time: 0 min | Last Modified : August 3, 2021
+    <p class="post-dets">Published on: August 5, 2021
+        | Reading Time: 1 min | Last Modified : August 5, 2021
         <br>
     </p>
     </span>
@@ -107,9 +111,37 @@
     <div class="content">
         
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/6sC1i1qe2Rk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/W8z6nlM3PwE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
+<p>Hi all, in this video i will show how to install Virt-Manager on Man.</p>
+<p>I hope you enjoy!</p>
+<h1 id="links">Links</h1>
+<ol>
+<li><a href="https://manjaro.org/">Manjaro Site for Download</a></li>
+</ol>
+<h1 id="1-minimum-hardware-requirements">1 Minimum Hardware Requirements</h1>
+<ol>
+<li>Your system should have &lsquo;virtualization parameters&rsquo; enabled on BIOS.</li>
+<li>Check the RAM and verify that is at least 4GB.</li>
+<li>At least 20 Gb of available disk space.</li>
+</ol>
+<h1 id="2-install-virt-manager">2 Install Virt-Manager</h1>
+<pre><code class="language-console" data-lang="console">$ sudo pacman -S dmidecode inxi virt-manager vde2 ebtables dnsmasq bridge-utils
+openbsd-netcat  
+</code></pre><h1 id="3-enable-and-start-services">3. Enable and Start Services</h1>
+<pre><code class="language-console" data-lang="console">$ sudo systemctl enable --now libvirtd  
+</code></pre><h1 id="4-kvm-config">4. KVM Config</h1>
+<p>Edit the file /etc/libvirt/libvirtd.conf and uncomment the lines 104 and 81.</p>
+<p>Add the group &ldquo;libvirt&rdquo; to your user.</p>
+<pre><code class="language-console" data-lang="console">$ sudo usermod -aG libvirt $(whoami)  
+</code></pre><h1 id="5-bridge-autostart">5. Bridge Autostart</h1>
+<pre><code class="language-console" data-lang="console">$ sudo virsh net-autostart default 
+</code></pre><h1 id="6-restart-the-service">6. Restart the Service</h1>
+<pre><code class="language-console" data-lang="console">$ sudo systemctl restart libvirtd  
+$ reboot
+</code></pre><h1 id="7-finish">7. Finish</h1>
+<p>Ok, you can now start virt-manager.</p>
 
     </div>
     
