@@ -6,7 +6,119 @@
     <description>Recent posts from on The Duck Channel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux Full Install with Kde Plasma</title>
+      <link>https://theduckchannel.github.io/post/arch-linux-full-install-with-kde-plasma/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/arch-linux-full-install-with-kde-plasma/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/iEeVw9kKZK8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hi all, in this video i will show how to full install Arch Linux with Kde Plasma.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The boot mode will be EFI.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&amp;rsquo;m assuming you already have the usb stick with the Arch Linux ISO.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I hope you enjoy!&lt;/p&gt;
+&lt;h1 id=&#34;1-links&#34;&gt;1. Links&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Connect_to_the_internet&#34;&gt;Arch Linux - Connect to Internet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Localization&#34;&gt;Localization Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;2-set-the-keyboard-layout&#34;&gt;2. Set the Keyboard Layout&lt;/h1&gt;
+&lt;p&gt;The default console keymap is US. Available layouts can be listed with:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$  ls /usr/share/kbd/keymaps/**/*.map.gz 
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ loadkeys yourKeyboardLayout  
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;3-best-mirrors&#34;&gt;3. Best Mirrors&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ reflector -c &amp;quot;BR&amp;quot; -f 12 -n 10 -l 12 \
+--save /etc/pacman.d/mirrorlist --verbose
+
+$ pacman -Syy
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;My country code is &amp;ldquo;BR&amp;rdquo;, so you need switch this reflector command parameter
+with your correct country code.&lt;/p&gt;
+&lt;h1 id=&#34;4-partitioning-the-disk&#34;&gt;4. Partitioning the Disk&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ fdisk /dev/yourDevice  
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;5-formatting&#34;&gt;5. Formatting&lt;/h1&gt;
+&lt;p&gt;use mkfs.ext4, mkfs.fat and mkswap .&lt;/p&gt;
+&lt;h1 id=&#34;6-mouting&#34;&gt;6. Mouting&lt;/h1&gt;
+&lt;p&gt;Use mount and swapon.&lt;/p&gt;
+&lt;h1 id=&#34;7-install-the-base&#34;&gt;7. Install the Base&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ pacstrap /mnt base base-devel linux \
+linux-firmware vim sudo networkmanager \
+efibootmgr grub mtools 
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;8-generate-fstab&#34;&gt;8. Generate fstab&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$  genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab 
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;9-enter-the-install&#34;&gt;9. Enter the Install&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$  arch-chroot /mnt 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;#10. Timezone&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ ln -sf /usr/share/zoneinfo/Region/City /etc/localtime  
+$ hwclock --systohc
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;11-localization&#34;&gt;11. Localization&lt;/h1&gt;
+&lt;p&gt;Edit /etc/locale.gen and uncomment your locale. After, generate the locales by running:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ locale-gen
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create the /etc/locale.conf and set the LANG variable:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;LANG=en_US.UTF-8   
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create /etc/vconsole.conf with your keyboard layout:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;KEYMAP=de-latin   
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;12-network-config&#34;&gt;12. Network Config&lt;/h1&gt;
+&lt;p&gt;Create /etc/hostname with the name your host:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;nameFromYourHost   
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create /etc/hosts:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;127.0.0.1   localhost
+::1         localhost
+127.0.0.1   nameFromYourHost.localdomain nameFromYourHost   
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Enable Network Manager&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ systemctl enable NetworkManager  
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;13-install-the-bootloader&#34;&gt;13. Install the Bootloader&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ grub-install --target=x86_64-efi \
+--efi-directory=/boot/efi \
+--bootloader-id=GRUB
+
+$ grub-mkconfig -o \
+/boot/grub/grub.cfg  
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;14-set-the-root-password&#34;&gt;14. Set the root Password&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ passwd  
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;15-exit-umount-and-reboot&#34;&gt;15. Exit, Umount and Reboot&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ exit
+$ umount -a
+$ reboot  
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;16-create-a-new-user&#34;&gt;16. Create a New User&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ useradd -m -G wheel yourUsername
+$ passwd yourUsername  
+$ export EDITOR=vim
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/sudoers run &amp;ldquo;visudo&amp;rdquo; and uncomment the following line:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;## Uncomment to allow members of group wheel to execute any command
+%wheel ALL=(ALL) ALL   
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;17-install-xorg&#34;&gt;17. Install xorg&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S xorg  
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;18-install-the-display-manager&#34;&gt;18. Install the Display Manager&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S sddm  
+$ sudo systemctl enable sddm
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open the sddm.conf file from the terminal.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo vim /usr/lib/sddm/sddm.conf.d/default.conf  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change the theme section as per below.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;[Theme]
+# current theme name
+ Current=breeze   
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;19-install-kde-plasma&#34;&gt;19. Install Kde Plasma&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S plasma kde-applications  
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;20-reboot-and-finish&#34;&gt;20. Reboot and Finish&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ reboot  
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;21-finish&#34;&gt;21. Finish&lt;/h1&gt;
+</description>
+    </item>
+    
     <item>
       <title>How to Install Manjaro with Windows 10 Dual Boot</title>
       <link>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</link>

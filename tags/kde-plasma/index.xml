@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kde plasma on The Duck Channel</title>
+    <link>https://theduckchannel.github.io/tags/kde-plasma/</link>
+    <description>Recent content in kde plasma on The Duck Channel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/kde-plasma/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux Full Install with Kde Plasma</title>
+      <link>https://theduckchannel.github.io/post/arch-linux-full-install-with-kde-plasma/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/arch-linux-full-install-with-kde-plasma/</guid>
+      <description>Hi all, in this video i will show how to full install Arch Linux with Kde Plasma.
+  The boot mode will be EFI.
+  I&amp;rsquo;m assuming you already have the usb stick with the Arch Linux ISO.
+  My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.</description>
+    </item>
+    
+  </channel>
+</rss>

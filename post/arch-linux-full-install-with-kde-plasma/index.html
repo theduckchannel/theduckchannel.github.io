@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <title>Arch Linux Full Install with Kde Plasma | The Duck Channel</title>
+        <meta name="description" content="Arch Linux Full Install with Kde Plasma">
+        <meta property="og:site_name" content="Arch Linux Full Install with Kde Plasma" />
+        <meta property="og:title" content="The Duck Channel" />
+        <meta property="og:description" content="Welcome to my blog. Here you will find a description about every video uploaded to The Duck Channel. Please, save this link in your bookmark."/>
+        <meta property="og:image" content="https://theduckchannel.github.io/img/profile.jpg" />
+    
+    
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    
+    <meta name="keywords" content="linux, arch linux, youtube, tutorial, linus tech tips">
+    <link rel="icon" type="image/svg" href='https://theduckchannel.github.io/img/Channel_Icon.png'/>
+    <meta name="author" content='duck_channel'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.87.0" />
+    
+    <link rel="stylesheet" href="https://theduckchannel.github.io/sass/main.min.9b60b881fa5b316281aa8ba686f7cc8121395a6dcf19f00e2f21cc99cca3c658.css" type="text/css" media="screen" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+    
+    </head>
+
+<body>
+      <div class="line" id="scrollIndicator"></div>
+      <div class="main"><div class="title">
+  <div class="name">
+    <h2><a href="https://theduckchannel.github.io/"
+	   style="text-decoration: none; color: inherit;">The Duck Channel</a></h2>
+  </div>
+  <div class="color-scheme">
+    <input type="checkbox" class="checkbox" id="chk" />
+    <label class="label" for="chk">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="ball"></div>
+    </label>
+  </div>
+</div>
+<script>
+  const themeSetter = (theme) => {
+      document.body.classList.toggle('dark')
+      localStorage.setItem('theme', theme)
+      blockSwitcher()
+  }
+
+  const blockSwitcher = () => [...document.getElementsByTagName("BLOCKQUOTE")]
+	.forEach(b => b.classList.toggle('dark'))
+
+  const styleSwapper = () => {
+      document.body.classList.add('back-transition')
+      if (localStorage.getItem('theme') === 'dark') themeSetter('light')
+      else if (localStorage.getItem('theme') === 'light') themeSetter('dark')
+  }
+
+  if (localStorage.getItem('theme') === 'light'){
+      themeSetter('light')
+      document.addEventListener("DOMContentLoaded", blockSwitcher)
+  }
+ else localStorage.setItem('theme', 'light')
+
+  document.getElementById('chk').addEventListener('change',styleSwapper);
+
+  window.addEventListener("scroll", () => {
+      let height = document.documentElement.scrollHeight
+          - document.documentElement.clientHeight;
+      if(height >= 500){
+	  let winScroll = document.body.scrollTop
+              || document.documentElement.scrollTop;
+	  let scrolled = (winScroll / height) * 100;
+	  document.getElementById("scrollIndicator").style.width = scrolled + "%";
+      }
+  });
+</script>
+
+<section class="intro">
+    
+    <div style="display: flex; align-items: center">
+    <h1 class="post-title"><a class="go-back" href="https://theduckchannel.github.io/post/">
+	      <i class="far fa-caret-square-left"></i></a> Arch Linux Full Install with Kde Plasma</h1>
+
+    <span class="tags" style="margin: 0 10px ">
+        
+        <h5><a class="tag" href='https://theduckchannel.github.io/tags/linux'>linux</a></h5>
+        
+        <h5><a class="tag" href='https://theduckchannel.github.io/tags/Arch%20Linux'>Arch Linux</a></h5>
+        
+        <h5><a class="tag" href='https://theduckchannel.github.io/tags/kde%20plasma'>kde plasma</a></h5>
+        
+    </div>
+    <p class="post-dets">Published on: August 6, 2021
+        | Reading Time: 2 min | Last Modified : August 6, 2021
+        <br>
+    </p>
+    </span>
+    
+    <div class="content">
+        
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/iEeVw9kKZK8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Hi all, in this video i will show how to full install Arch Linux with Kde Plasma.</p>
+<ol>
+<li>
+<p>The boot mode will be EFI.</p>
+</li>
+<li>
+<p>I&rsquo;m assuming you already have the usb stick with the Arch Linux ISO.</p>
+</li>
+<li>
+<p>My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.</p>
+</li>
+</ol>
+<p>I hope you enjoy!</p>
+<h1 id="1-links">1. Links</h1>
+<ol>
+<li><a href="https://wiki.archlinux.org/title/installation_guide#Connect_to_the_internet">Arch Linux - Connect to Internet</a></li>
+<li><a href="https://wiki.archlinux.org/title/installation_guide#Localization">Localization Guide</a></li>
+</ol>
+<h1 id="2-set-the-keyboard-layout">2. Set the Keyboard Layout</h1>
+<p>The default console keymap is US. Available layouts can be listed with:</p>
+<pre><code class="language-console" data-lang="console">$  ls /usr/share/kbd/keymaps/**/*.map.gz 
+</code></pre><pre><code class="language-console" data-lang="console">$ loadkeys yourKeyboardLayout  
+</code></pre><h1 id="3-best-mirrors">3. Best Mirrors</h1>
+<pre><code class="language-console" data-lang="console">$ reflector -c &quot;BR&quot; -f 12 -n 10 -l 12 \
+--save /etc/pacman.d/mirrorlist --verbose
+
+$ pacman -Syy
+</code></pre><p>My country code is &ldquo;BR&rdquo;, so you need switch this reflector command parameter
+with your correct country code.</p>
+<h1 id="4-partitioning-the-disk">4. Partitioning the Disk</h1>
+<pre><code class="language-console" data-lang="console">$ fdisk /dev/yourDevice  
+</code></pre><h1 id="5-formatting">5. Formatting</h1>
+<p>use mkfs.ext4, mkfs.fat and mkswap .</p>
+<h1 id="6-mouting">6. Mouting</h1>
+<p>Use mount and swapon.</p>
+<h1 id="7-install-the-base">7. Install the Base</h1>
+<pre><code class="language-console" data-lang="console">$ pacstrap /mnt base base-devel linux \
+linux-firmware vim sudo networkmanager \
+efibootmgr grub mtools 
+</code></pre><h1 id="8-generate-fstab">8. Generate fstab</h1>
+<pre><code class="language-console" data-lang="console">$  genfstab -U /mnt &gt;&gt; /mnt/etc/fstab 
+</code></pre><h1 id="9-enter-the-install">9. Enter the Install</h1>
+<pre><code class="language-console" data-lang="console">$  arch-chroot /mnt 
+</code></pre><p>#10. Timezone</p>
+<pre><code class="language-console" data-lang="console">$ ln -sf /usr/share/zoneinfo/Region/City /etc/localtime  
+$ hwclock --systohc
+</code></pre><h1 id="11-localization">11. Localization</h1>
+<p>Edit /etc/locale.gen and uncomment your locale. After, generate the locales by running:</p>
+<pre><code class="language-console" data-lang="console">$ locale-gen
+</code></pre><p>Create the /etc/locale.conf and set the LANG variable:</p>
+<pre><code class="language-console" data-lang="console">LANG=en_US.UTF-8   
+</code></pre><p>Create /etc/vconsole.conf with your keyboard layout:</p>
+<pre><code class="language-console" data-lang="console">KEYMAP=de-latin   
+</code></pre><h1 id="12-network-config">12. Network Config</h1>
+<p>Create /etc/hostname with the name your host:</p>
+<pre><code class="language-console" data-lang="console">nameFromYourHost   
+</code></pre><p>Create /etc/hosts:</p>
+<pre><code class="language-console" data-lang="console">127.0.0.1   localhost
+::1         localhost
+127.0.0.1   nameFromYourHost.localdomain nameFromYourHost   
+</code></pre><p>Enable Network Manager</p>
+<pre><code class="language-console" data-lang="console">$ systemctl enable NetworkManager  
+</code></pre><h1 id="13-install-the-bootloader">13. Install the Bootloader</h1>
+<pre><code class="language-console" data-lang="console">$ grub-install --target=x86_64-efi \
+--efi-directory=/boot/efi \
+--bootloader-id=GRUB
+
+$ grub-mkconfig -o \
+/boot/grub/grub.cfg  
+</code></pre><h1 id="14-set-the-root-password">14. Set the root Password</h1>
+<pre><code class="language-console" data-lang="console">$ passwd  
+</code></pre><h1 id="15-exit-umount-and-reboot">15. Exit, Umount and Reboot</h1>
+<pre><code class="language-console" data-lang="console">$ exit
+$ umount -a
+$ reboot  
+</code></pre><h1 id="16-create-a-new-user">16. Create a New User</h1>
+<pre><code class="language-console" data-lang="console">$ useradd -m -G wheel yourUsername
+$ passwd yourUsername  
+$ export EDITOR=vim
+</code></pre><p>Edit /etc/sudoers run &ldquo;visudo&rdquo; and uncomment the following line:</p>
+<pre><code class="language-console" data-lang="console">## Uncomment to allow members of group wheel to execute any command
+%wheel ALL=(ALL) ALL   
+</code></pre><h1 id="17-install-xorg">17. Install xorg</h1>
+<pre><code class="language-console" data-lang="console">$ sudo pacman -S xorg  
+</code></pre><h1 id="18-install-the-display-manager">18. Install the Display Manager</h1>
+<pre><code class="language-console" data-lang="console">$ sudo pacman -S sddm  
+$ sudo systemctl enable sddm
+</code></pre><p>Open the sddm.conf file from the terminal.</p>
+<pre><code class="language-console" data-lang="console">$ sudo vim /usr/lib/sddm/sddm.conf.d/default.conf  
+</code></pre><p>Change the theme section as per below.</p>
+<pre><code class="language-console" data-lang="console">[Theme]
+# current theme name
+ Current=breeze   
+</code></pre><h1 id="19-install-kde-plasma">19. Install Kde Plasma</h1>
+<pre><code class="language-console" data-lang="console">$ sudo pacman -S plasma kde-applications  
+</code></pre><h1 id="20-reboot-and-finish">20. Reboot and Finish</h1>
+<pre><code class="language-console" data-lang="console">$ reboot  
+</code></pre><h1 id="21-finish">21. Finish</h1>
+
+    </div>
+    
+</section>
+<footer id="footer">
+    <strong></strong>
+    <div class="social">
+        &nbsp; <a href="https://www.youtube.com/c/OGanso" target="_blank" rel="noopener" title="Youtube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a> &nbsp;&nbsp; <a href="https://github.com/theduckchannel" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a> &nbsp;&nbsp; <a href="mailto:fredcox@gmail.com" target="_blank" rel="noopener" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a> &nbsp;
+    </div><strong></strong>
+    <p style="color:grey;">© 2021 The Duck Channel.  <a href="https://creativecommons.org/licenses/by/4.0/">Some rights reserved</a>.</p>
+</footer>
+</div>
+    </body>
+</html>

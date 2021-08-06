@@ -3,10 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://theduckchannel.github.io/</loc>
-    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/arch-linux/</loc>
-    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/post/arch-linux-full-install-with-kde-plasma/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/kde-plasma/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/linux/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/post/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/dual-boot/</loc>
     <lastmod>2021-08-05T00:00:00+00:00</lastmod>
@@ -20,16 +35,7 @@
     <loc>https://theduckchannel.github.io/tags/kvm/</loc>
     <lastmod>2021-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theduckchannel.github.io/tags/linux/</loc>
-    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://theduckchannel.github.io/tags/manjaro/</loc>
-    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/post/</loc>
-    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/</loc>
     <lastmod>2021-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/virt-manager/</loc>
