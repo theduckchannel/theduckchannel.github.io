@@ -6,7 +6,44 @@
     <description>Recent posts from on The Duck Channel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install Linux Mint Dual Boot with Windows 10</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-linux-mint-dual-boot-with-windows-10/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-linux-mint-dual-boot-with-windows-10/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/h5LX9Ilwp7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hi all, in this video i will show how to full install Linux Mint
+with Windows 10 in Dual Boot.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The boot mode will be EFI.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&amp;rsquo;m assuming you already have the usb stick with the Linux Mint ISO installation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You need install Windows 10 first.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I hope you enjoy!&lt;/p&gt;
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://linuxmint.com/&#34;&gt;Linux Mint - Download&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
+&lt;h1 id=&#34;1-prepare-windows-10&#34;&gt;1. Prepare Windows 10&lt;/h1&gt;
+&lt;p&gt;I will shrink the disk space about 30 Gb to install Linux Mint.&lt;/p&gt;
+&lt;h1 id=&#34;2-install-linux-mint&#34;&gt;2. Install Linux Mint&lt;/h1&gt;
+&lt;p&gt;Follow de video.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Arch Linux Full Install with Kde Plasma</title>
       <link>https://theduckchannel.github.io/post/arch-linux-full-install-with-kde-plasma/</link>
@@ -15,7 +52,7 @@
       <guid>https://theduckchannel.github.io/post/arch-linux-full-install-with-kde-plasma/</guid>
       <description>
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/iEeVw9kKZK8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SQr5P6jWkh4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Hi all, in this video i will show how to full install Arch Linux with Kde Plasma.&lt;/p&gt;

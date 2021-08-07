@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux Mint on The Duck Channel</title>
+    <link>https://theduckchannel.github.io/tags/linux-mint/</link>
+    <description>Recent content in Linux Mint on The Duck Channel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/linux-mint/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install Linux Mint Dual Boot with Windows 10</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-linux-mint-dual-boot-with-windows-10/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-linux-mint-dual-boot-with-windows-10/</guid>
+      <description>Hi all, in this video i will show how to full install Linux Mint with Windows 10 in Dual Boot.
+  The boot mode will be EFI.
+  I&amp;rsquo;m assuming you already have the usb stick with the Linux Mint ISO installation.
+  You need install Windows 10 first.
+  I hope you enjoy!
+Links  Linux Mint - Download  Steps 1. Prepare Windows 10 I will shrink the disk space about 30 Gb to install Linux Mint.</description>
+    </item>
+    
+  </channel>
+</rss>
