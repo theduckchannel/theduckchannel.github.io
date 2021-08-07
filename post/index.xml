@@ -22,6 +22,20 @@ Links  Linux Mint - Download  Steps 1. Prepare Windows 10 I will shrink the disk
     </item>
     
     <item>
+      <title>How to Install MX Linux Duall Boot with Windows 10</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-mx-linux-duall-boot-with-windows-10/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-mx-linux-duall-boot-with-windows-10/</guid>
+      <description>Hi all, in this video i will show how to full install MX Linux with Windows 10 in Dual Boot.
+  The boot mode will be EFI.
+  I&amp;rsquo;m assuming you already have the usb stick with the MX Linux ISO.
+  You need install Windows 10 first.
+  I hope you enjoy!
+Links  MX Linux - Download  Steps 1. Prepare Windows 10 I will shrink the disk space about 30 Gb to install MX Linux.</description>
+    </item>
+    
+    <item>
       <title>Arch Linux Full Install with Kde Plasma</title>
       <link>https://theduckchannel.github.io/post/arch-linux-full-install-with-kde-plasma/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
