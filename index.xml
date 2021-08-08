@@ -6,7 +6,194 @@
     <description>Recent posts from on The Duck Channel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux Full Install with Cinnamon</title>
+      <link>https://theduckchannel.github.io/post/08082021/arch-linux-full-install-with-cinnamon/</link>
+      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/08082021/arch-linux-full-install-with-cinnamon/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/h5LX9Ilwp7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hi all, in this video i will show how to full install Arch Linux 
+with Cinnamon Desktop Environment.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The boot mode will be EFI.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&amp;rsquo;m assuming you already have the usb stick with the Arch Linux ISO.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I hope you enjoy!&lt;/p&gt;
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Connect_to_the_internet&#34;&gt;Arch Linux - Wireless Network Config&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Localization&#34;&gt;Localization Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;1-pre-install&#34;&gt;1. Pre-Install&lt;/h1&gt;
+&lt;h2 id=&#34;11-set-keyboard-layout&#34;&gt;1.1 Set Keyboard Layout&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;The default console keymap is US. Available layouts can be listed with:
+```console
+$  ls /usr/share/kbd/keymaps/**/*.map.gz 
+```
+
+```console
+$ loadkeys yourKeyboardLayout  
+```
+
+
+## 1.2 Update the System Clock
+```console
+$ timedatectl set-ntp true
+```
+
+# 1.3 Partitioning the Disk
+
+```console
+$ fdisk /dev/yourDevice  
+```
+
+# 1.4 Formatting 
+use mkfs.ext4, mkfs.fat and mkswap .
+
+# 1.5 Mouting
+Use mount and swapon.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2-installation&#34;&gt;2. Installation&lt;/h1&gt;
+&lt;h2 id=&#34;21-select-the-best-mirrors&#34;&gt;2.1 Select the Best Mirrors&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$ reflector -c &amp;quot;BR&amp;quot; -f 12 -n 10 -l 12 \
+--save /etc/pacman.d/mirrorlist --verbose
+
+$ pacman -Syy
+```
+
+My country code is &amp;quot;BR&amp;quot;, so you need switch this reflector command parameter
+with your correct country code. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;22-install-the-base&#34;&gt;2.2 Install the Base&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$ pacstrap /mnt base base-devel linux \
+linux-firmware vim sudo networkmanager \
+efibootmgr grub mtools 
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;3-config-the-system&#34;&gt;3. Config the System&lt;/h1&gt;
+&lt;h1 id=&#34;31-generate-fstab&#34;&gt;3.1 Generate fstab&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$  genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab 
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;32-chroot&#34;&gt;3.2 Chroot&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$  arch-chroot /mnt 
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;33-timezone&#34;&gt;3.3 Timezone&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$ ln -sf /usr/share/zoneinfo/Region/City /etc/localtime  
+$ hwclock --systohc
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;34-localization&#34;&gt;3.4 Localization&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;Edit /etc/locale.gen and uncomment your locale. After, generate the locales by running:
+```console
+$ locale-gen
+```
+Create the /etc/locale.conf and set the LANG variable:
+```console
+LANG=en_US.UTF-8   
+```
+Create /etc/vconsole.conf with your keyboard layout:
+```console
+KEYMAP=de-latin   
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;35-network-config&#34;&gt;3.5 Network Config&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;Create /etc/hostname with the name your host:
+```console
+nameFromYourHost   
+```
+ 
+Create /etc/hosts:
+```console
+127.0.0.1   localhost
+::1         localhost
+127.0.0.1   nameFromYourHost.localdomain nameFromYourHost   
+```
+Enable Network Manager
+```console
+$ systemctl enable NetworkManager  
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;36-install-grub&#34;&gt;3.6 Install GRUB&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$ grub-install --target=x86_64-efi \
+--efi-directory=/boot/efi \
+--bootloader-id=GRUB
+
+$ grub-mkconfig -o \
+/boot/grub/grub.cfg  
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;37-set-the-root-password&#34;&gt;3.7 Set the root Password&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$ passwd  
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;38-exit-umount-and-reboot&#34;&gt;3.8 Exit, Umount and Reboot&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$ exit
+$ umount -a
+$ reboot  
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;4-post-install&#34;&gt;4. Post-Install&lt;/h1&gt;
+&lt;h1 id=&#34;41-create-a-new-user&#34;&gt;4.1 Create a New User&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$ useradd -m -G wheel yourUsername
+$ passwd yourUsername  
+$ export EDITOR=vim
+```
+Edit /etc/sudoers run &amp;quot;visudo&amp;quot; and uncomment the following line:
+```console
+## Uncomment to allow members of group wheel to execute any command
+%wheel ALL=(ALL) ALL   
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;42-install-xorg&#34;&gt;4.2 Install xorg&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$ sudo pacman -S xorg  
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;42-install-the-display-manager&#34;&gt;4.2 Install the Display Manager&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$ sudo pacman -S gdm
+$ sudo systemctl enable gdm
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;43-install-cinnamon&#34;&gt;4.3 Install Cinnamon&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$ sudo pacman -S cinnamon nemo-fileroller \
+firefox gnome-terminal pulseaudio 
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;44-reboot&#34;&gt;4.4 Reboot&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;```console
+$ reboot  
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;5-finish&#34;&gt;5. Finish&lt;/h1&gt;
+</description>
+    </item>
+    
     <item>
       <title>How to Install LEMP Stack on Manjaro</title>
       <link>https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/</link>
