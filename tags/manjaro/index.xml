@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>manjaro on The Duck Channel</title>
+    <title>Manjaro on The Duck Channel</title>
     <link>https://theduckchannel.github.io/tags/manjaro/</link>
-    <description>Recent content in manjaro on The Duck Channel</description>
+    <description>Recent content in Manjaro on The Duck Channel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install LEMP Stack on Manjaro</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/</guid>
+      <description>Hi all, in this video i will show how to full install LEMP (NGINX+MariaDB+PHP) on Manjaro.
+I hope you enjoy!
+Links  Manjaro - Download MariaDB NGINX PHP  Steps 1. NGINX $ sudo pacman -Syyu$ sudo pacman -S nginx$ sudo systemctl enable --now nginx$ sudo systemctl status nginxCheck http://localhost in your browser to see default nginx page.
+2. MariaDB $ sudo pacman -S mysql$ sudo mysql_install_db --user=mysql \--basedir=/usr --datadir=/var/lib/mysql$ sudo systemctl enable --now mysqld$ sudo systemctl status mysqld$ mysql_secure_installation3.</description>
+    </item>
+    
     <item>
       <title>How to Install Manjaro with Windows 10 Dual Boot</title>
       <link>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</link>

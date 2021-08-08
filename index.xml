@@ -8,6 +8,67 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How to Install LEMP Stack on Manjaro</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/h5LX9Ilwp7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hi all, in this video i will show how to full install LEMP (NGINX+MariaDB+PHP) on Manjaro.&lt;/p&gt;
+&lt;p&gt;I hope you enjoy!&lt;/p&gt;
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://manjaro.org/&#34;&gt;Manjaro - Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mariadb.org/&#34;&gt;MariaDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nginx.com/&#34;&gt;NGINX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.php.net/&#34;&gt;PHP&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
+&lt;h1 id=&#34;1-nginx&#34;&gt;1. NGINX&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -Syyu
+$ sudo pacman -S nginx
+$ sudo systemctl enable --now nginx
+$ sudo systemctl status nginx
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Check http://localhost in your browser to see default nginx page.&lt;/p&gt;
+&lt;h1 id=&#34;2-mariadb&#34;&gt;2. MariaDB&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S mysql
+$ sudo mysql_install_db --user=mysql \
+--basedir=/usr --datadir=/var/lib/mysql
+$ sudo systemctl enable --now mysqld
+$ sudo systemctl status mysqld
+$ mysql_secure_installation
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;3-php-and-php-fpm&#34;&gt;3. PHP and PHP-FPM&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S php php-fpm php-gd
+$ sudo systemctl enable --now php-fpm
+$ sudo systemctl status php-fpm
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;4-configs&#34;&gt;4. Configs&lt;/h1&gt;
+&lt;p&gt;Edit /etc/php/php.ini and change the values by uncommenting ::&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;extension=gd
+extension=pdo_mysql
+extension=mysqli
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/nginx/nginx.conf and Add the content as shown after ‘location’ contents.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;Add the content as shown after ‘location’ contents.
+location ~ \.php$ {
+fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
+fastcgi_index index.php;
+root /usr/share/nginx/html;
+include fastcgi.conf;
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create /usr/share/nginx/html/info.php with the following content:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&amp;lt;?php phpinfo(); ?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Restart the nginx and php-fpm.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo systemctl restart nginx
+$ sudo systemctl restart php-fpm
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;5-finish&#34;&gt;5. Finish&lt;/h1&gt;
+&lt;p&gt;Finally point your browser to http://localhost/info.php&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to Install Linux Mint Dual Boot with Windows 10</title>
       <link>https://theduckchannel.github.io/post/how-to-install-linux-mint-dual-boot-with-windows-10/</link>
       <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>

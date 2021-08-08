@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>linux</title>
+      <link>https://theduckchannel.github.io/tags/linux/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux Mint</title>
       <link>https://theduckchannel.github.io/tags/linux-mint/</link>
       <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
@@ -26,11 +35,47 @@
     </item>
     
     <item>
+      <title>Manjaro</title>
+      <link>https://theduckchannel.github.io/tags/manjaro/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/manjaro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MariaDB</title>
+      <link>https://theduckchannel.github.io/tags/mariadb/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/mariadb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>MX Linux</title>
       <link>https://theduckchannel.github.io/tags/mx-linux/</link>
       <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/mx-linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>https://theduckchannel.github.io/tags/mysql/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>https://theduckchannel.github.io/tags/php/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/php/</guid>
       <description></description>
     </item>
     
@@ -71,29 +116,11 @@
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://theduckchannel.github.io/tags/linux/</link>
-      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>kvm</title>
       <link>https://theduckchannel.github.io/tags/kvm/</link>
       <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/kvm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>manjaro</title>
-      <link>https://theduckchannel.github.io/tags/manjaro/</link>
-      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/manjaro/</guid>
       <description></description>
     </item>
     
