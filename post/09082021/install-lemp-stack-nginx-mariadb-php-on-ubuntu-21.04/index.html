@@ -3,9 +3,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     
-        <title>PHP | The Duck Channel</title>
-        <meta name="description" content="PHP">
-        <meta property="og:site_name" content="PHP" />
+        <title>Install LEMP Stack NGINX MariaDB PHP on Ubuntu 21.04 | The Duck Channel</title>
+        <meta name="description" content="Install LEMP Stack NGINX MariaDB PHP on Ubuntu 21.04">
+        <meta property="og:site_name" content="Install LEMP Stack NGINX MariaDB PHP on Ubuntu 21.04" />
         <meta property="og:title" content="The Duck Channel" />
         <meta property="og:description" content="Welcome to my blog. Here you will find a description about every video uploaded to The Duck Channel. Please, save this link in your bookmark."/>
         <meta property="og:image" content="https://theduckchannel.github.io/img/profile.jpg" />
@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="https://theduckchannel.github.io/sass/main.min.9b60b881fa5b316281aa8ba686f7cc8121395a6dcf19f00e2f21cc99cca3c658.css" type="text/css" media="screen" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
     
-    <link rel="alternate" type="application/rss+xml" href="https://theduckchannel.github.io/tags/php/index.xml" title="The Duck Channel" />
     </head>
 
 <body>
@@ -84,68 +83,85 @@
   });
 </script>
 
-<br>
-    <h2 class="post-title"><a class="go-back" href="https://theduckchannel.github.io/">
-	<i class="far fa-caret-square-left"></i> </a>PHP</h2>
+<section class="intro">
+    
+    <div style="display: flex; align-items: center">
+    <h1 class="post-title"><a class="go-back" href="https://theduckchannel.github.io/post/">
+	      <i class="far fa-caret-square-left"></i></a> Install LEMP Stack NGINX MariaDB PHP on Ubuntu 21.04</h1>
+
+    <span class="tags" style="margin: 0 10px ">
         
+        <h5><a class="tag" href='https://theduckchannel.github.io/tags/linux'>linux</a></h5>
         
-          
-            <div class="post-item">
-              
-                <well class="well">
-                    <h3><a class="link" href="https://theduckchannel.github.io/post/09082021/install-lemp-stack-nginx-mariadb-php-on-ubuntu-21.04/">Install LEMP Stack NGINX MariaDB PHP on Ubuntu 21.04</a></h3>
-                    <h4>August 9, 2021 | Reading Time: 2 min </h4>
-                    <span class="tags">
-                        
-                        <h5><a class="tag" href='https://theduckchannel.github.io/tags/linux'>linux</a></h5>
-                        
-                        <h5><a class="tag" href='https://theduckchannel.github.io/tags/Ubuntu'>Ubuntu</a></h5>
-                        
-                        <h5><a class="tag" href='https://theduckchannel.github.io/tags/Nginx'>Nginx</a></h5>
-                        
-                        <h5><a class="tag" href='https://theduckchannel.github.io/tags/MariaDB'>MariaDB</a></h5>
-                        
-                        <h5><a class="tag" href='https://theduckchannel.github.io/tags/Mysql'>Mysql</a></h5>
-                        
-                        <h5><a class="tag" href='https://theduckchannel.github.io/tags/PHP'>PHP</a></h5>
-                        
-                    </span>
-                    <p>Hi all, in this video i will show how to install LEMP Stack (Nginx + MariaDB + PHP) on Ubuntu 21.04 desktop/server.
-I hope you enjoy!
-Links  Ubuntu Download  Steps #1. Update your System
-$ sudo apt update$ sudo apt upgrade#2. Install Nginx
-$ sudo apt install nginx$ sudo chown -R www-data:www-data /usr/share/nginx/html$ sudo systemctl enable --now nginx$ sudo systemctl status nginxPoint your browser to http://localhost</p>
-                </well>
-                            
-            </div><br>
-          
-            <div class="post-item">
-              
-                <well class="well">
-                    <h3><a class="link" href="https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/">How to Install LEMP Stack on Manjaro</a></h3>
-                    <h4>August 7, 2021 | Reading Time: 1 min </h4>
-                    <span class="tags">
-                        
-                        <h5><a class="tag" href='https://theduckchannel.github.io/tags/linux'>linux</a></h5>
-                        
-                        <h5><a class="tag" href='https://theduckchannel.github.io/tags/Manjaro'>Manjaro</a></h5>
-                        
-                        <h5><a class="tag" href='https://theduckchannel.github.io/tags/MariaDB'>MariaDB</a></h5>
-                        
-                        <h5><a class="tag" href='https://theduckchannel.github.io/tags/php'>php</a></h5>
-                        
-                        <h5><a class="tag" href='https://theduckchannel.github.io/tags/mysql'>mysql</a></h5>
-                        
-                    </span>
-                    <p>Hi all, in this video i will show how to full install LEMP (NGINX+MariaDB+PHP) on Manjaro.
-I hope you enjoy!
-Links  Manjaro - Download MariaDB NGINX PHP  Steps 1. NGINX $ sudo pacman -Syyu$ sudo pacman -S nginx$ sudo systemctl enable --now nginx$ sudo systemctl status nginxCheck http://localhost in your browser to see default nginx page.
-2. MariaDB $ sudo pacman -S mysql$ sudo mysql_install_db --user=mysql \--basedir=/usr --datadir=/var/lib/mysql$ sudo systemctl enable --now mysqld$ sudo systemctl status mysqld$ mysql_secure_installation3.</p>
-                </well>
-                            
-            </div><br>
-          
+        <h5><a class="tag" href='https://theduckchannel.github.io/tags/Ubuntu'>Ubuntu</a></h5>
         
+        <h5><a class="tag" href='https://theduckchannel.github.io/tags/Nginx'>Nginx</a></h5>
+        
+        <h5><a class="tag" href='https://theduckchannel.github.io/tags/MariaDB'>MariaDB</a></h5>
+        
+        <h5><a class="tag" href='https://theduckchannel.github.io/tags/Mysql'>Mysql</a></h5>
+        
+        <h5><a class="tag" href='https://theduckchannel.github.io/tags/PHP'>PHP</a></h5>
+        
+    </div>
+    <p class="post-dets">Published on: August 9, 2021
+        | Reading Time: 2 min | Last Modified : August 9, 2021
+        <br>
+    </p>
+    </span>
+    
+    <div class="content">
+        
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/h5LX9Ilwp7M" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Hi all, in this video i will show how to install LEMP Stack (Nginx + MariaDB + PHP) 
+on Ubuntu 21.04 desktop/server.</p>
+<p>I hope you enjoy!</p>
+<h1 id="links">Links</h1>
+<ol>
+<li><a href="https://ubuntu.com/download/desktop">Ubuntu Download</a></li>
+</ol>
+<h1 id="steps">Steps</h1>
+<p>#1. Update your System</p>
+<pre><code class="language-console" data-lang="console">$ sudo apt update
+$ sudo apt upgrade
+</code></pre><p>#2. Install Nginx</p>
+<pre><code class="language-console" data-lang="console">$ sudo apt install nginx
+$ sudo chown -R www-data:www-data /usr/share/nginx/html
+$ sudo systemctl enable --now nginx
+$ sudo systemctl status nginx
+</code></pre><p>Point your browser to http://localhost</p>
+<p>#3. Install MariaDB</p>
+<pre><code class="language-console" data-lang="console">$ sudo apt install mariadb-server mariadb-client
+$ sudo systemctl status mariadb
+$ sudo mysql_secure_installation
+</code></pre><p>When it asks you to enter MariaDB root password, press Enter key as the root password isn’t set yet. Then enter y to set the root password for MariaDB server.</p>
+<p>Next, you can press Enter to answer all remaining questions, which will remove anonymous user, disable remote root login and remove test database. This step is a basic requirement for MariaDB database security. (Notice that Y is capitalized, which means it is the default answer. )</p>
+<pre><code class="language-console" data-lang="console">$ sudo mariadb -u root -p
+</code></pre><p>#4. Install PHP</p>
+<pre><code class="language-console" data-lang="console">$ sudo apt install php php-fpm \
+php-mysql php-gd php-json php-curl
+$ sudo systemctl disable --now apache2
+$ sudo apt remove apache2
+</code></pre><ol start="5">
+<li>Config Nginx</li>
+</ol>
+<pre><code class="language-console" data-lang="console">$ sudo rm /etc/nginx/sites-enabled/default
+$ sudo wget -O /etc/nginx/conf.d/default.conf \
+https://theduckchannel.github.io/resources/nginx-default.conf 
+$ sudo nginx -t
+$ sudo systemctl reload nginx
+</code></pre><p>Create /usr/share/nginx/html/info.php with the following content.</p>
+<pre><code class="language-console" data-lang="console">&lt;?php phpinfo(); ?&gt;   
+</code></pre><p>Point your browser to http://localhost/info.php</p>
+<p>#6. Finish</p>
+<p>That´s all.</p>
+
+    </div>
+    
+</section>
 <footer id="footer">
     <strong></strong>
     <div class="social">

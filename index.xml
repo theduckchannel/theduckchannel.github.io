@@ -6,7 +6,63 @@
     <description>Recent posts from on The Duck Channel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install LEMP Stack NGINX MariaDB PHP on Ubuntu 21.04</title>
+      <link>https://theduckchannel.github.io/post/09082021/install-lemp-stack-nginx-mariadb-php-on-ubuntu-21.04/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/09082021/install-lemp-stack-nginx-mariadb-php-on-ubuntu-21.04/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/h5LX9Ilwp7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hi all, in this video i will show how to install LEMP Stack (Nginx + MariaDB + PHP) 
+on Ubuntu 21.04 desktop/server.&lt;/p&gt;
+&lt;p&gt;I hope you enjoy!&lt;/p&gt;
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://ubuntu.com/download/desktop&#34;&gt;Ubuntu Download&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
+&lt;p&gt;#1. Update your System&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo apt update
+$ sudo apt upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;#2. Install Nginx&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo apt install nginx
+$ sudo chown -R www-data:www-data /usr/share/nginx/html
+$ sudo systemctl enable --now nginx
+$ sudo systemctl status nginx
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Point your browser to http://localhost&lt;/p&gt;
+&lt;p&gt;#3. Install MariaDB&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo apt install mariadb-server mariadb-client
+$ sudo systemctl status mariadb
+$ sudo mysql_secure_installation
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When it asks you to enter MariaDB root password, press Enter key as the root password isn’t set yet. Then enter y to set the root password for MariaDB server.&lt;/p&gt;
+&lt;p&gt;Next, you can press Enter to answer all remaining questions, which will remove anonymous user, disable remote root login and remove test database. This step is a basic requirement for MariaDB database security. (Notice that Y is capitalized, which means it is the default answer. )&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo mariadb -u root -p
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;#4. Install PHP&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo apt install php php-fpm \
+php-mysql php-gd php-json php-curl
+$ sudo systemctl disable --now apache2
+$ sudo apt remove apache2
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Config Nginx&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo rm /etc/nginx/sites-enabled/default
+$ sudo wget -O /etc/nginx/conf.d/default.conf \
+https://theduckchannel.github.io/resources/nginx-default.conf 
+$ sudo nginx -t
+$ sudo systemctl reload nginx
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create /usr/share/nginx/html/info.php with the following content.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&amp;lt;?php phpinfo(); ?&amp;gt;   
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Point your browser to http://localhost/info.php&lt;/p&gt;
+&lt;p&gt;#6. Finish&lt;/p&gt;
+&lt;p&gt;That´s all.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Arch Linux Full Install with Cinnamon</title>
       <link>https://theduckchannel.github.io/post/08082021/arch-linux-full-install-with-cinnamon/</link>
