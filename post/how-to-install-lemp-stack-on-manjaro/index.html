@@ -1,115 +1,163 @@
 <!DOCTYPE html>
-<html><head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    
-        <title>How to Install LEMP Stack on Manjaro | The Duck Channel</title>
-        <meta name="description" content="How to Install LEMP Stack on Manjaro">
-        <meta property="og:site_name" content="How to Install LEMP Stack on Manjaro" />
-        <meta property="og:title" content="The Duck Channel" />
-        <meta property="og:description" content="Welcome to my blog. Here you will find a description about every video uploaded to The Duck Channel. Please, save this link in your bookmark."/>
-        <meta property="og:image" content="https://theduckchannel.github.io/img/profile.jpg" />
-    
-    
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="The Duck Channel">
+<meta name="description" content="The Duck Channel Vlog" />
+<meta name="keywords" content="linux, arch linux, youtube, tutorial, linus tech tips, ubuntu, endeavouros, linux, Manjaro, MariaDB, php, mysql" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/" />
+
+
+    <title>
+        
+            How to Install LEMP Stack on Manjaro :: The Duck Channel´s Site  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://theduckchannel.github.io/main.031a8efc33f94f55a4071bf4e91596478a5809fc8c148fab113801189cfd2152.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://theduckchannel.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://theduckchannel.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://theduckchannel.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://theduckchannel.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://theduckchannel.github.io/safari-pinned-tab.svg" color="#1b1c1d">
+    <link rel="shortcut icon" href="https://theduckchannel.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1b1c1d">
+    <meta name="theme-color" content="#1b1c1d">
+
+
+
+<meta itemprop="name" content="How to Install LEMP Stack on Manjaro">
+<meta itemprop="description" content="The Duck Channel Vlog"><meta itemprop="datePublished" content="2021-08-07T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-07T00:00:00+00:00" />
+<meta itemprop="wordCount" content="187"><meta itemprop="image" content="https://theduckchannel.github.io"/>
+<meta itemprop="keywords" content="linux,Manjaro,MariaDB,php,mysql," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://theduckchannel.github.io"/>
+
+<meta name="twitter:title" content="How to Install LEMP Stack on Manjaro"/>
+<meta name="twitter:description" content="The Duck Channel Vlog"/>
+
+
+
+
+    <meta property="og:title" content="How to Install LEMP Stack on Manjaro" />
+<meta property="og:description" content="The Duck Channel Vlog" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/" /><meta property="og:image" content="https://theduckchannel.github.io"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-07T00:00:00+00:00" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-08-07 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
 
     
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-
-    
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
-    
-    <meta name="keywords" content="linux, arch linux, youtube, tutorial, linus tech tips">
-    <link rel="icon" type="image/svg" href='https://theduckchannel.github.io/img/Channel_Icon.png'/>
-    <meta name="author" content='duck_channel'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hugo 0.87.0" />
-    
-    <link rel="stylesheet" href="https://theduckchannel.github.io/sass/main.min.9b60b881fa5b316281aa8ba686f7cc8121395a6dcf19f00e2f21cc99cca3c658.css" type="text/css" media="screen" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
-    
-    </head>
-
-<body>
-      <div class="line" id="scrollIndicator"></div>
-      <div class="main"><div class="title">
-  <div class="name">
-    <h2><a href="https://theduckchannel.github.io/"
-	   style="text-decoration: none; color: inherit;">The Duck Channel</a></h2>
-  </div>
-  <div class="color-scheme">
-    <input type="checkbox" class="checkbox" id="chk" />
-    <label class="label" for="chk">
-      <i class="fas fa-moon"></i>
-      <i class="fas fa-sun"></i>
-      <div class="ball"></div>
-    </label>
-  </div>
-</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZG8XJ4C4Q"></script>
 <script>
-  const themeSetter = (theme) => {
-      document.body.classList.toggle('dark')
-      localStorage.setItem('theme', theme)
-      blockSwitcher()
-  }
-
-  const blockSwitcher = () => [...document.getElementsByTagName("BLOCKQUOTE")]
-	.forEach(b => b.classList.toggle('dark'))
-
-  const styleSwapper = () => {
-      document.body.classList.add('back-transition')
-      if (localStorage.getItem('theme') === 'dark') themeSetter('light')
-      else if (localStorage.getItem('theme') === 'light') themeSetter('dark')
-  }
-
-  if (localStorage.getItem('theme') === 'light'){
-      themeSetter('light')
-      document.addEventListener("DOMContentLoaded", blockSwitcher)
-  }
- else localStorage.setItem('theme', 'light')
-
-  document.getElementById('chk').addEventListener('change',styleSwapper);
-
-  window.addEventListener("scroll", () => {
-      let height = document.documentElement.scrollHeight
-          - document.documentElement.clientHeight;
-      if(height >= 500){
-	  let winScroll = document.body.scrollTop
-              || document.documentElement.scrollTop;
-	  let scrolled = (winScroll / height) * 100;
-	  document.getElementById("scrollIndicator").style.width = scrolled + "%";
-      }
-  });
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-GZG8XJ4C4Q', { 'anonymize_ip': false });
+}
 </script>
 
-<section class="intro">
-    
-    <div style="display: flex; align-items: center">
-    <h1 class="post-title"><a class="go-back" href="https://theduckchannel.github.io/post/">
-	      <i class="far fa-caret-square-left"></i></a> How to Install LEMP Stack on Manjaro</h1>
 
-    <span class="tags" style="margin: 0 10px ">
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://theduckchannel.github.io/" style="text-decoration: none;">
+    <div class="logo">
         
-        <h5><a class="tag" href='https://theduckchannel.github.io/tags/linux'>linux</a></h5>
-        
-        <h5><a class="tag" href='https://theduckchannel.github.io/tags/Manjaro'>Manjaro</a></h5>
-        
-        <h5><a class="tag" href='https://theduckchannel.github.io/tags/MariaDB'>MariaDB</a></h5>
-        
-        <h5><a class="tag" href='https://theduckchannel.github.io/tags/php'>php</a></h5>
-        
-        <h5><a class="tag" href='https://theduckchannel.github.io/tags/mysql'>mysql</a></h5>
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
         
     </div>
-    <p class="post-dets">Published on: August 7, 2021
-        | Reading Time: 1 min | Last Modified : August 7, 2021
-        <br>
-    </p>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://theduckchannel.github.io/about/">About</a></li><li><a href="https://theduckchannel.github.io/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
     </span>
-    
-    <div class="content">
-        
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/">How to Install LEMP Stack on Manjaro</a></h2>
+            <h4>Published on: August 7, 2021</h4>
+
+            
+            
+            
+
+            <div class="post-content">
+                
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/1_bv_rTSKyU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
@@ -162,16 +210,62 @@ $ sudo systemctl restart php-fpm
 </code></pre><h1 id="5-finish">5. Finish</h1>
 <p>Finally point your browser to http://localhost/info.php</p>
 
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/linux/">linux</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/manjaro/">Manjaro</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/mariadb/">MariaDB</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/php/">php</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/mysql/">mysql</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            <span><a href="https://theduckchannel.github.io">The Duck Channel</a></span>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://theduckchannel.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
     </div>
     
-</section>
-<footer id="footer">
-    <strong></strong>
-    <div class="social">
-        &nbsp; <a href="https://www.youtube.com/c/OGanso" target="_blank" rel="noopener" title="Youtube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a> &nbsp;&nbsp; <a href="https://github.com/theduckchannel" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a> &nbsp;&nbsp; <a href="mailto:fredcox@gmail.com" target="_blank" rel="noopener" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a> &nbsp;
-    </div><strong></strong>
-    <p style="color:grey;">© 2021 The Duck Channel.  <a href="https://creativecommons.org/licenses/by/4.0/">Some rights reserved</a>.</p>
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
 </footer>
-</div>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://theduckchannel.github.io/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
     </body>
 </html>

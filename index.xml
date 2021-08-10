@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Duck Channel</title>
+    <title>The Duck Channel´s Site</title>
     <link>https://theduckchannel.github.io/</link>
-    <description>Recent posts from on The Duck Channel</description>
+    <description>Recent content on The Duck Channel´s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install LEMP Stack NGINX MariaDB PHP on Ubuntu 21.04</title>
@@ -13,54 +14,11 @@
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/09082021/install-lemp-stack-nginx-mariadb-php-on-ubuntu-21.04/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/rq-t00ryJP4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Hi all, in this video i will show how to install LEMP Stack (Nginx + MariaDB + PHP) 
-on Ubuntu 21.04 desktop/server.&lt;/p&gt;
-&lt;p&gt;I hope you enjoy!&lt;/p&gt;
-&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://ubuntu.com/download/desktop&#34;&gt;Ubuntu Download&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
-&lt;p&gt;#1. Update your System&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo apt update
-$ sudo apt upgrade
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;#2. Install Nginx&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo apt install nginx
-$ sudo chown -R www-data:www-data /usr/share/nginx/html
-$ sudo systemctl enable --now nginx
-$ sudo systemctl status nginx
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Point your browser to http://localhost&lt;/p&gt;
-&lt;p&gt;#3. Install MariaDB&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo apt install mariadb-server mariadb-client
-$ sudo systemctl status mariadb
-$ sudo mysql_secure_installation
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When it asks you to enter MariaDB root password, press Enter key as the root password isn’t set yet. Then enter y to set the root password for MariaDB server.&lt;/p&gt;
-&lt;p&gt;Next, you can press Enter to answer all remaining questions, which will remove anonymous user, disable remote root login and remove test database. This step is a basic requirement for MariaDB database security. (Notice that Y is capitalized, which means it is the default answer. )&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo mariadb -u root -p
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;#4. Install PHP&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo apt install php php-fpm \
-php-mysql php-gd php-json php-curl
-$ sudo systemctl disable --now apache2
-$ sudo apt remove apache2
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;Config Nginx&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo rm /etc/nginx/sites-enabled/default
-$ sudo wget -O /etc/nginx/conf.d/default.conf \
-https://theduckchannel.github.io/resources/nginx-default.conf 
-$ sudo nginx -t
-$ sudo systemctl reload nginx
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create /usr/share/nginx/html/info.php with the following content.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&amp;lt;?php phpinfo(); ?&amp;gt;   
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Point your browser to http://localhost/info.php&lt;/p&gt;
-&lt;p&gt;#6. Finish&lt;/p&gt;
-&lt;p&gt;That´s all.&lt;/p&gt;
-</description>
+      <description>Hi all, in this video i will show how to install LEMP Stack (Nginx + MariaDB + PHP) on Ubuntu 21.04 desktop/server.
+I hope you enjoy!
+Links  Ubuntu Download  Steps #1. Update your System
+$ sudo apt update$ sudo apt upgrade#2. Install Nginx
+$ sudo apt install nginx$ sudo chown -R www-data:www-data /usr/share/nginx/html$ sudo systemctl enable --now nginx$ sudo systemctl status nginxPoint your browser to http://localhost</description>
     </item>
     
     <item>
@@ -69,185 +27,10 @@ $ sudo systemctl reload nginx
       <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/08082021/arch-linux-full-install-with-cinnamon/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/_L7WvwtVbKs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Hi all, in this video i will show how to full install Arch Linux 
-with Cinnamon Desktop Environment.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;The boot mode will be EFI.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I&amp;rsquo;m assuming you already have the usb stick with the Arch Linux ISO.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I hope you enjoy!&lt;/p&gt;
-&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Connect_to_the_internet&#34;&gt;Arch Linux - Wireless Network Config&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Localization&#34;&gt;Localization Guide&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;1-pre-install&#34;&gt;1. Pre-Install&lt;/h1&gt;
-&lt;h2 id=&#34;11-set-keyboard-layout&#34;&gt;1.1 Set Keyboard Layout&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;The default console keymap is US. Available layouts can be listed with:
-```console
-$  ls /usr/share/kbd/keymaps/**/*.map.gz 
-```
-
-```console
-$ loadkeys yourKeyboardLayout  
-```
-
-
-## 1.2 Update the System Clock
-```console
-$ timedatectl set-ntp true
-```
-
-# 1.3 Partitioning the Disk
-
-```console
-$ fdisk /dev/yourDevice  
-```
-
-# 1.4 Formatting 
-use mkfs.ext4, mkfs.fat and mkswap .
-
-# 1.5 Mouting
-Use mount and swapon.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;2-installation&#34;&gt;2. Installation&lt;/h1&gt;
-&lt;h2 id=&#34;21-select-the-best-mirrors&#34;&gt;2.1 Select the Best Mirrors&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$ reflector -c &amp;quot;BR&amp;quot; -f 12 -n 10 -l 12 \
---save /etc/pacman.d/mirrorlist --verbose
-
-$ pacman -Syy
-```
-
-My country code is &amp;quot;BR&amp;quot;, so you need switch this reflector command parameter
-with your correct country code. 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;22-install-the-base&#34;&gt;2.2 Install the Base&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$ pacstrap /mnt base base-devel linux \
-linux-firmware vim sudo networkmanager \
-efibootmgr grub mtools 
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;3-config-the-system&#34;&gt;3. Config the System&lt;/h1&gt;
-&lt;h1 id=&#34;31-generate-fstab&#34;&gt;3.1 Generate fstab&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$  genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab 
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;32-chroot&#34;&gt;3.2 Chroot&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$  arch-chroot /mnt 
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;33-timezone&#34;&gt;3.3 Timezone&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$ ln -sf /usr/share/zoneinfo/Region/City /etc/localtime  
-$ hwclock --systohc
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;34-localization&#34;&gt;3.4 Localization&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;Edit /etc/locale.gen and uncomment your locale. After, generate the locales by running:
-```console
-$ locale-gen
-```
-Create the /etc/locale.conf and set the LANG variable:
-```console
-LANG=en_US.UTF-8   
-```
-Create /etc/vconsole.conf with your keyboard layout:
-```console
-KEYMAP=de-latin   
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;35-network-config&#34;&gt;3.5 Network Config&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;Create /etc/hostname with the name your host:
-```console
-nameFromYourHost   
-```
- 
-Create /etc/hosts:
-```console
-127.0.0.1   localhost
-::1         localhost
-127.0.0.1   nameFromYourHost.localdomain nameFromYourHost   
-```
-Enable Network Manager
-```console
-$ systemctl enable NetworkManager  
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;36-install-grub&#34;&gt;3.6 Install GRUB&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$ grub-install --target=x86_64-efi \
---efi-directory=/boot/efi \
---bootloader-id=GRUB
-
-$ grub-mkconfig -o \
-/boot/grub/grub.cfg  
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;37-set-the-root-password&#34;&gt;3.7 Set the root Password&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$ passwd  
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;38-exit-umount-and-reboot&#34;&gt;3.8 Exit, Umount and Reboot&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$ exit
-$ umount -a
-$ reboot  
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;4-post-install&#34;&gt;4. Post-Install&lt;/h1&gt;
-&lt;h1 id=&#34;41-create-a-new-user&#34;&gt;4.1 Create a New User&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$ useradd -m -G wheel yourUsername
-$ passwd yourUsername  
-$ export EDITOR=vim
-```
-Edit /etc/sudoers run &amp;quot;visudo&amp;quot; and uncomment the following line:
-```console
-## Uncomment to allow members of group wheel to execute any command
-%wheel ALL=(ALL) ALL   
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;42-install-xorg&#34;&gt;4.2 Install xorg&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$ sudo pacman -S xorg  
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;42-install-the-display-manager&#34;&gt;4.2 Install the Display Manager&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$ sudo pacman -S gdm
-$ sudo systemctl enable gdm
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;43-install-cinnamon&#34;&gt;4.3 Install Cinnamon&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$ sudo pacman -S cinnamon nemo-fileroller \
-firefox gnome-terminal pulseaudio 
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;44-reboot&#34;&gt;4.4 Reboot&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;```console
-$ reboot  
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;5-finish&#34;&gt;5. Finish&lt;/h1&gt;
-</description>
+      <description>Hi all, in this video i will show how to full install Arch Linux with Cinnamon Desktop Environment.
+  The boot mode will be EFI.
+  I&amp;rsquo;m assuming you already have the usb stick with the Arch Linux ISO.
+  My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.</description>
     </item>
     
     <item>
@@ -256,59 +39,10 @@ $ reboot
       <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/1_bv_rTSKyU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Hi all, in this video i will show how to full install LEMP (NGINX+MariaDB+PHP) on Manjaro.&lt;/p&gt;
-&lt;p&gt;I hope you enjoy!&lt;/p&gt;
-&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://manjaro.org/&#34;&gt;Manjaro - Download&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://mariadb.org/&#34;&gt;MariaDB&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.nginx.com/&#34;&gt;NGINX&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.php.net/&#34;&gt;PHP&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
-&lt;h1 id=&#34;1-nginx&#34;&gt;1. NGINX&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -Syyu
-$ sudo pacman -S nginx
-$ sudo systemctl enable --now nginx
-$ sudo systemctl status nginx
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Check http://localhost in your browser to see default nginx page.&lt;/p&gt;
-&lt;h1 id=&#34;2-mariadb&#34;&gt;2. MariaDB&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S mysql
-$ sudo mysql_install_db --user=mysql \
---basedir=/usr --datadir=/var/lib/mysql
-$ sudo systemctl enable --now mysqld
-$ sudo systemctl status mysqld
-$ mysql_secure_installation
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;3-php-and-php-fpm&#34;&gt;3. PHP and PHP-FPM&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S php php-fpm php-gd
-$ sudo systemctl enable --now php-fpm
-$ sudo systemctl status php-fpm
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;4-configs&#34;&gt;4. Configs&lt;/h1&gt;
-&lt;p&gt;Edit /etc/php/php.ini and change the values by uncommenting ::&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;extension=gd
-extension=pdo_mysql
-extension=mysqli
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/nginx/nginx.conf and Add the content as shown after ‘location’ contents.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;Add the content as shown after ‘location’ contents.
-location ~ \.php$ {
-fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
-fastcgi_index index.php;
-root /usr/share/nginx/html;
-include fastcgi.conf;
-} 
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create /usr/share/nginx/html/info.php with the following content:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&amp;lt;?php phpinfo(); ?&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Restart the nginx and php-fpm.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo systemctl restart nginx
-$ sudo systemctl restart php-fpm
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;5-finish&#34;&gt;5. Finish&lt;/h1&gt;
-&lt;p&gt;Finally point your browser to http://localhost/info.php&lt;/p&gt;
-</description>
+      <description>Hi all, in this video i will show how to full install LEMP (NGINX+MariaDB+PHP) on Manjaro.
+I hope you enjoy!
+Links  Manjaro - Download MariaDB NGINX PHP  Steps 1. NGINX $ sudo pacman -Syyu$ sudo pacman -S nginx$ sudo systemctl enable --now nginx$ sudo systemctl status nginxCheck http://localhost in your browser to see default nginx page.
+2. MariaDB $ sudo pacman -S mysql$ sudo mysql_install_db --user=mysql \--basedir=/usr --datadir=/var/lib/mysql$ sudo systemctl enable --now mysqld$ sudo systemctl status mysqld$ mysql_secure_installation3.</description>
     </item>
     
     <item>
@@ -317,35 +51,12 @@ $ sudo systemctl restart php-fpm
       <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/how-to-install-linux-mint-dual-boot-with-windows-10/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/fFK8VfKCUnA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Hi all, in this video i will show how to full install Linux Mint
-with Windows 10 in Dual Boot.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;The boot mode will be EFI.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I&amp;rsquo;m assuming you already have the usb stick with the Linux Mint ISO installation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You need install Windows 10 first.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I hope you enjoy!&lt;/p&gt;
-&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://linuxmint.com/&#34;&gt;Linux Mint - Download&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
-&lt;h1 id=&#34;1-prepare-windows-10&#34;&gt;1. Prepare Windows 10&lt;/h1&gt;
-&lt;p&gt;I will shrink the disk space about 30 Gb to install Linux Mint.&lt;/p&gt;
-&lt;h1 id=&#34;2-install-linux-mint&#34;&gt;2. Install Linux Mint&lt;/h1&gt;
-&lt;p&gt;Follow de video.&lt;/p&gt;
-</description>
+      <description>Hi all, in this video i will show how to full install Linux Mint with Windows 10 in Dual Boot.
+  The boot mode will be EFI.
+  I&amp;rsquo;m assuming you already have the usb stick with the Linux Mint ISO installation.
+  You need install Windows 10 first.
+  I hope you enjoy!
+Links  Linux Mint - Download  Steps 1. Prepare Windows 10 I will shrink the disk space about 30 Gb to install Linux Mint.</description>
     </item>
     
     <item>
@@ -354,36 +65,12 @@ with Windows 10 in Dual Boot.&lt;/p&gt;
       <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/how-to-install-mx-linux-duall-boot-with-windows-10/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/SHf1L_x-qHI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Hi all, in this video i will show how to full install MX Linux
-with Windows 10 in Dual Boot.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;The boot mode will be EFI.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I&amp;rsquo;m assuming you already have the usb stick with the MX Linux ISO.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You need install Windows 10 first.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I hope you enjoy!&lt;/p&gt;
-&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://mxlinux.org/&#34;&gt;MX Linux - Download&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
-&lt;h1 id=&#34;1-prepare-windows-10&#34;&gt;1. Prepare Windows 10&lt;/h1&gt;
-&lt;p&gt;I will shrink the disk space about 30 Gb to install MX Linux.&lt;/p&gt;
-&lt;h1 id=&#34;2-install-mx-linux&#34;&gt;2. Install MX Linux&lt;/h1&gt;
-&lt;p&gt;Follow de video.&lt;/p&gt;
-&lt;h1 id=&#34;finish&#34;&gt;Finish&lt;/h1&gt;
-</description>
+      <description>Hi all, in this video i will show how to full install MX Linux with Windows 10 in Dual Boot.
+  The boot mode will be EFI.
+  I&amp;rsquo;m assuming you already have the usb stick with the MX Linux ISO.
+  You need install Windows 10 first.
+  I hope you enjoy!
+Links  MX Linux - Download  Steps 1. Prepare Windows 10 I will shrink the disk space about 30 Gb to install MX Linux.</description>
     </item>
     
     <item>
@@ -392,110 +79,10 @@ with Windows 10 in Dual Boot.&lt;/p&gt;
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/arch-linux-full-install-with-kde-plasma/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/SQr5P6jWkh4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Hi all, in this video i will show how to full install Arch Linux with Kde Plasma.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;The boot mode will be EFI.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I&amp;rsquo;m assuming you already have the usb stick with the Arch Linux ISO.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I hope you enjoy!&lt;/p&gt;
-&lt;h1 id=&#34;1-links&#34;&gt;1. Links&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Connect_to_the_internet&#34;&gt;Arch Linux - Connect to Internet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Localization&#34;&gt;Localization Guide&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;2-set-the-keyboard-layout&#34;&gt;2. Set the Keyboard Layout&lt;/h1&gt;
-&lt;p&gt;The default console keymap is US. Available layouts can be listed with:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$  ls /usr/share/kbd/keymaps/**/*.map.gz 
-&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ loadkeys yourKeyboardLayout  
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;3-best-mirrors&#34;&gt;3. Best Mirrors&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ reflector -c &amp;quot;BR&amp;quot; -f 12 -n 10 -l 12 \
---save /etc/pacman.d/mirrorlist --verbose
-
-$ pacman -Syy
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;My country code is &amp;ldquo;BR&amp;rdquo;, so you need switch this reflector command parameter
-with your correct country code.&lt;/p&gt;
-&lt;h1 id=&#34;4-partitioning-the-disk&#34;&gt;4. Partitioning the Disk&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ fdisk /dev/yourDevice  
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;5-formatting&#34;&gt;5. Formatting&lt;/h1&gt;
-&lt;p&gt;use mkfs.ext4, mkfs.fat and mkswap .&lt;/p&gt;
-&lt;h1 id=&#34;6-mouting&#34;&gt;6. Mouting&lt;/h1&gt;
-&lt;p&gt;Use mount and swapon.&lt;/p&gt;
-&lt;h1 id=&#34;7-install-the-base&#34;&gt;7. Install the Base&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ pacstrap /mnt base base-devel linux \
-linux-firmware vim sudo networkmanager \
-efibootmgr grub mtools 
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;8-generate-fstab&#34;&gt;8. Generate fstab&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$  genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab 
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;9-enter-the-install&#34;&gt;9. Enter the Install&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$  arch-chroot /mnt 
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;#10. Timezone&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ ln -sf /usr/share/zoneinfo/Region/City /etc/localtime  
-$ hwclock --systohc
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;11-localization&#34;&gt;11. Localization&lt;/h1&gt;
-&lt;p&gt;Edit /etc/locale.gen and uncomment your locale. After, generate the locales by running:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ locale-gen
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create the /etc/locale.conf and set the LANG variable:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;LANG=en_US.UTF-8   
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create /etc/vconsole.conf with your keyboard layout:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;KEYMAP=de-latin   
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;12-network-config&#34;&gt;12. Network Config&lt;/h1&gt;
-&lt;p&gt;Create /etc/hostname with the name your host:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;nameFromYourHost   
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create /etc/hosts:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;127.0.0.1   localhost
-::1         localhost
-127.0.0.1   nameFromYourHost.localdomain nameFromYourHost   
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Enable Network Manager&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ systemctl enable NetworkManager  
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;13-install-the-bootloader&#34;&gt;13. Install the Bootloader&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ grub-install --target=x86_64-efi \
---efi-directory=/boot/efi \
---bootloader-id=GRUB
-
-$ grub-mkconfig -o \
-/boot/grub/grub.cfg  
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;14-set-the-root-password&#34;&gt;14. Set the root Password&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ passwd  
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;15-exit-umount-and-reboot&#34;&gt;15. Exit, Umount and Reboot&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ exit
-$ umount -a
-$ reboot  
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;16-create-a-new-user&#34;&gt;16. Create a New User&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ useradd -m -G wheel yourUsername
-$ passwd yourUsername  
-$ export EDITOR=vim
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/sudoers run &amp;ldquo;visudo&amp;rdquo; and uncomment the following line:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;## Uncomment to allow members of group wheel to execute any command
-%wheel ALL=(ALL) ALL   
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;17-install-xorg&#34;&gt;17. Install xorg&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S xorg  
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;18-install-the-display-manager&#34;&gt;18. Install the Display Manager&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S sddm  
-$ sudo systemctl enable sddm
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open the sddm.conf file from the terminal.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo vim /usr/lib/sddm/sddm.conf.d/default.conf  
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change the theme section as per below.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;[Theme]
-# current theme name
- Current=breeze   
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;19-install-kde-plasma&#34;&gt;19. Install Kde Plasma&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S plasma kde-applications  
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;20-reboot-and-finish&#34;&gt;20. Reboot and Finish&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ reboot  
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;21-finish&#34;&gt;21. Finish&lt;/h1&gt;
-</description>
+      <description>Hi all, in this video i will show how to full install Arch Linux with Kde Plasma.
+  The boot mode will be EFI.
+  I&amp;rsquo;m assuming you already have the usb stick with the Arch Linux ISO.
+  My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.</description>
     </item>
     
     <item>
@@ -504,37 +91,11 @@ $ sudo systemctl enable sddm
       <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Dl9YffchhTA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Hi all, in this video i will show how to install Manjaro Linux with Windows
-Dual Boot.&lt;/p&gt;
-&lt;p&gt;The boot mode in this case is EFI.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m assuming you installed windows 10 first.&lt;/p&gt;
-&lt;p&gt;I hope you enjoy!&lt;/p&gt;
-&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://manjaro.org/&#34;&gt;Manjaro Site for Download&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
-&lt;h3 id=&#34;1-prepare-the-bios&#34;&gt;1. Prepare the Bios&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.&lt;/li&gt;
-&lt;li&gt;Disable fastboot in BIOS settings.&lt;/li&gt;
-&lt;li&gt;Go to security -&amp;gt; secure Boot and disable secure boot in BIOS settings.&lt;/li&gt;
-&lt;li&gt;Make sure that SATA controller is set to AHCI mode in BIOS settings.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;2-prepare-windows-10&#34;&gt;2. Prepare Windows 10&lt;/h3&gt;
-&lt;p&gt;You will need to reduce the space occupied by windows 10 to free up space for
-installing manjaro.&lt;/p&gt;
-&lt;p&gt;I allocated 30gb to install manjaro.&lt;/p&gt;
-&lt;h3 id=&#34;3-install-manjaro&#34;&gt;3. Install Manjaro&lt;/h3&gt;
-&lt;p&gt;I am assuming you have the Manjaro USB boot disk, if you dont have, please go
-to site in description this video, make iso download from manjaro and prepare usb
-disk.&lt;/p&gt;
-</description>
+      <description>Hi all, in this video i will show how to install Manjaro Linux with Windows Dual Boot.
+The boot mode in this case is EFI.
+I&amp;rsquo;m assuming you installed windows 10 first.
+I hope you enjoy!
+Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</description>
     </item>
     
     <item>
@@ -543,40 +104,9 @@ disk.&lt;/p&gt;
       <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-manjaro/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/6A1BRUuecEc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Hi all, in this video i will show how to install Virt-Manager on Manjaro.&lt;/p&gt;
-&lt;p&gt;I hope you enjoy!&lt;/p&gt;
-&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://manjaro.org/&#34;&gt;Manjaro Site for Download&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;1-minimum-hardware-requirements&#34;&gt;1 Minimum Hardware Requirements&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Your system should have &amp;lsquo;virtualization parameters&amp;rsquo; enabled on BIOS.&lt;/li&gt;
-&lt;li&gt;Check the RAM and verify that is at least 4GB.&lt;/li&gt;
-&lt;li&gt;At least 20 Gb of available disk space.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;2-install-virt-manager&#34;&gt;2 Install Virt-Manager&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S dmidecode inxi virt-manager vde2 ebtables dnsmasq bridge-utils
-openbsd-netcat  
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;3-enable-and-start-services&#34;&gt;3. Enable and Start Services&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo systemctl enable --now libvirtd  
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;4-kvm-config&#34;&gt;4. KVM Config&lt;/h1&gt;
-&lt;p&gt;Edit the file /etc/libvirt/libvirtd.conf and uncomment the lines 104 and 81.&lt;/p&gt;
-&lt;p&gt;Add the group &amp;ldquo;libvirt&amp;rdquo; to your user.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo usermod -aG libvirt $(whoami)  
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;5-bridge-autostart&#34;&gt;5. Bridge Autostart&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo virsh net-autostart default 
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;6-restart-the-service&#34;&gt;6. Restart the Service&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo systemctl restart libvirtd  
-$ reboot
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;7-finish&#34;&gt;7. Finish&lt;/h1&gt;
-&lt;p&gt;Ok, you can now start virt-manager.&lt;/p&gt;
-</description>
+      <description>Hi all, in this video i will show how to install Virt-Manager on Manjaro.
+I hope you enjoy!
+Links  Manjaro Site for Download  1 Minimum Hardware Requirements  Your system should have &amp;lsquo;virtualization parameters&amp;rsquo; enabled on BIOS. Check the RAM and verify that is at least 4GB. At least 20 Gb of available disk space.  2 Install Virt-Manager $ sudo pacman -S dmidecode inxi virt-manager vde2 ebtables dnsmasq bridge-utilsopenbsd-netcat 3.</description>
     </item>
     
     <item>
@@ -585,84 +115,12 @@ $ reboot
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/kGrQuwAn2q0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Hi all, in this video i will show how to install Arch Linux Dual Boot with Windows 10.&lt;/p&gt;
-&lt;p&gt;The bootloader utilized is Grub and boot mode is uefi.&lt;/p&gt;
-&lt;p&gt;The Arch Linux installation will be only the base system with network and bootloader.&lt;/p&gt;
-&lt;p&gt;I will use virtual machine, but the procedure is the same and it does not affect.&lt;/p&gt;
-&lt;p&gt;I hope you enjoy!&lt;/p&gt;
-&lt;h1 id=&#34;bios&#34;&gt;Bios&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Boot the PC and press the manufacturers key to open the BIOS. Common keys used: 
-Esc, Delete, F1, F2, F9, F10, F11, or F12.&lt;/li&gt;
-&lt;li&gt;Disable fastboot in BIOS settings.&lt;/li&gt;
-&lt;li&gt;Disable fastboot in BIOS settings.&lt;/li&gt;
-&lt;li&gt;Go to security &amp;gt; secure Boot and disable secure boot in BIOS settings.&lt;/li&gt;
-&lt;li&gt;Make sure that SATA controller is set to AHCI mode in BIOS settings.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
-&lt;h3 id=&#34;wireless-network-config&#34;&gt;Wireless Network Config&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Connect_to_the_internet&#34;&gt;https://wiki.archlinux.org/title/installation_guide#Connect_to_the_internet&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;keyboard-layout&#34;&gt;Keyboard Layout&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/installation_guide#Set_the_keyboard_layout&#34;&gt;https://wiki.archlinux.org/title/installation_guide#Set_the_keyboard_layout&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;commands&#34;&gt;Commands&lt;/h1&gt;
-&lt;h3 id=&#34;1-preparing-windows&#34;&gt;1. Preparing Windows&lt;/h3&gt;
-&lt;h3 id=&#34;2-boot&#34;&gt;2. Boot&lt;/h3&gt;
-&lt;h3 id=&#34;3-install-arch-linux&#34;&gt;3. Install Arch Linux&lt;/h3&gt;
-&lt;h4 id=&#34;31-keymap&#34;&gt;3.1 Keymap&lt;/h4&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ loadkeys yourKeyboardLayout
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;32-internet&#34;&gt;3.2 Internet&lt;/h3&gt;
-&lt;p&gt;I use wired ethernet, if you use wireless see the links in description.&lt;/p&gt;
-&lt;h3 id=&#34;33-mirrors&#34;&gt;3.3 Mirrors&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ reflector -c &amp;quot;BR&amp;quot; -f 12 -n 10 -l 12 \
---save /etc/pacman.d/mirrorlist
-$ pacman -Syy
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;34-partitioning&#34;&gt;3.4 Partitioning&lt;/h3&gt;
-&lt;h3 id=&#34;35-formatting&#34;&gt;3.5 Formatting&lt;/h3&gt;
-&lt;h3 id=&#34;36-mounting&#34;&gt;3.6 Mounting&lt;/h3&gt;
-&lt;h3 id=&#34;37-base-install&#34;&gt;3.7 Base Install&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ pacstrap /mnt base base-devel \
-linux linux-firmware vim sudo networkmanager
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;38-fstab&#34;&gt;3.8 Fstab&lt;/h3&gt;
-&lt;h3 id=&#34;39-enter-install-arch-chroot&#34;&gt;3.9 Enter Install (arch-chroot)&lt;/h3&gt;
-&lt;h3 id=&#34;310-time-zone&#34;&gt;3.10 Time Zone&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ ln -sf /usr/share/zoneinfo/Region/City \
-/etc/localtime
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;311-locales&#34;&gt;3.11 Locales&lt;/h3&gt;
-&lt;p&gt;Edit /etc/locale.gen and uncomment the line for your language.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ locale-gen
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/locale.conf and put your language&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;LANG=yourLanguage
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/vconsole.conf and put your keyboard layout.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ KEYMAP=yourKeyboardLayout
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;312-network-config&#34;&gt;3.12 Network Config&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ echo &amp;quot;yourHostName&amp;quot;&amp;gt;/etc/hostname
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/hosts&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;127.0.0.1	localhost
-::1			localhost
-127.0.0.1	yourHostname.localdomain	yourHostName
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;313-install-grub&#34;&gt;3.13 Install Grub&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ pacman -S grub os-prober efibootmgr ntfs-3g dosfstools mtools
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/default/grub and put this in the end off file.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;GRUB_DISABLE_OS_PROBER=false
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;314-root-password&#34;&gt;3.14 Root Password&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ passwd
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;315-exit-umount-and-reboot&#34;&gt;3.15 Exit, umount and reboot&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ exit
-$ umount -a
-$ reboot
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;316-create-new-user&#34;&gt;3.16 create new user&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ useradd -m -G wheel yourUserName
-$ passwd yourUserName
-$ export EDITOR=vim
-$ visudo
-$ reboot
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;317-finish&#34;&gt;3.17 Finish&lt;/h3&gt;
-</description>
+      <description>Hi all, in this video i will show how to install Arch Linux Dual Boot with Windows 10.
+The bootloader utilized is Grub and boot mode is uefi.
+The Arch Linux installation will be only the base system with network and bootloader.
+I will use virtual machine, but the procedure is the same and it does not affect.
+I hope you enjoy!
+Bios  Boot the PC and press the manufacturers key to open the BIOS.</description>
     </item>
     
     <item>
@@ -671,173 +129,11 @@ $ reboot
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/arch-linux-samba-server-2021/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/cTEy_1wicXQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Hi all, in this video i will show how to install Samba Server on Arch Linux.&lt;/p&gt;
-&lt;p&gt;I hope you enjoy!&lt;/p&gt;
-&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
-&lt;h3 id=&#34;smbconf-link&#34;&gt;smb.conf Link&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://git.samba.org/samba.git/?p=samba.git;a=blob_plain;f=examples/smb.conf.default;hb=HEAD&#34;&gt;git smb.conf&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;commands&#34;&gt;Commands&lt;/h1&gt;
-&lt;h3 id=&#34;1-install-samba&#34;&gt;1. Install Samba&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo pacman -S samba wget 
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;2-smbconf&#34;&gt;2. smb.conf&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo wget -O /etc/samba/smb.conf LinkToSmb.ConfAbove
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit /etc/samba/smb.conf and change:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Line 26&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;workgroup = WORKGROUP   
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Create Samba Share
-In the end off file.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;[sambashare]
-comment = My Samba Share
-path = /samba
-writable = yes
-browsable = yes
-create mask = 0700
-directory mask 0700
-read only = no
-guest ok = no
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-directory-and-sambausers-group&#34;&gt;3. Directory and sambausers group&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo groupadd -r sambausers
-$ sudo usermod -aG sambausers yourUsername
-$ sudo smbpasswd -a yourUsername
-$ sudo mkdir /samba
-$ sudo chown -R :sambausers /samba
-$ sudo chmod 1770 /samba
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4-start-the-services&#34;&gt;4. Start the Services&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ sudo systemctl enable --now smb
-$ sudo systemctl enable --now nmb  
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;5-test-the-server&#34;&gt;5. Test the Server&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ smbclient -L //127.0.0.1/share -U yourUserName
-smb&amp;gt; l
-smb&amp;gt; exit
-
-$ sudo chown -R g+rwx /samba
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;6-connect-from-windows&#34;&gt;6. Connect from Windows&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Install Arch Linux - 2021</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-arch-linux-2021/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-arch-linux-2021/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/h5LX9Ilwp7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&#34;commands&#34;&gt;Commands&lt;/h1&gt;
-&lt;h3 id=&#34;1-set-the-keyboard-layout&#34;&gt;1. Set the Keyboard Layout&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ loadkeys yourKeyboardLayout
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The default console keymap is US. Available layouts can be listed with:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ ls /usr/share/kbd/keymaps/**/*.map.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;2-config-the-best-mirrors&#34;&gt;2. Config the Best Mirrors&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ reflector -c &amp;quot;BR&amp;quot; -f 12 -n 10 -l 12 \
---save /etc/pacman.d/mirrorlist --verbose
-
-$ pacman -Syy
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-partitioning-the-disk&#34;&gt;3. Partitioning the Disk&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ fdisk /dev/yourDevice
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create the root partition and the swap.&lt;/p&gt;
-&lt;h4 id=&#34;4-formatting-the-partitions&#34;&gt;4. Formatting the partitions&lt;/h4&gt;
-&lt;p&gt;use &lt;em&gt;&lt;strong&gt;mkfs.ext4, mkswap and mkfs.fat&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;5-mounting&#34;&gt;5. Mounting&lt;/h3&gt;
-&lt;p&gt;use mount and swapon.&lt;/p&gt;
-&lt;h3 id=&#34;6-install-the-base&#34;&gt;6. Install the Base&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ pacstrap /mnt base base-devel linux \
-linux-firmware vim sudo networkmanager \
-efibootmgr grub
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;7-generate-fstab&#34;&gt;7. Generate fstab&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;8-enter-the-install&#34;&gt;8. Enter the install&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ arch-chroot /mnt
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;9-timezone&#34;&gt;9. Timezone&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;10-localization&#34;&gt;10. Localization&lt;/h4&gt;
-&lt;p&gt;Edit /etc/locale.gen and uncomment your locale. After, generate the locales by running:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ locale-gen
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create the /etc/locale.conf and set the LANG variable&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;LANG=en_US.UTF-8
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create /etc/vconsole.conf with your keyboard layout:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;KEYMAP=de-latin
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;11-network-configuration&#34;&gt;11. Network configuration&lt;/h3&gt;
-&lt;p&gt;Create /etc/hostname with the name your host&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;nameFromYourHost
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create /etc/hosts&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;127.0.0.1   localhost
-::1         localhost
-127.0.0.1   nameFromYourHost.localdomain nameFromYourHost
-&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ systemctl enable NetworkManager
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;12-set-the-root-password&#34;&gt;12. Set the root password&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ passwd
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;13-install-the-bootloader&#34;&gt;13. Install the Bootloader&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ grub-install --target=x86_64-efi \
---efi-directory=/boot/efi \
---bootloader-id=GRUB
-
-$ grub-mkconfig -o \
-/boot/grub/grub.cfg
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;14-umount-and-reboot&#34;&gt;14. Umount and Reboot&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ exit
-$ umount -a
-$ reboot
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;15-create-a-new-user&#34;&gt;15. Create a new user&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;$ useradd -m -G wheel yourUsername
-$ passwd yourUsername
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>How to Install Cinnamon Desktop Environment on Arch Linux</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/6sC1i1qe2Rk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How To Install Virt Manager on Arch Linux</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-arch-linux/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-arch-linux/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/G1N0lyuDm0Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>How to Install Windows 10 Fastest on Virt-Manager</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-windows-10-fastest-on-virt-manager/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-windows-10-fastest-on-virt-manager/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Yw4PuPOcSQs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&#34;link-for-windows-virtio-drivers&#34;&gt;Link for Windows Virtio Drivers&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md&#34;&gt;https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Hi all, in this video i will show how to install Samba Server on Arch Linux.
+I hope you enjoy!
+Links smb.conf Link git smb.conf
+Commands 1. Install Samba $ sudo pacman -S samba wget 2. smb.conf $ sudo wget -O /etc/samba/smb.conf LinkToSmb.ConfAboveEdit /etc/samba/smb.conf and change:
+ Line 26  workgroup = WORKGROUP Create Samba Share In the end off file.  [sambashare]comment = My Samba Sharepath = /sambawritable = yesbrowsable = yescreate mask = 0700directory mask 0700read only = noguest ok = no3.</description>
     </item>
     
   </channel>

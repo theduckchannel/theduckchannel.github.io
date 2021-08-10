@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on The Duck Channel</title>
+    <title>Posts on The Duck Channel´s Site</title>
     <link>https://theduckchannel.github.io/post/</link>
-    <description>Recent content in Posts on The Duck Channel</description>
+    <description>Recent content in Posts on The Duck Channel´s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install LEMP Stack NGINX MariaDB PHP on Ubuntu 21.04</title>
@@ -133,44 +134,6 @@ I hope you enjoy!
 Links smb.conf Link git smb.conf
 Commands 1. Install Samba $ sudo pacman -S samba wget 2. smb.conf $ sudo wget -O /etc/samba/smb.conf LinkToSmb.ConfAboveEdit /etc/samba/smb.conf and change:
  Line 26  workgroup = WORKGROUP Create Samba Share In the end off file.  [sambashare]comment = My Samba Sharepath = /sambawritable = yesbrowsable = yescreate mask = 0700directory mask 0700read only = noguest ok = no3.</description>
-    </item>
-    
-    <item>
-      <title>How to Install Arch Linux - 2021</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-arch-linux-2021/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-arch-linux-2021/</guid>
-      <description>Commands 1. Set the Keyboard Layout $ loadkeys yourKeyboardLayout The default console keymap is US. Available layouts can be listed with:
-$ ls /usr/share/kbd/keymaps/**/*.map.gz 2. Config the Best Mirrors $ reflector -c &amp;quot;BR&amp;quot; -f 12 -n 10 -l 12 \ --save /etc/pacman.d/mirrorlist --verbose $ pacman -Syy 3. Partitioning the Disk $ fdisk /dev/yourDevice Create the root partition and the swap.
-4. Formatting the partitions use mkfs.ext4, mkswap and mkfs.</description>
-    </item>
-    
-    <item>
-      <title>How to Install Cinnamon Desktop Environment on Arch Linux</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</guid>
-      <description>   </description>
-    </item>
-    
-    <item>
-      <title>How To Install Virt Manager on Arch Linux</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-arch-linux/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-arch-linux/</guid>
-      <description>   </description>
-    </item>
-    
-    <item>
-      <title>How to Install Windows 10 Fastest on Virt-Manager</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-windows-10-fastest-on-virt-manager/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-windows-10-fastest-on-virt-manager/</guid>
-      <description>Link for Windows Virtio Drivers https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md</description>
     </item>
     
   </channel>
