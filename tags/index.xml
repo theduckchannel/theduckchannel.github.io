@@ -7,13 +7,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dual Boot</title>
+      <link>https://theduckchannel.github.io/tags/dual-boot/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/dual-boot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EndeavourOS</title>
+      <link>https://theduckchannel.github.io/tags/endeavouros/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/endeavouros/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grub</title>
+      <link>https://theduckchannel.github.io/tags/grub/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/grub/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>linux</title>
       <link>https://theduckchannel.github.io/tags/linux/</link>
-      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://theduckchannel.github.io/tags/windows/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows 10</title>
+      <link>https://theduckchannel.github.io/tags/windows-10/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/windows-10/</guid>
       <description></description>
     </item>
     
@@ -50,51 +95,6 @@
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/php/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ubuntu</title>
-      <link>https://theduckchannel.github.io/tags/ubuntu/</link>
-      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Arch Linux</title>
-      <link>https://theduckchannel.github.io/tags/arch-linux/</link>
-      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/arch-linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cinnamon</title>
-      <link>https://theduckchannel.github.io/tags/cinnamon/</link>
-      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/cinnamon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dual boot</title>
-      <link>https://theduckchannel.github.io/tags/dual-boot/</link>
-      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/dual-boot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux Mint</title>
-      <link>https://theduckchannel.github.io/tags/linux-mint/</link>
-      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/linux-mint/</guid>
       <description></description>
     </item>
     

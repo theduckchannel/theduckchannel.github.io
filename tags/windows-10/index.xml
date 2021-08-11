@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>windows 10 on The Duck Channel´s Site</title>
+    <title>Windows 10 on The Duck Channel´s Site</title>
     <link>https://theduckchannel.github.io/tags/windows-10/</link>
-    <description>Recent content in windows 10 on The Duck Channel´s Site</description>
+    <description>Recent content in Windows 10 on The Duck Channel´s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 07 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/windows-10/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/windows-10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install EndeavourOS with Windows 10 Dual Boot</title>
+      <link>https://theduckchannel.github.io/post/10082021/how-to-install-endeavouros-with-windows-10-dual-boot/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/10082021/how-to-install-endeavouros-with-windows-10-dual-boot/</guid>
+      <description>Hi all, in this video i will show how to install EndeavourOS Dual Boot with Windows 10.
+ The boot mode will be EFI. I’m assuming you already have the usb stick with the EndeavourOS ISO. You need install Windows 10 first. I will choose plasma as desktop environment.  I hope you enjoy!
+Links  Download EndeavourOS Create EndeavourOS Install Media EndeavourOS Wiki  Steps #1. Bios Considerations</description>
+    </item>
+    
     <item>
       <title>How to Install Linux Mint Dual Boot with Windows 10</title>
       <link>https://theduckchannel.github.io/post/how-to-install-linux-mint-dual-boot-with-windows-10/</link>
