@@ -7,7 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>how to</title>
+      <link>https://theduckchannel.github.io/tags/how-to/</link>
+      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/how-to/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux mint</title>
+      <link>https://theduckchannel.github.io/tags/linux-mint/</link>
+      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/linux-mint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Samba</title>
+      <link>https://theduckchannel.github.io/tags/samba/</link>
+      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/samba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Server</title>
+      <link>https://theduckchannel.github.io/tags/server/</link>
+      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/server/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Dual Boot</title>
       <link>https://theduckchannel.github.io/tags/dual-boot/</link>
@@ -59,42 +95,6 @@
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/windows-10/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MariaDB</title>
-      <link>https://theduckchannel.github.io/tags/mariadb/</link>
-      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/mariadb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mysql</title>
-      <link>https://theduckchannel.github.io/tags/mysql/</link>
-      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nginx</title>
-      <link>https://theduckchannel.github.io/tags/nginx/</link>
-      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/nginx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PHP</title>
-      <link>https://theduckchannel.github.io/tags/php/</link>
-      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/php/</guid>
       <description></description>
     </item>
     

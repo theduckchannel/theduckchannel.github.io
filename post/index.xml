@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install Samba Server on Linux Mint 20.2</title>
+      <link>https://theduckchannel.github.io/post/11082021/how-to-install-samba-server-on-linux-mint-20.2/</link>
+      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/11082021/how-to-install-samba-server-on-linux-mint-20.2/</guid>
+      <description>Hi all, in this video i will show how to install Samba Server on Linux Mint 20.2.
+I hope you enjoy!
+Links  Linux Mint  Steps #1. Update your System
+$ sudo apt update$ sudo apt upgrade#2. Install Samba Server
+$ sudo aptt install samba$ sudo systemctl enable --now smbd$ sudo systemctl status smbd$ sudo ufw allow samba$ sudo usermod -aG sambashare $USER$ groups $USER$ sudo smbpasswd -a $USER#3.</description>
+    </item>
+    
     <item>
       <title>How to Install EndeavourOS with Windows 10 Dual Boot</title>
       <link>https://theduckchannel.github.io/post/10082021/how-to-install-endeavouros-with-windows-10-dual-boot/</link>
@@ -118,20 +131,6 @@ Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and pre
       <description>Hi all, in this video i will show how to install Virt-Manager on Manjaro.
 I hope you enjoy!
 Links  Manjaro Site for Download  1 Minimum Hardware Requirements  Your system should have &amp;lsquo;virtualization parameters&amp;rsquo; enabled on BIOS. Check the RAM and verify that is at least 4GB. At least 20 Gb of available disk space.  2 Install Virt-Manager $ sudo pacman -S dmidecode inxi virt-manager vde2 ebtables dnsmasq bridge-utilsopenbsd-netcat 3.</description>
-    </item>
-    
-    <item>
-      <title>Arch Linux Dual Boot Windows 10</title>
-      <link>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</guid>
-      <description>Hi all, in this video i will show how to install Arch Linux Dual Boot with Windows 10.
-The bootloader utilized is Grub and boot mode is uefi.
-The Arch Linux installation will be only the base system with network and bootloader.
-I will use virtual machine, but the procedure is the same and it does not affect.
-I hope you enjoy!
-Bios  Boot the PC and press the manufacturers key to open the BIOS.</description>
     </item>
     
   </channel>

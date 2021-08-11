@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux mint on The Duck Channel´s Site</title>
-    <link>https://theduckchannel.github.io/tags/linux-mint/</link>
-    <description>Recent content in linux mint on The Duck Channel´s Site</description>
+    <title>how to on The Duck Channel´s Site</title>
+    <link>https://theduckchannel.github.io/tags/how-to/</link>
+    <description>Recent content in how to on The Duck Channel´s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 11 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/linux-mint/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Install Samba Server on Linux Mint 20.2</title>
       <link>https://theduckchannel.github.io/post/11082021/how-to-install-samba-server-on-linux-mint-20.2/</link>
@@ -19,20 +19,6 @@ I hope you enjoy!
 Links  Linux Mint  Steps #1. Update your System
 $ sudo apt update$ sudo apt upgrade#2. Install Samba Server
 $ sudo aptt install samba$ sudo systemctl enable --now smbd$ sudo systemctl status smbd$ sudo ufw allow samba$ sudo usermod -aG sambashare $USER$ groups $USER$ sudo smbpasswd -a $USER#3.</description>
-    </item>
-    
-    <item>
-      <title>How to Install Linux Mint Dual Boot with Windows 10</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-linux-mint-dual-boot-with-windows-10/</link>
-      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-linux-mint-dual-boot-with-windows-10/</guid>
-      <description>Hi all, in this video i will show how to full install Linux Mint with Windows 10 in Dual Boot.
-  The boot mode will be EFI.
-  I&amp;rsquo;m assuming you already have the usb stick with the Linux Mint ISO installation.
-  You need install Windows 10 first.
-  I hope you enjoy!
-Links  Linux Mint - Download  Steps 1. Prepare Windows 10 I will shrink the disk space about 30 Gb to install Linux Mint.</description>
     </item>
     
   </channel>
