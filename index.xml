@@ -84,20 +84,6 @@ Links  Linux Mint - Download  Steps 1. Prepare Windows 10 I will shrink the disk
     </item>
     
     <item>
-      <title>How to Install MX Linux Duall Boot with Windows 10</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-mx-linux-duall-boot-with-windows-10/</link>
-      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-mx-linux-duall-boot-with-windows-10/</guid>
-      <description>Hi all, in this video i will show how to full install MX Linux with Windows 10 in Dual Boot.
-  The boot mode will be EFI.
-  I&amp;rsquo;m assuming you already have the usb stick with the MX Linux ISO.
-  You need install Windows 10 first.
-  I hope you enjoy!
-Links  MX Linux - Download  Steps 1. Prepare Windows 10 I will shrink the disk space about 30 Gb to install MX Linux.</description>
-    </item>
-    
-    <item>
       <title>Arch Linux Full Install with Kde Plasma</title>
       <link>https://theduckchannel.github.io/post/arch-linux-full-install-with-kde-plasma/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
@@ -131,6 +117,20 @@ Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and pre
       <description>Hi all, in this video i will show how to install Virt-Manager on Manjaro.
 I hope you enjoy!
 Links  Manjaro Site for Download  1 Minimum Hardware Requirements  Your system should have &amp;lsquo;virtualization parameters&amp;rsquo; enabled on BIOS. Check the RAM and verify that is at least 4GB. At least 20 Gb of available disk space.  2 Install Virt-Manager $ sudo pacman -S dmidecode inxi virt-manager vde2 ebtables dnsmasq bridge-utilsopenbsd-netcat 3.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux Dual Boot Windows 10</title>
+      <link>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</guid>
+      <description>Hi all, in this video i will show how to install Arch Linux Dual Boot with Windows 10.
+The bootloader utilized is Grub and boot mode is uefi.
+The Arch Linux installation will be only the base system with network and bootloader.
+I will use virtual machine, but the procedure is the same and it does not affect.
+I hope you enjoy!
+Bios  Boot the PC and press the manufacturers key to open the BIOS.</description>
     </item>
     
   </channel>
