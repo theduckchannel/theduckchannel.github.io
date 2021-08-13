@@ -44,7 +44,7 @@
 <meta itemprop="name" content="Manjaro with Btrfs and Snapper [2021]">
 <meta itemprop="description" content="The Duck Channel Vlog"><meta itemprop="datePublished" content="2021-08-13T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-13T00:00:00+00:00" />
-<meta itemprop="wordCount" content="291"><meta itemprop="image" content="https://theduckchannel.github.io"/>
+<meta itemprop="wordCount" content="285"><meta itemprop="image" content="https://theduckchannel.github.io"/>
 <meta itemprop="keywords" content="linux,Arch Linux,kernel," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://theduckchannel.github.io"/>
@@ -167,7 +167,7 @@ if (!doNotTrack) {
 <li><a href="https://manjaro.org/">Manjaro</a></li>
 <li><a href="https://wiki.archlinux.org/title/btrfs">Btrfs</a></li>
 </ol>
-<p>#0. Intro</p>
+<h1 id="0-intro">0. Intro</h1>
 <p>Hi all, in this video i show how to install Manjaro with 
 btrfs, snapshots and Grub-Btrfs.</p>
 <ol>
@@ -176,7 +176,7 @@ btrfs, snapshots and Grub-Btrfs.</p>
 <li>Buggie will be Desktop Environment in this case.</li>
 </ol>
 <p>I hope you enjoy!</p>
-<p>#1. Install</p>
+<h1 id="1install">1.Install</h1>
 <p>[Subtitle 01]
 Any moment you can access the site in description and
 see every command i gave here.</p>
@@ -186,9 +186,9 @@ I will create 3 partitions.
 <p>[Subtitle 03]
 I&rsquo;m assuming you upgraded your system in order to continue.
 I</p>
-<p>#2. Enable AUR</p>
+<h1 id="2-enable-aur">2. Enable AUR</h1>
 <p>Folow the video&hellip;</p>
-<p>#3. Install and Config Snapper</p>
+<h1 id="3-install-and-config-snapper">3. Install and Config Snapper</h1>
 <pre><code class="language-console" data-lang="console">$ sudo pamac install snapper vim
 $ sudo snapper -c root create-config /
 </code></pre><p>Edit /etc/snapper/configs/root</p>
@@ -211,12 +211,11 @@ $ sudo btrfs subvolume create /@snapshots
 $ sudo mkdir /.snapshots
 $ sudo chmod 750 /.snapshots
 $ sudo chown :duckchannel /.snapshots
-</code></pre><p>#mount -o subvol=@/@snapshots /dev/sda3 /.snapshots</p>
-<p>#4. Fstab</p>
+</code></pre><h1 id="4-fstab">4. Fstab</h1>
 <p>Edit /etc/fstab and add the line for mount /.snapshots:</p>
 <pre><code class="language-console" data-lang="console">$ sudo mount -a
 $ lsblk
-</code></pre><p>#5. Reinstall Grub</p>
+</code></pre><h1 id="5-reinstall-grub">5. Reinstall Grub</h1>
 <p>Edit /etc/default/grub and comment out the line 3</p>
 <pre><code class="language-console" data-lang="console">#GRUB_DEFAULT_TIMEOUT_STYLE=hidden
 </code></pre><pre><code class="language-console" data-lang="console">$ sudo pamac install grub-btrfs efibootmgr dosfstools \
@@ -226,16 +225,16 @@ $ sudo grub-install --target=x86_64-efi \
 --efi_directory=/boot/efi \
 --bootloader-id=GRUB
 $ sudo grub-mkconfig -o /boot/grub/grub.cfg
-</code></pre><p>#6. Install snapper-gui</p>
+</code></pre><h1 id="6-install-snapper-gui">6. Install snapper-gui</h1>
 <pre><code class="language-console" data-lang="console">$ sudo pamac install snapper-gui
-</code></pre><p>#7. Start the Services</p>
+</code></pre><h1 id="7-start-the-services">7. Start the Services</h1>
 <pre><code class="language-console" data-lang="console">$ sudo systemctl enable --now snapper-timeline.timer
 $ sudo systemctl enable --now snapper-cleanup.timer
 $ sudo systemctl enable --now grub-btrfs.path
 $ 
-</code></pre><p>#8. Create your First Snapshot</p>
+</code></pre><h1 id="8-create-your-first-snapshot">8. Create your First Snapshot</h1>
 <p>Follow the video&hellip;</p>
-<p>#9. Finish</p>
+<h1 id="9-finish">9. Finish</h1>
 
             </div>
         </article>

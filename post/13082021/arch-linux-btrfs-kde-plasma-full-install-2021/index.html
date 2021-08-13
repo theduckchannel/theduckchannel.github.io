@@ -44,7 +44,7 @@
 <meta itemprop="name" content="Arch Linux Btrfs Kde Plasma Full Install [2021]">
 <meta itemprop="description" content="The Duck Channel Vlog"><meta itemprop="datePublished" content="2021-08-13T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-13T00:00:00+00:00" />
-<meta itemprop="wordCount" content="886"><meta itemprop="image" content="https://theduckchannel.github.io"/>
+<meta itemprop="wordCount" content="878"><meta itemprop="image" content="https://theduckchannel.github.io"/>
 <meta itemprop="keywords" content="linux,Arch Linux,kernel," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://theduckchannel.github.io"/>
@@ -183,8 +183,8 @@ your network.</li>
 <li><a href="https://github.com/ricardomv/snapper-gui">snapper-gui</a></li>
 <li><a href="https://github.com/Jguer/yay">Yay</a></li>
 </ol>
-<p>#1. Pre-Install</p>
-<p>##1.1 Set Keymap (Optional)</p>
+<h1 id="1-pre-install">1. Pre-Install</h1>
+<h2 id="11-set-keymap-optional">1.1 Set Keymap (Optional)</h2>
 <p>Default keymap is US which will fit most keyboards. 
 However if you have a different keymap you can set it using
 this command.</p>
@@ -192,9 +192,9 @@ this command.</p>
 you can list all keymaps with:</p>
 <pre><code class="language-console" data-lang="console">$ localectl list-keymaps 
 </code></pre><pre><code class="language-console" data-lang="console">$ loadkeys [keymap]
-</code></pre><p>##1.2 Set Time</p>
+</code></pre><h2 id="12-set-time">1.2 Set Time</h2>
 <pre><code class="language-console" data-lang="console">$ timedatectl set-ntp true
-</code></pre><p>##1.3 Reflector</p>
+</code></pre><h2 id="13-reflector">1.3 Reflector</h2>
 <p>This command is optional. However, it considerably 
 increases the speed for downloading packages on 
 the internet during installation.</p>
@@ -206,17 +206,17 @@ i put Colombia because closer.</p>
 <pre><code class="language-console" data-lang="console">$ reflector --country Brazil,Colombia -f 12 -l 10 -n 12 \
 --save /etc/pacman.d/mirrorlist --verbose
 $ pacman -Syy
-</code></pre><p>##1.3 Partitioning the Disk</p>
+</code></pre><h2 id="13-partitioning-the-disk">1.3 Partitioning the Disk</h2>
 <p>I will create 3 partitions.</p>
 <p>The scheme.</p>
 <p>Folow the video&hellip;</p>
 <pre><code class="language-console" data-lang="console">$ fdisk /dev/[device]
-</code></pre><p>##1.4 Formatting</p>
+</code></pre><h2 id="14-formatting">1.4 Formatting</h2>
 <p>use mkfs.btrfs, mkfs.fat and mkswap.</p>
 <pre><code class="language-console" data-lang="console">$ mkfs.fat -F32 /dev/sda1
 $ mkswap /dev/sda2
 $ mkfs.btrs /dev/sda3
-</code></pre><p>#1.5 Creating Subvolumes and Mounting</p>
+</code></pre><h1 id="15-creating-subvolumes-and-mounting">1.5 Creating Subvolumes and Mounting</h1>
 <p>First i mount /dev/sda3 and create subvolumes. After
 umount and mount this partition with 
 every subvolumes created.</p>
@@ -232,58 +232,52 @@ $ umount /mnt
 $ mount -o noatime,compress=lzo,space_cache=v2,\
 subvol=@ /dev/sda3 /mnt
 $ mkdir -p /mnt/{boot/efi,home,var, tmp,.snapshots}
-</code></pre><p>####Home</p>
+</code></pre><h4 id="home">Home</h4>
 <pre><code class="language-console" data-lang="console">$ mount -o noatime,compress=lzo,space_cache=v2,\
 subvol=@home /dev/sda3 /mnt/home
-</code></pre><p>####var</p>
+</code></pre><h4 id="var">var</h4>
 <pre><code class="language-console" data-lang="console">$ mount -o subvol=@var /dev/sda3 /mnt/var
-</code></pre><p>####tmp</p>
+</code></pre><h4 id="tmp">tmp</h4>
 <pre><code class="language-console" data-lang="console">$ mount -o noatime,compress=lzo,space_cache=v2,\
 subvol=@home /dev/sda3 /mnt/home
-</code></pre><p>####Snapshots</p>
+</code></pre><h4 id="snapshots">Snapshots</h4>
 <pre><code class="language-console" data-lang="console">$ mount -o noatime,compress=lzo,space_cache=v2,\
 subvol=@snapshots /dev/sda3 /mnt/.snapshots
-</code></pre><p>###EFI</p>
+</code></pre><h3 id="efi">EFI</h3>
 <pre><code class="language-console" data-lang="console">$ mount /dev/sda1 /mnt/boot/efi
-</code></pre><p>####Swap
-$ swapon /dev/sda2
-$ lsblk</p>
-<pre><code>
-#2. Install
-
-2.2 Install the Base System
-Take a look at the site in the description you need 
+</code></pre><h4 id="swap">Swap</h4>
+<pre><code class="language-console" data-lang="console">$ swapon /dev/sda2
+$ lsblk
+</code></pre><h1 id="2-install">2. Install</h1>
+<p>Take a look at the site in the description you need 
 to add a package in this command. 
-It will depend on the brand of your processor (AMD or Intel)
-
-- For Intel Processor add intel-ucode package;
-- For AMD Processor add amd-ucode package;
-
-
-Press enter twice...
-
-```console
-$ pacstrap /mnt base base-devel linux \
+It will depend on the brand of your processor (AMD or Intel)</p>
+<ul>
+<li>For Intel Processor add intel-ucode package;</li>
+<li>For AMD Processor add amd-ucode package;</li>
+</ul>
+<p>Press enter twice&hellip;</p>
+<pre><code class="language-console" data-lang="console">$ pacstrap /mnt base base-devel linux \
 linux-firmware vim btrfs-progs \
 networkmanager network-manager-applet \
 grub grub-btrfs efibootmgr linux-headers \
 reflector rsync mtools net-tools os-prober dosfstools \
 git snapper xdg-user-dirs
 </code></pre><p>Press enter twice here..</p>
-<p>#3. Config the System</p>
-<p>##3.1 Generate fstab</p>
+<h1 id="3-config-the-system">3. Config the System</h1>
+<h2 id="31-generate-fstab">3.1 Generate fstab</h2>
 <pre><code class="language-console" data-lang="console">$ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab 
 $ cat /mnt/etc/fstab
-</code></pre><p>##3.2 Chroot</p>
+</code></pre><h2 id="32-chroot">3.2 Chroot</h2>
 <pre><code class="language-console" data-lang="console">$  arch-chroot /mnt 
-</code></pre><p>##3.3 Timezone</p>
+</code></pre><h2 id="33-timezone">3.3 Timezone</h2>
 <p>You can list all timezones with:</p>
 <pre><code class="language-console" data-lang="console">$ timedatectl list-timezones
 </code></pre><p>Replace region and city with your own timezone.</p>
 <pre><code class="language-console" data-lang="console">$ ln -sf /usr/share/zoneinfo/Region/City /etc/localtime  
 $ hwclock --systohc
-</code></pre><p>##3.4 Localization
-Edit /etc/locale.gen and uncomment your locale. After, generate the locales by running:</p>
+</code></pre><h2 id="34-localization">3.4 Localization</h2>
+<p>Edit /etc/locale.gen and uncomment your locale. After, generate the locales by running:</p>
 <pre><code class="language-console" data-lang="console">$ locale-gen
 </code></pre><p>Create the /etc/locale.conf and set the LANG variable:</p>
 <pre><code class="language-console" data-lang="console">LANG=en_US.UTF-8   
@@ -291,7 +285,7 @@ Edit /etc/locale.gen and uncomment your locale. After, generate the locales by r
 you need to add it here also:
 Create /etc/vconsole.conf with your keyboard layout:</p>
 <pre><code class="language-console" data-lang="console">KEYMAP=[keymap]
-</code></pre><p>##3.5 Network Config</p>
+</code></pre><h2 id="35-network-config">3.5 Network Config</h2>
 <p>Create /etc/hostname with the name your host:</p>
 <pre><code class="language-console" data-lang="console">nameFromYourHost   
 </code></pre><p>Create /etc/hosts:</p>
@@ -300,27 +294,27 @@ Create /etc/vconsole.conf with your keyboard layout:</p>
 127.0.0.1   nameFromYourHost.localdomain nameFromYourHost   
 </code></pre><p>Enable Network Manager</p>
 <pre><code class="language-console" data-lang="console">$ systemctl enable NetworkManager  
-</code></pre><p>#3.6 Add btrfs module to mkinitcpio</p>
+</code></pre><h1 id="36-add-btrfs-module-to-mkinitcpio">3.6 Add btrfs module to mkinitcpio</h1>
 <pre><code class="language-console" data-lang="console">$ vim /etc/mkinitcpio.conf
 $ mkinitcpio -p linux
 </code></pre><p>And add btrfs on Modules list.
 remove fsck on line . If you dont remove your efi 
 partition you be corrupted because btrfs.</p>
-<p>3.7 Install GRUB</p>
+<h2 id="37-install-grub">3.7 Install GRUB</h2>
 <pre><code class="language-console" data-lang="console">$ grub-install --target=x86_64-efi \
 --efi-directory=/boot/efi \
 --bootloader-id=GRUB
 
 $ grub-mkconfig -o \
 /boot/grub/grub.cfg  
-</code></pre><p>3.8 Set the root Password</p>
+</code></pre><h2 id="38-set-the-root-password">3.8 Set the root Password</h2>
 <pre><code class="language-console" data-lang="console">$ passwd  
-</code></pre><p>3.9 Exit, Umount and Reboot</p>
+</code></pre><h2 id="39-exit-umount-and-reboot">3.9 Exit, Umount and Reboot</h2>
 <pre><code class="language-console" data-lang="console">$ exit
 $ umount -a
 $ reboot  
-</code></pre><p>#4. Post-Install</p>
-<p>##4.1 Create a New User</p>
+</code></pre><h1 id="4-post-install">4. Post-Install</h1>
+<h2 id="41-create-a-new-user">4.1 Create a New User</h2>
 <pre><code class="language-console" data-lang="console">$ useradd -m -G wheel yourUsername
 $ passwd yourUsername  
 $ export EDITOR=vim
@@ -328,17 +322,17 @@ $ export EDITOR=vim
 <pre><code class="language-console" data-lang="console">## Uncomment to allow members of group wheel to execute any command
 %wheel ALL=(ALL) ALL   
 </code></pre><pre><code class="language-console" data-lang="console">$ exit
-</code></pre><p>##4.2 Install xorg</p>
+</code></pre><h2 id="42-install-xorg">4.2 Install xorg</h2>
 <pre><code class="language-console" data-lang="console">$ sudo pacman -S xorg  
-</code></pre><p>##4.2 Install the Display Manager</p>
+</code></pre><h2 id="42-install-the-display-manager">4.2 Install the Display Manager</h2>
 <pre><code class="language-console" data-lang="console">$ sudo pacman -S sddm
 $ sudo systemctl enable sddm
-</code></pre><p>#4.3 Install Kde Plasma</p>
+</code></pre><h2 id="43-install-kde-plasma">4.3 Install Kde Plasma</h2>
 <p>I only press enter to confirm every dialogs. Be patient!</p>
 <pre><code class="language-console" data-lang="console">$ sudo pacman -S plasma kde-applications firefox
-</code></pre><p>#4.4 Reboot</p>
+</code></pre><h2 id="44-reboot">4.4 Reboot</h2>
 <pre><code class="language-console" data-lang="console">$ reboot  
-</code></pre><p>#5. Snapper</p>
+</code></pre><h1 id="5-snapper">5. Snapper</h1>
 <p>You need remove this directory because 
 snapper will create again.</p>
 <pre><code class="language-console" data-lang="console">$ su
@@ -373,8 +367,8 @@ $ yay -S snap-pac-grub snapper-gui
 $ reboot
 </code></pre><p>Make Grub-Btrfs Show Snapshots</p>
 <pre><code class="language-console" data-lang="console">$ sudo systemctl enable --now grub-btrfs.path
-</code></pre><h1 id="create-one-new-snapshot-with-snapper-gui">Create one new Snapshot with snapper-gui</h1>
-<p>#6. Finish</p>
+</code></pre><p>Create one new Snapshot with snapper-gui</p>
+<h1 id="6-finish">6. Finish</h1>
 
             </div>
         </article>
