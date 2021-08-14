@@ -18,6 +18,15 @@
     </item>
     
     <item>
+      <title>btrfs</title>
+      <link>https://theduckchannel.github.io/tags/btrfs/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/btrfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>kernel</title>
       <link>https://theduckchannel.github.io/tags/kernel/</link>
       <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
@@ -32,6 +41,33 @@
       <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>manjaro</title>
+      <link>https://theduckchannel.github.io/tags/manjaro/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/manjaro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>snapper</title>
+      <link>https://theduckchannel.github.io/tags/snapper/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/snapper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>snapshots</title>
+      <link>https://theduckchannel.github.io/tags/snapshots/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/snapshots/</guid>
       <description></description>
     </item>
     
@@ -59,42 +95,6 @@
       <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/samba/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Server</title>
-      <link>https://theduckchannel.github.io/tags/server/</link>
-      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dual Boot</title>
-      <link>https://theduckchannel.github.io/tags/dual-boot/</link>
-      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/dual-boot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EndeavourOS</title>
-      <link>https://theduckchannel.github.io/tags/endeavouros/</link>
-      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/endeavouros/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Grub</title>
-      <link>https://theduckchannel.github.io/tags/grub/</link>
-      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/grub/</guid>
       <description></description>
     </item>
     

@@ -19,6 +19,18 @@
     </item>
     
     <item>
+      <title>Manjaro with Btrfs and snapper [2021]</title>
+      <link>https://theduckchannel.github.io/post/13082021/manjaro-with-btrfs-and-snapper-2021/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/13082021/manjaro-with-btrfs-and-snapper-2021/</guid>
+      <description>#Links
+ Manjaro Btrfs  0. Intro Hi all, in this video i show how to install Manjaro with btrfs, snapshots and Grub-Btrfs.
+ The boot mode will be efi; I’m assuming you already have the usb stick with the Manjaro Linux ISO. Buggie will be Desktop Environment in this case.  I hope you enjoy!
+1. Install [Subtitle 01] Any moment you can access the site in description and see every command i gave here.</description>
+    </item>
+    
+    <item>
       <title>How to Install Samba Server on Linux Mint 20.2</title>
       <link>https://theduckchannel.github.io/post/11082021/how-to-install-samba-server-on-linux-mint-20.2/</link>
       <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
@@ -116,17 +128,6 @@ The boot mode in this case is EFI.
 I&amp;rsquo;m assuming you installed windows 10 first.
 I hope you enjoy!
 Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</description>
-    </item>
-    
-    <item>
-      <title>How to Install Virt-Manager on Manjaro</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-manjaro/</link>
-      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-manjaro/</guid>
-      <description>Hi all, in this video i will show how to install Virt-Manager on Manjaro.
-I hope you enjoy!
-Links  Manjaro Site for Download  1 Minimum Hardware Requirements  Your system should have &amp;lsquo;virtualization parameters&amp;rsquo; enabled on BIOS. Check the RAM and verify that is at least 4GB. At least 20 Gb of available disk space.  2 Install Virt-Manager $ sudo pacman -S dmidecode inxi virt-manager vde2 ebtables dnsmasq bridge-utilsopenbsd-netcat 3.</description>
     </item>
     
   </channel>

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="The Duck Channel">
 <meta name="description" content="The Duck Channel Vlog" />
-<meta name="keywords" content="linux, arch linux, youtube, tutorial, linus tech tips, ubuntu, endeavouros, linux, Arch Linux, kernel" />
+<meta name="keywords" content="linux, arch linux, youtube, tutorial, linus tech tips, ubuntu, endeavouros, linux, btrfs, manjaro, snapper, snapshots" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://theduckchannel.github.io/post/13082021/manjaro-with-btrfs-and-snapper-2021/" />
@@ -14,7 +14,7 @@
 
     <title>
         
-            Manjaro with Btrfs and Snapper [2021] :: The Duck Channel´s Site  — Hello Friend NG Theme
+            Manjaro with Btrfs and snapper [2021] :: The Duck Channel´s Site  — Hello Friend NG Theme
         
     </title>
 
@@ -41,21 +41,21 @@
 
 
 
-<meta itemprop="name" content="Manjaro with Btrfs and Snapper [2021]">
+<meta itemprop="name" content="Manjaro with Btrfs and snapper [2021]">
 <meta itemprop="description" content="The Duck Channel Vlog"><meta itemprop="datePublished" content="2021-08-13T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-13T00:00:00+00:00" />
-<meta itemprop="wordCount" content="285"><meta itemprop="image" content="https://theduckchannel.github.io"/>
-<meta itemprop="keywords" content="linux,Arch Linux,kernel," />
+<meta itemprop="wordCount" content="291"><meta itemprop="image" content="https://theduckchannel.github.io"/>
+<meta itemprop="keywords" content="linux,btrfs,manjaro,snapper,snapshots," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://theduckchannel.github.io"/>
 
-<meta name="twitter:title" content="Manjaro with Btrfs and Snapper [2021]"/>
+<meta name="twitter:title" content="Manjaro with Btrfs and snapper [2021]"/>
 <meta name="twitter:description" content="The Duck Channel Vlog"/>
 
 
 
 
-    <meta property="og:title" content="Manjaro with Btrfs and Snapper [2021]" />
+    <meta property="og:title" content="Manjaro with Btrfs and snapper [2021]" />
 <meta property="og:description" content="The Duck Channel Vlog" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://theduckchannel.github.io/post/13082021/manjaro-with-btrfs-and-snapper-2021/" /><meta property="og:image" content="https://theduckchannel.github.io"/><meta property="article:section" content="post" />
@@ -149,7 +149,7 @@ if (!doNotTrack) {
         </div>
 
         <article>
-            <h2 class="post-title"><a href="https://theduckchannel.github.io/post/13082021/manjaro-with-btrfs-and-snapper-2021/">Manjaro with Btrfs and Snapper [2021]</a></h2>
+            <h2 class="post-title"><a href="https://theduckchannel.github.io/post/13082021/manjaro-with-btrfs-and-snapper-2021/">Manjaro with Btrfs and snapper [2021]</a></h2>
             <h4>Published on: August 13, 2021</h4>
 
             
@@ -176,7 +176,7 @@ btrfs, snapshots and Grub-Btrfs.</p>
 <li>Buggie will be Desktop Environment in this case.</li>
 </ol>
 <p>I hope you enjoy!</p>
-<h1 id="1install">1.Install</h1>
+<h1 id="1-install">1. Install</h1>
 <p>[Subtitle 01]
 Any moment you can access the site in description and
 see every command i gave here.</p>
@@ -211,7 +211,8 @@ $ sudo btrfs subvolume create /@snapshots
 $ sudo mkdir /.snapshots
 $ sudo chmod 750 /.snapshots
 $ sudo chown :duckchannel /.snapshots
-</code></pre><h1 id="4-fstab">4. Fstab</h1>
+</code></pre><p>#mount -o subvol=@/@snapshots /dev/sda3 /.snapshots</p>
+<h1 id="4-fstab">4. Fstab</h1>
 <p>Edit /etc/fstab and add the line for mount /.snapshots:</p>
 <pre><code class="language-console" data-lang="console">$ sudo mount -a
 $ lsblk
@@ -247,8 +248,10 @@ $
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
         <span class="tag"><a href="https://theduckchannel.github.io/tags/linux/">linux</a></span>
-        <span class="tag"><a href="https://theduckchannel.github.io/tags/arch-linux/">Arch Linux</a></span>
-        <span class="tag"><a href="https://theduckchannel.github.io/tags/kernel/">kernel</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/btrfs/">btrfs</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/manjaro/">manjaro</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/snapper/">snapper</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/snapshots/">snapshots</a></span>
         
     </p>
 

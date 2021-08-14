@@ -19,6 +19,18 @@
     </item>
     
     <item>
+      <title>Manjaro with Btrfs and snapper [2021]</title>
+      <link>https://theduckchannel.github.io/post/13082021/manjaro-with-btrfs-and-snapper-2021/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/13082021/manjaro-with-btrfs-and-snapper-2021/</guid>
+      <description>#Links
+ Manjaro Btrfs  0. Intro Hi all, in this video i show how to install Manjaro with btrfs, snapshots and Grub-Btrfs.
+ The boot mode will be efi; I’m assuming you already have the usb stick with the Manjaro Linux ISO. Buggie will be Desktop Environment in this case.  I hope you enjoy!
+1. Install [Subtitle 01] Any moment you can access the site in description and see every command i gave here.</description>
+    </item>
+    
+    <item>
       <title>How to Install EndeavourOS with Windows 10 Dual Boot</title>
       <link>https://theduckchannel.github.io/post/10082021/how-to-install-endeavouros-with-windows-10-dual-boot/</link>
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
@@ -114,19 +126,6 @@ The Arch Linux installation will be only the base system with network and bootlo
 I will use virtual machine, but the procedure is the same and it does not affect.
 I hope you enjoy!
 Bios  Boot the PC and press the manufacturers key to open the BIOS.</description>
-    </item>
-    
-    <item>
-      <title>Arch Linux Samba Server 2021</title>
-      <link>https://theduckchannel.github.io/post/arch-linux-samba-server-2021/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/arch-linux-samba-server-2021/</guid>
-      <description>Hi all, in this video i will show how to install Samba Server on Arch Linux.
-I hope you enjoy!
-Links smb.conf Link git smb.conf
-Commands 1. Install Samba $ sudo pacman -S samba wget 2. smb.conf $ sudo wget -O /etc/samba/smb.conf LinkToSmb.ConfAboveEdit /etc/samba/smb.conf and change:
- Line 26  workgroup = WORKGROUP Create Samba Share In the end off file.  [sambashare]comment = My Samba Sharepath = /sambawritable = yesbrowsable = yescreate mask = 0700directory mask 0700read only = noguest ok = no3.</description>
     </item>
     
   </channel>
