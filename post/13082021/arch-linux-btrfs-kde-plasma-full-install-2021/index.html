@@ -294,7 +294,7 @@ Create /etc/vconsole.conf with your keyboard layout:</p>
 127.0.0.1   nameFromYourHost.localdomain nameFromYourHost   
 </code></pre><p>Enable Network Manager</p>
 <pre><code class="language-console" data-lang="console">$ systemctl enable NetworkManager  
-</code></pre><h1 id="36-add-btrfs-module-to-mkinitcpio">3.6 Add btrfs module to mkinitcpio</h1>
+</code></pre><h2 id="36-add-btrfs-module-to-mkinitcpio">3.6 Add btrfs module to mkinitcpio</h2>
 <pre><code class="language-console" data-lang="console">$ vim /etc/mkinitcpio.conf
 $ mkinitcpio -p linux
 </code></pre><p>And add btrfs on Modules list.
@@ -324,13 +324,13 @@ $ export EDITOR=vim
 </code></pre><pre><code class="language-console" data-lang="console">$ exit
 </code></pre><h2 id="42-install-xorg">4.2 Install xorg</h2>
 <pre><code class="language-console" data-lang="console">$ sudo pacman -S xorg  
-</code></pre><h2 id="42-install-the-display-manager">4.2 Install the Display Manager</h2>
+</code></pre><p>##4.2 Install the Display Manager</p>
 <pre><code class="language-console" data-lang="console">$ sudo pacman -S sddm
 $ sudo systemctl enable sddm
-</code></pre><h2 id="43-install-kde-plasma">4.3 Install Kde Plasma</h2>
+</code></pre><h1 id="43-install-kde-plasma">4.3 Install Kde Plasma</h1>
 <p>I only press enter to confirm every dialogs. Be patient!</p>
 <pre><code class="language-console" data-lang="console">$ sudo pacman -S plasma kde-applications firefox
-</code></pre><h2 id="44-reboot">4.4 Reboot</h2>
+</code></pre><h1 id="44-reboot">4.4 Reboot</h1>
 <pre><code class="language-console" data-lang="console">$ reboot  
 </code></pre><h1 id="5-snapper">5. Snapper</h1>
 <p>You need remove this directory because 
