@@ -3,7 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://theduckchannel.github.io/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/btrfs/</loc>
+    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/post/15082021/how-to-install-linux-mint-20.2-with-btrfs-2021/</loc>
+    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/linux/</loc>
+    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/linux-mint/</loc>
+    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/post/</loc>
+    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/</loc>
+    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/arch-linux/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
@@ -23,22 +41,10 @@
     <loc>https://theduckchannel.github.io/tags/install/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theduckchannel.github.io/tags/linux/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/post/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://theduckchannel.github.io/tags/windows-10/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/post/13082021/arch-linux-btrfs-kde-plasma-full-install-2021/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/btrfs/</loc>
     <lastmod>2021-08-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/kernel/</loc>
@@ -60,9 +66,6 @@
     <lastmod>2021-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/post/11082021/how-to-install-samba-server-on-linux-mint-20.2/</loc>
-    <lastmod>2021-08-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/linux-mint/</loc>
     <lastmod>2021-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/samba/</loc>
