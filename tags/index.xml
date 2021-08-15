@@ -18,11 +18,38 @@
     </item>
     
     <item>
-      <title>kernel</title>
-      <link>https://theduckchannel.github.io/tags/kernel/</link>
+      <title>archcraft</title>
+      <link>https://theduckchannel.github.io/tags/archcraft/</link>
       <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://theduckchannel.github.io/tags/kernel/</guid>
+      <guid>https://theduckchannel.github.io/tags/archcraft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dual Boot</title>
+      <link>https://theduckchannel.github.io/tags/dual-boot/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/dual-boot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grub-btrfs</title>
+      <link>https://theduckchannel.github.io/tags/grub-btrfs/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/grub-btrfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>install</title>
+      <link>https://theduckchannel.github.io/tags/install/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/install/</guid>
       <description></description>
     </item>
     
@@ -36,6 +63,15 @@
     </item>
     
     <item>
+      <title>Windows 10</title>
+      <link>https://theduckchannel.github.io/tags/windows-10/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/windows-10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>btrfs</title>
       <link>https://theduckchannel.github.io/tags/btrfs/</link>
       <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
@@ -45,56 +81,20 @@
     </item>
     
     <item>
+      <title>kernel</title>
+      <link>https://theduckchannel.github.io/tags/kernel/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/kernel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>manjaro</title>
       <link>https://theduckchannel.github.io/tags/manjaro/</link>
       <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/manjaro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>snapper</title>
-      <link>https://theduckchannel.github.io/tags/snapper/</link>
-      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/snapper/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>snapshots</title>
-      <link>https://theduckchannel.github.io/tags/snapshots/</link>
-      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/snapshots/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>how to</title>
-      <link>https://theduckchannel.github.io/tags/how-to/</link>
-      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/how-to/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux mint</title>
-      <link>https://theduckchannel.github.io/tags/linux-mint/</link>
-      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/linux-mint/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Samba</title>
-      <link>https://theduckchannel.github.io/tags/samba/</link>
-      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/samba/</guid>
       <description></description>
     </item>
     
