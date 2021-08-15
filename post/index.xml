@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archcraft with Btrfs and Dual Boot Windows 10 [2021]</title>
+      <link>https://theduckchannel.github.io/post/14082021/archcraft-with-btrfs-and-dual-boot-windows-10-2021/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/14082021/archcraft-with-btrfs-and-dual-boot-windows-10-2021/</guid>
+      <description>Links  Archcraft Btrfs  0. Intro Hi all, in this video i show how to install Archcraft with btrfs, snapshots, grub-btrfs, dual boot with Windows 10.
+ The boot mode will be efi; I’m assuming you already have the latest usb stick with the Archcraft Linux ISO. You need install Windows 10 first.  I hope you enjoy!
+1. Bios Considerations  Reset BIOS to factory default and reboot.</description>
+    </item>
+    
     <item>
       <title>Arch Linux Btrfs Kde Plasma Full Install [2021]</title>
       <link>https://theduckchannel.github.io/post/13082021/arch-linux-btrfs-kde-plasma-full-install-2021/</link>
@@ -115,19 +126,6 @@ Links  Linux Mint - Download  Steps 1. Prepare Windows 10 I will shrink the disk
   The boot mode will be EFI.
   I&amp;rsquo;m assuming you already have the usb stick with the Arch Linux ISO.
   My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.</description>
-    </item>
-    
-    <item>
-      <title>How to Install Manjaro with Windows 10 Dual Boot</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</link>
-      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</guid>
-      <description>Hi all, in this video i will show how to install Manjaro Linux with Windows Dual Boot.
-The boot mode in this case is EFI.
-I&amp;rsquo;m assuming you installed windows 10 first.
-I hope you enjoy!
-Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</description>
     </item>
     
   </channel>

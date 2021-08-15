@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="The Duck Channel">
+<meta name="description" content="The Duck Channel Vlog" />
+<meta name="keywords" content="linux, arch linux, youtube, tutorial, linus tech tips, ubuntu, endeavouros, linux, Arch Linux, kernel" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://theduckchannel.github.io/post/14082021/archcraft-with-btrfs-and-dual-boot-windows-10-2021/" />
+
+
+    <title>
+        
+            Archcraft with Btrfs and Dual Boot Windows 10 [2021] :: The Duck Channel´s Site  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://theduckchannel.github.io/main.031a8efc33f94f55a4071bf4e91596478a5809fc8c148fab113801189cfd2152.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://theduckchannel.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://theduckchannel.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://theduckchannel.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://theduckchannel.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://theduckchannel.github.io/safari-pinned-tab.svg" color="#1b1c1d">
+    <link rel="shortcut icon" href="https://theduckchannel.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1b1c1d">
+    <meta name="theme-color" content="#1b1c1d">
+
+
+
+<meta itemprop="name" content="Archcraft with Btrfs and Dual Boot Windows 10 [2021]">
+<meta itemprop="description" content="The Duck Channel Vlog"><meta itemprop="datePublished" content="2021-08-14T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-14T00:00:00+00:00" />
+<meta itemprop="wordCount" content="412"><meta itemprop="image" content="https://theduckchannel.github.io"/>
+<meta itemprop="keywords" content="linux,Arch Linux,kernel," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://theduckchannel.github.io"/>
+
+<meta name="twitter:title" content="Archcraft with Btrfs and Dual Boot Windows 10 [2021]"/>
+<meta name="twitter:description" content="The Duck Channel Vlog"/>
+
+
+
+
+    <meta property="og:title" content="Archcraft with Btrfs and Dual Boot Windows 10 [2021]" />
+<meta property="og:description" content="The Duck Channel Vlog" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://theduckchannel.github.io/post/14082021/archcraft-with-btrfs-and-dual-boot-windows-10-2021/" /><meta property="og:image" content="https://theduckchannel.github.io"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-14T00:00:00+00:00" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-08-14 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZG8XJ4C4Q"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-GZG8XJ4C4Q', { 'anonymize_ip': false });
+}
+</script>
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://theduckchannel.github.io/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://theduckchannel.github.io/about/">About</a></li><li><a href="https://theduckchannel.github.io/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://theduckchannel.github.io/post/14082021/archcraft-with-btrfs-and-dual-boot-windows-10-2021/">Archcraft with Btrfs and Dual Boot Windows 10 [2021]</a></h2>
+            <h4>Published on: August 14, 2021</h4>
+
+            
+            
+            
+
+            <div class="post-content">
+                
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/h5LX9Ilwp7M" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="links">Links</h1>
+<ol>
+<li><a href="https://archcraft.io/">Archcraft</a></li>
+<li><a href="https://wiki.archlinux.org/title/btrfs">Btrfs</a></li>
+</ol>
+<h1 id="0-intro">0. Intro</h1>
+<p>Hi all, in this video i show how to install Archcraft with 
+btrfs, snapshots, grub-btrfs, dual boot with Windows 10.</p>
+<ol>
+<li>The boot mode will be efi;</li>
+<li>I’m assuming you already have the latest usb stick with the Archcraft Linux ISO.</li>
+<li>You need install Windows 10 first.</li>
+</ol>
+<p>I hope you enjoy!</p>
+<h1 id="1-bios-considerations">1. Bios Considerations</h1>
+<ol>
+<li>Reset BIOS to factory default and reboot.</li>
+<li>Disable fastboot and secure boot in BIOS settings.</li>
+<li>Make sure that SATA controller is set to AHCI mode in BIOS settings.</li>
+</ol>
+<h1 id="2-prepare-windows">2. Prepare Windows</h1>
+<p>Follow the video&hellip;</p>
+<h1 id="3-install-archcraft">3. Install Archcraft</h1>
+<p>Follow instructions from video&hellip;</p>
+<h1 id="31-update-and-upgrade">3.1 Update and Upgrade</h1>
+<p>[Subtitle 3.1.1]
+Don´t worry about Windows 10 option in grub menu now. We will fix this soon.</p>
+<pre><code class="language-console" data-lang="console">$ sudo pacman -S archlinux-keyring
+$ sudo pacman-key --populate
+$ sudo pacman -Syyu
+</code></pre><h1 id="32-add-module-btrfs">3.2 Add module btrfs</h1>
+<p>Edit the file /etc/mkinitcpio.conf and change the line 10 to:</p>
+<pre><code class="language-console" data-lang="console">$ sudo vim /etc/mkinitcpio.conf
+</code></pre><pre><code class="language-console" data-lang="console">MODULES=(crc32c btrfs)
+</code></pre><p>Save the file and run the following command:</p>
+<pre><code class="language-console" data-lang="console">$ sudo mkinitcpio -p linux
+</code></pre><h1 id="4-install-and-config-snapper">4. Install and Config Snapper</h1>
+<p>[subtitle 4.1]
+We will install snapper and create config for root snapshots.</p>
+<pre><code class="language-console" data-lang="console">$ sudo pacman install snapper
+$ sudo snapper -c root create-config /
+</code></pre><p>Edit /etc/snapper/configs/root</p>
+<pre><code class="language-console" data-lang="console">$ sudo vim /etc/snapper/configs/root
+</code></pre><p>And put your username in:</p>
+<pre><code class="language-console" data-lang="console">ALLOW_USERS=&quot;[yourusername]&quot;
+</code></pre><p>Change the folowing lines to:</p>
+<pre><code class="language-console" data-lang="console">TIMELINE_LIMIT_HOURLY=&quot;5&quot;
+TIMELINE_LIMIT_DAYLY=&quot;7&quot;
+TIMELINE_LIMIT_WEEKLY=&quot;0&quot;
+TIMELINE_LIMIT_MONTHLY=&quot;0&quot;
+TIMELINE_LIMIT-YEARLY=&quot;0&quot;
+</code></pre><p>And save the file.</p>
+<p>[subtitle 4.2]
+If you want know about this parameters, you can visit the site in description.</p>
+<pre><code class="language-console" data-lang="console">
+$ sudo btrfs subvolume delete /.snapshots
+$ sudo btrfs subvolume create /@snapshots
+$ sudo mkdir /.snapshots
+$ sudo chmod 750 /.snapshots
+$ sudo chown :duckchannel /.snapshots
+</code></pre><h1 id="5-fstab">5. Fstab</h1>
+<p>Edit /etc/fstab and add the line for mount /.snapshots:</p>
+<pre><code class="language-console" data-lang="console">$ sudo vim /etc/fstab
+</code></pre><p>Copy the last line and modify it to the @snapshots subvolume you created.</p>
+<p>Save the file and type:</p>
+<pre><code class="language-console" data-lang="console">$ sudo mount -a
+$ sudo btrfs subvolume list /
+$ lsblk
+</code></pre><h1 id="6-install-snapper-gui">6. Install snapper-gui</h1>
+<pre><code class="language-console" data-lang="console">$ yay -S snapper-gui
+</code></pre><h1 id="7-install-grub-btrfs">7. Install grub-btrfs</h1>
+<p>[Subtitle 6.1]
+The pacman will ask about remove archcraft-grub, you need type &ldquo;y&rdquo;.</p>
+<pre><code class="language-console" data-lang="console">$ sudo pacman -S grub-btrfs
+</code></pre><p>Edit /etc/default/grub:</p>
+<pre><code class="language-console" data-lang="console">$ sudo vim /etc/default/grub
+</code></pre><p>And add the following line:</p>
+<pre><code class="language-console" data-lang="console">GRUB_DISABLE_OS_PROBER=false
+</code></pre><p>Now, reinstall grub with.</p>
+<pre><code class="language-console" data-lang="console">$ sudo grub-install --target=x86_64-efi \
+--efi-directory=/boot/efi \
+--bootloader-id=GRUB
+$ sudo grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre><p>And you will see Windows 10 in grub options menu.</p>
+<h1 id="8-start-the-services">8. Start the Services</h1>
+<pre><code class="language-console" data-lang="console">$ sudo pacman -S grub-btrfs
+$ sudo systemctl enable --now snapper-timeline.timer
+$ sudo systemctl enable --now snapper-cleanup.timer
+$ sudo systemctl enable --now grub-btrfs.path
+</code></pre><h1 id="9-create--your-first-snapshot">9. Create  your First Snapshot</h1>
+<p>Follow the video&hellip;</p>
+<h1 id="10-finish">10. Finish</h1>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/linux/">linux</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/arch-linux/">Arch Linux</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/kernel/">kernel</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            <span><a href="https://theduckchannel.github.io">The Duck Channel</a></span>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://theduckchannel.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://theduckchannel.github.io/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>
