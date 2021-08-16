@@ -7,7 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 15 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>automount</title>
+      <link>https://theduckchannel.github.io/tags/automount/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/automount/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux mint</title>
+      <link>https://theduckchannel.github.io/tags/linux-mint/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/linux-mint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ntfs</title>
+      <link>https://theduckchannel.github.io/tags/ntfs/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/ntfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ntfs3g</title>
+      <link>https://theduckchannel.github.io/tags/ntfs3g/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/ntfs3g/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>btrfs</title>
       <link>https://theduckchannel.github.io/tags/btrfs/</link>
@@ -23,15 +59,6 @@
       <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux mint</title>
-      <link>https://theduckchannel.github.io/tags/linux-mint/</link>
-      <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/linux-mint/</guid>
       <description></description>
     </item>
     
@@ -68,33 +95,6 @@
       <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/grub-btrfs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>install</title>
-      <link>https://theduckchannel.github.io/tags/install/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/install/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Windows 10</title>
-      <link>https://theduckchannel.github.io/tags/windows-10/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/windows-10/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kernel</title>
-      <link>https://theduckchannel.github.io/tags/kernel/</link>
-      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/kernel/</guid>
       <description></description>
     </item>
     

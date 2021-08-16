@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 15 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Linux Mint 20.2 Mount NTFS Automatically</title>
+      <link>https://theduckchannel.github.io/post/16082021/how-to-linux-mint-20.2-mount-ntfs-automatically/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/16082021/how-to-linux-mint-20.2-mount-ntfs-automatically/</guid>
+      <description>Links  Linux Mint Download NTFS-3G Arch Linux Wiki  0. Intro Hi all, in this video i will show how to automatically mount NTFS partitions in Linux Mint 20.2 read and write to your regular user.
+I will mount the partition on /SecondaryDisk directory, so you can change to the directory where you want and any name.
+I hope you enjoy!
+1. Show on Windows Follow the video&amp;hellip;</description>
+    </item>
+    
     <item>
       <title>How to Install Linux Mint 20.2 with Btrfs [2021]</title>
       <link>https://theduckchannel.github.io/post/15082021/how-to-install-linux-mint-20.2-with-btrfs-2021/</link>
@@ -111,20 +123,6 @@ $ sudo apt install nginx$ sudo chown -R www-data:www-data /usr/share/nginx/html
 I hope you enjoy!
 Links  Manjaro - Download MariaDB NGINX PHP  Steps 1. NGINX $ sudo pacman -Syyu$ sudo pacman -S nginx$ sudo systemctl enable --now nginx$ sudo systemctl status nginxCheck http://localhost in your browser to see default nginx page.
 2. MariaDB $ sudo pacman -S mysql$ sudo mysql_install_db --user=mysql \--basedir=/usr --datadir=/var/lib/mysql$ sudo systemctl enable --now mysqld$ sudo systemctl status mysqld$ mysql_secure_installation3.</description>
-    </item>
-    
-    <item>
-      <title>How to Install Linux Mint Dual Boot with Windows 10</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-linux-mint-dual-boot-with-windows-10/</link>
-      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-linux-mint-dual-boot-with-windows-10/</guid>
-      <description>Hi all, in this video i will show how to full install Linux Mint with Windows 10 in Dual Boot.
-  The boot mode will be EFI.
-  I&amp;rsquo;m assuming you already have the usb stick with the Linux Mint ISO installation.
-  You need install Windows 10 first.
-  I hope you enjoy!
-Links  Linux Mint - Download  Steps 1. Prepare Windows 10 I will shrink the disk space about 30 Gb to install Linux Mint.</description>
     </item>
     
   </channel>

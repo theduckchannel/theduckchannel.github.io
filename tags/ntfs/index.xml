@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ntfs on The Duck Channel´s Site</title>
+    <link>https://theduckchannel.github.io/tags/ntfs/</link>
+    <description>Recent content in ntfs on The Duck Channel´s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 16 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/ntfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Linux Mint 20.2 Mount NTFS Automatically</title>
+      <link>https://theduckchannel.github.io/post/16082021/how-to-linux-mint-20.2-mount-ntfs-automatically/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/16082021/how-to-linux-mint-20.2-mount-ntfs-automatically/</guid>
+      <description>Links  Linux Mint Download NTFS-3G Arch Linux Wiki  0. Intro Hi all, in this video i will show how to automatically mount NTFS partitions in Linux Mint 20.2 read and write to your regular user.
+I will mount the partition on /SecondaryDisk directory, so you can change to the directory where you want and any name.
+I hope you enjoy!
+1. Show on Windows Follow the video&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>
