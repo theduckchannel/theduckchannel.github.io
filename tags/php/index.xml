@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install LAMP Server on Arch Linux (Apache&#43;PHP&#43;MariaDB) [2021]</title>
+      <link>https://theduckchannel.github.io/post/17082021/how-to-install-lamp-server-on-arch-linux-apache&#43;php&#43;mariadb-2021/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/17082021/how-to-install-lamp-server-on-arch-linux-apache&#43;php&#43;mariadb-2021/</guid>
+      <description>Links  Arch Linux Apache MariaDB PHP  0. Intro Hi all, in this video i will show how to install LAMP Server on Arch Linux.
+I hope you enjoy!
+1. Install Apache $ sudo pacman -S apacheSave an close the file.
+$ sudo systemctl enable --now httpd$ sudo systemctl status httpdEdit /srv/http/index.html and put following lines:
+&amp;lt;html&amp;gt; &amp;lt;title&amp;gt;Welcome&amp;lt;/title&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h2&amp;gt;Welcome to Apache test page!</description>
+    </item>
+    
     <item>
       <title>Install LEMP Stack NGINX MariaDB PHP on Ubuntu 21.04</title>
       <link>https://theduckchannel.github.io/post/09082021/install-lemp-stack-nginx-mariadb-php-on-ubuntu-21.04/</link>
