@@ -22,6 +22,19 @@ $ sudo systemctl enable --now httpd$ sudo systemctl status httpdEdit /srv/http
     </item>
     
     <item>
+      <title>Install Webmin on Arch Linux</title>
+      <link>https://theduckchannel.github.io/post/17082021/install-webmin-on-arch-linux/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/17082021/install-webmin-on-arch-linux/</guid>
+      <description>How to Install Webmin on Arch Linux [2021]
+Links  Webmin Arch Linux Wiki Yay AUR Helper  0. Intro Hi all, in this video i will show how to install Webmin on Arch Linux.
+Webmin is a web-based interface for system administration for Unix. Using any modern web browser, you can setup user accounts, Apache, DNS, file sharing and much more.
+I hope you enjoy!
+1. Enable AUR If you have AUR enabled in your system, please go to the next section.</description>
+    </item>
+    
+    <item>
       <title>How to Install Linux Mint 20.2 with Btrfs [2021]</title>
       <link>https://theduckchannel.github.io/post/15082021/how-to-install-linux-mint-20.2-with-btrfs-2021/</link>
       <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
@@ -111,18 +124,6 @@ $ sudo apt install nginx$ sudo chown -R www-data:www-data /usr/share/nginx/html
 I hope you enjoy!
 Links  Manjaro - Download MariaDB NGINX PHP  Steps 1. NGINX $ sudo pacman -Syyu$ sudo pacman -S nginx$ sudo systemctl enable --now nginx$ sudo systemctl status nginxCheck http://localhost in your browser to see default nginx page.
 2. MariaDB $ sudo pacman -S mysql$ sudo mysql_install_db --user=mysql \--basedir=/usr --datadir=/var/lib/mysql$ sudo systemctl enable --now mysqld$ sudo systemctl status mysqld$ mysql_secure_installation3.</description>
-    </item>
-    
-    <item>
-      <title>Arch Linux Full Install with Kde Plasma</title>
-      <link>https://theduckchannel.github.io/post/arch-linux-full-install-with-kde-plasma/</link>
-      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/arch-linux-full-install-with-kde-plasma/</guid>
-      <description>Hi all, in this video i will show how to full install Arch Linux with Kde Plasma.
-  The boot mode will be EFI.
-  I&amp;rsquo;m assuming you already have the usb stick with the Arch Linux ISO.
-  My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.</description>
     </item>
     
   </channel>

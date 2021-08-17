@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Webmin on Arch Linux</title>
+      <link>https://theduckchannel.github.io/post/17082021/install-webmin-on-arch-linux/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/17082021/install-webmin-on-arch-linux/</guid>
+      <description>How to Install Webmin on Arch Linux [2021]
+Links  Webmin Arch Linux Wiki Yay AUR Helper  0. Intro Hi all, in this video i will show how to install Webmin on Arch Linux.
+Webmin is a web-based interface for system administration for Unix. Using any modern web browser, you can setup user accounts, Apache, DNS, file sharing and much more.
+I hope you enjoy!
+1. Enable AUR If you have AUR enabled in your system, please go to the next section.</description>
+    </item>
+    
     <item>
       <title>Arch Linux Btrfs Kde Plasma Full Install [2021]</title>
       <link>https://theduckchannel.github.io/post/13082021/arch-linux-btrfs-kde-plasma-full-install-2021/</link>

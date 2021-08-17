@@ -22,6 +22,19 @@ $ sudo systemctl enable --now httpd$ sudo systemctl status httpdEdit /srv/http
     </item>
     
     <item>
+      <title>Install Webmin on Arch Linux</title>
+      <link>https://theduckchannel.github.io/post/17082021/install-webmin-on-arch-linux/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/17082021/install-webmin-on-arch-linux/</guid>
+      <description>How to Install Webmin on Arch Linux [2021]
+Links  Webmin Arch Linux Wiki Yay AUR Helper  0. Intro Hi all, in this video i will show how to install Webmin on Arch Linux.
+Webmin is a web-based interface for system administration for Unix. Using any modern web browser, you can setup user accounts, Apache, DNS, file sharing and much more.
+I hope you enjoy!
+1. Enable AUR If you have AUR enabled in your system, please go to the next section.</description>
+    </item>
+    
+    <item>
       <title>How to Linux Mint 20.2 Mount NTFS Automatically</title>
       <link>https://theduckchannel.github.io/post/16082021/how-to-linux-mint-20.2-mount-ntfs-automatically/</link>
       <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
@@ -112,18 +125,6 @@ I hope you enjoy!
 Links  Ubuntu Download  Steps #1. Update your System
 $ sudo apt update$ sudo apt upgrade#2. Install Nginx
 $ sudo apt install nginx$ sudo chown -R www-data:www-data /usr/share/nginx/html$ sudo systemctl enable --now nginx$ sudo systemctl status nginxPoint your browser to http://localhost</description>
-    </item>
-    
-    <item>
-      <title>Arch Linux Full Install with Cinnamon</title>
-      <link>https://theduckchannel.github.io/post/08082021/arch-linux-full-install-with-cinnamon/</link>
-      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/08082021/arch-linux-full-install-with-cinnamon/</guid>
-      <description>Hi all, in this video i will show how to full install Arch Linux with Cinnamon Desktop Environment.
-  The boot mode will be EFI.
-  I&amp;rsquo;m assuming you already have the usb stick with the Arch Linux ISO.
-  My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.</description>
     </item>
     
   </channel>
