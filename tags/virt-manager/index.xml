@@ -39,14 +39,5 @@ $ ls /usr/share/kbd/keymaps/**/*.map.gz 2. Config the Best Mirrors $ reflector -
       <description>   </description>
     </item>
     
-    <item>
-      <title>How to Install Windows 10 Fastest on Virt-Manager</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-windows-10-fastest-on-virt-manager/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-windows-10-fastest-on-virt-manager/</guid>
-      <description>Link for Windows Virtio Drivers https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md</description>
-    </item>
-    
   </channel>
 </rss>
