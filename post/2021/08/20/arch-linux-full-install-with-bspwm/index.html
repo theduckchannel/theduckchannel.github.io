@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="The Duck Channel">
+<meta name="description" content="The Duck Channel Vlog" />
+<meta name="keywords" content="linux, arch linux, youtube, tutorial, linus tech tips, ubuntu, endeavouros, linux, Arch Linux, kernel" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://theduckchannel.github.io/post/2021/08/20/arch-linux-full-install-with-bspwm/" />
+
+
+    <title>
+        
+            Arch Linux Full Install with bspwm :: The Duck Channel´s Site  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://theduckchannel.github.io/main.031a8efc33f94f55a4071bf4e91596478a5809fc8c148fab113801189cfd2152.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://theduckchannel.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://theduckchannel.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://theduckchannel.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://theduckchannel.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://theduckchannel.github.io/safari-pinned-tab.svg" color="#1b1c1d">
+    <link rel="shortcut icon" href="https://theduckchannel.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1b1c1d">
+    <meta name="theme-color" content="#1b1c1d">
+
+
+
+<meta itemprop="name" content="Arch Linux Full Install with bspwm">
+<meta itemprop="description" content="The Duck Channel Vlog"><meta itemprop="datePublished" content="2021-08-20T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-20T00:00:00+00:00" />
+<meta itemprop="wordCount" content="652"><meta itemprop="image" content="https://theduckchannel.github.io"/>
+<meta itemprop="keywords" content="linux,Arch Linux,kernel," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://theduckchannel.github.io"/>
+
+<meta name="twitter:title" content="Arch Linux Full Install with bspwm"/>
+<meta name="twitter:description" content="The Duck Channel Vlog"/>
+
+
+
+
+    <meta property="og:title" content="Arch Linux Full Install with bspwm" />
+<meta property="og:description" content="The Duck Channel Vlog" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://theduckchannel.github.io/post/2021/08/20/arch-linux-full-install-with-bspwm/" /><meta property="og:image" content="https://theduckchannel.github.io"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-20T00:00:00+00:00" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-08-20 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G93HFQW3P3"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-G93HFQW3P3', { 'anonymize_ip': false });
+}
+</script>
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://theduckchannel.github.io/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://theduckchannel.github.io/about/">About</a></li><li><a href="https://theduckchannel.github.io/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://theduckchannel.github.io/post/2021/08/20/arch-linux-full-install-with-bspwm/">Arch Linux Full Install with bspwm</a></h2>
+            <h4>Published on: August 20, 2021</h4>
+
+            
+            
+            
+
+            <div class="post-content">
+                
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/h5LX9Ilwp7M" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Hi all, in this video i will show how to full install Arch Linux
+with bspwm desktop environment.</p>
+<ol>
+<li>The boot mode will be EFI.</li>
+<li>I’m assuming you already have the usb stick with the Arch Linux ISO.</li>
+<li>If you use wireless network, please go to the site 
+in the description and see the link to properly configure 
+your network.</li>
+</ol>
+<p>I hope you enjoy!</p>
+<h1 id="links">Links</h1>
+<ol>
+<li><a href="https://archlinux.org/download/">Download the latest Arch Linux ISO</a></li>
+<li><a href="https://wiki.archlinux.org/title/installation_guide#Connect_to_the_internet">Connect to the Internet - Arch Linux Wiki</a></li>
+<li><a href="https://github.com/Jguer/yay">Yay</a></li>
+<li><a href="https://wiki.archlinux.org/title/Swap">Arch Linux Wiki - Swap File</a></li>
+<li><a href="https://github.com/theduckchannel/bspwm-install">Duck Channel´s bspwm-install</a></li>
+</ol>
+<h1 id="1-pre-install">1. Pre-Install</h1>
+<h2 id="11-set-time">1.1 Set Time</h2>
+<pre><code class="language-console" data-lang="console">$ timedatectl set-ntp true
+</code></pre><h2 id="12-partitioning-the-disk">1.2 Partitioning the Disk</h2>
+<p>I will create two partitions.</p>
+<p>The scheme.</p>
+<p>Folow the video&hellip;</p>
+<pre><code class="language-console" data-lang="console">$ cfdisk /dev/[device]
+</code></pre><p>And follow the video&hellip;</p>
+<p>I dont create one partition only for swap. No more, we will use
+one small swapfile. Dont worry about this.</p>
+<h2 id="13-formatting">1.3 Formatting</h2>
+<p>use mkfs.btrfs, mkfs.fat and mkswap.</p>
+<pre><code class="language-console" data-lang="console">$ mkfs.fat -F32 /dev/sda1
+$ mkfs.btrs /dev/sda3
+</code></pre><h1 id="14-creating-subvolumes-and-mounting">1.4 Creating Subvolumes and Mounting</h1>
+<pre><code class="language-console" data-lang="console">$ mount /dev/sda2 /mnt
+$ mkdir /mnt/boot
+$ mount /dev/sda1 /mnt/boot
+</code></pre><h1 id="2-install">2. Install</h1>
+<h3 id="21-install-the-base-system">2.1 Install the Base System</h3>
+<p>Take a look at the site in the description you need 
+to add a package in this command.</p>
+<p>It will depend on the brand of your processor (AMD or Intel)</p>
+<ul>
+<li>For Intel Processor add intel-ucode package;</li>
+<li>For AMD Processor add amd-ucode package;</li>
+</ul>
+<pre><code class="language-console" data-lang="console">$ pacstrap /mnt base base-devel linux \
+linux-firmware vim \
+networkmanager network-manager-applet \
+grub efibootmgr linux-headers mtools git \
+xdg-user-dirs
+</code></pre><p>Press enter twice here..</p>
+<h1 id="3-config-the-system">3. Config the System</h1>
+<h2 id="31-generate-fstab">3.1 Generate fstab</h2>
+<pre><code class="language-console" data-lang="console">$ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab 
+$ cat /mnt/etc/fstab
+</code></pre><h2 id="32-chroot">3.2 Chroot</h2>
+<pre><code class="language-console" data-lang="console">$  arch-chroot /mnt 
+</code></pre><h1 id="33-create-swapfile">3.3 Create swapfile</h1>
+<pre><code class="language-console" data-lang="console">$ dd if=/dev/zero of=/swapfile bs=1M count=512 status=progress
+$ chmod 600 /swapfile
+$ mkswap /swapfile
+$ swapon /swapfile
+$ echo &quot;/swapfile none swap defaults 0 0&quot;&gt;&gt;/etc/fstab
+</code></pre><h2 id="32-timezone">3.2 Timezone</h2>
+<p>You can list all timezones with:</p>
+<pre><code class="language-console" data-lang="console">$ timedatectl list-timezones
+</code></pre><p>Replace region and city with your own timezone.</p>
+<pre><code class="language-console" data-lang="console">$ ln -sf /usr/share/zoneinfo/Region/City /etc/localtime  
+$ hwclock --systohc
+</code></pre><h2 id="33-localization">3.3 Localization</h2>
+<p>Edit /etc/locale.gen and uncomment your locale. After, generate the locales by running:</p>
+<pre><code class="language-console" data-lang="console">$ locale-gen
+</code></pre><p>Create the /etc/locale.conf and set the LANG variable:</p>
+<pre><code class="language-console" data-lang="console">LANG=en_US.UTF-8   
+</code></pre><h2 id="34-network-config">3.4 Network Config</h2>
+<p>Create /etc/hostname with the name your host:</p>
+<pre><code class="language-console" data-lang="console">nameFromYourHost   
+</code></pre><p>Create /etc/hosts:</p>
+<pre><code class="language-console" data-lang="console">127.0.0.1   localhost
+::1         localhost
+127.0.0.1   nameFromYourHost.localdomain nameFromYourHost   
+</code></pre><p>Enable Network Manager</p>
+<pre><code class="language-console" data-lang="console">$ systemctl enable NetworkManager  
+</code></pre><h3 id="35-install-grub">3.5 Install GRUB</h3>
+<pre><code class="language-console" data-lang="console">$ grub-install --target=x86_64-efi \
+--efi-directory=/boot \
+--bootloader-id=GRUB
+
+$ grub-mkconfig -o \
+/boot/grub/grub.cfg  
+</code></pre><h3 id="36-set-the-root-password">3.6 Set the root Password</h3>
+<pre><code class="language-console" data-lang="console">$ passwd  
+</code></pre><h3 id="37-exit-umount-and-reboot">3.7 Exit, Umount and Reboot</h3>
+<pre><code class="language-console" data-lang="console">$ exit
+$ umount -a
+$ reboot  
+</code></pre><h1 id="4-post-install">4. Post-Install</h1>
+<h2 id="41-create-a-new-user">4.1 Create a New User</h2>
+<pre><code class="language-console" data-lang="console">$ useradd -m -G wheel yourUsername
+$ passwd yourUsername  
+$ export EDITOR=vim
+</code></pre><p>Edit /etc/sudoers run &ldquo;visudo&rdquo; and uncomment the following line:</p>
+<pre><code class="language-console" data-lang="console">## Uncomment to allow members of group wheel to execute any command
+%wheel ALL=(ALL) ALL   
+</code></pre><pre><code class="language-console" data-lang="console">$ exit
+</code></pre><h2 id="42-install-xorg">4.2 Install xorg</h2>
+<pre><code class="language-console" data-lang="console">$ sudo pacman -S xorg  
+</code></pre><h2 id="43-install-the-display-manager">4.3 Install the Display Manager</h2>
+<pre><code class="language-console" data-lang="console">$ sudo pacman -S lxdm
+$ sudo systemctl enable lxdm
+</code></pre><h1 id="5-install-bspwm">5. Install bspwm</h1>
+<p>We need clone the bspwm-install repository. 
+I created this to make installation easier and avoid any rework.</p>
+<pre><code class="language-console" data-lang="console">$ git clone https://github.com/theduckchannel/bspwm-install.git
+$ cd bspwm-install
+$ chmod +x setup.sh
+$ ./setup.sh
+</code></pre><p>Press enter each time to confirm.</p>
+<p>You need be patient, because every packages are retrieved by your network connection.</p>
+<p>After finish, you see the screen with &ldquo;Press any key to reboot&rdquo;.</p>
+<h1 id="shortcuts">Shortcuts</h1>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ctrl + alt + t</td>
+<td>Change bspwm theme</td>
+</tr>
+<tr>
+<td>super + Return</td>
+<td>Terminal</td>
+</tr>
+<tr>
+<td>super + shift + Return</td>
+<td>Floating Terminal</td>
+</tr>
+<tr>
+<td>super + q</td>
+<td>Close window</td>
+</tr>
+<tr>
+<td>super + t</td>
+<td>Open thunar file manager</td>
+</tr>
+<tr>
+<td>alt + F1</td>
+<td>Rofi Menu</td>
+</tr>
+<tr>
+<td>super + x</td>
+<td>Powermenu</td>
+</tr>
+<tr>
+<td>Print</td>
+<td>Take screenshot</td>
+</tr>
+<tr>
+<td>alt + Print</td>
+<td>Take screenshot after 5 seconds</td>
+</tr>
+<tr>
+<td>ctrl + alt + l</td>
+<td>Lock Screen</td>
+</tr>
+<tr>
+<td>super + f</td>
+<td>Full screen or monocle</td>
+</tr>
+<tr>
+<td>super + {h,v,q}</td>
+<td>horizontal, vertical or cancel</td>
+</tr>
+<tr>
+<td>super + space</td>
+<td>Toggle beetwen floating &amp; tiled</td>
+</tr>
+<tr>
+<td>ctrl + alt + {Left,Right}</td>
+<td>Switch workspace</td>
+</tr>
+</tbody>
+</table>
+<h1 id="6-finish">6. Finish</h1>
+<p><a href="https://github.com/theduckchannel/bspwm-install">Repository: https://github.com/theduckchannel/bspwm-install</a></p>
+<p>If you want, please go to the bspwm-install repository page 
+and I have prepared a simple documentation with the most 
+used shortcut keys.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/linux/">linux</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/arch-linux/">Arch Linux</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/kernel/">kernel</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            <span><a href="https://theduckchannel.github.io">The Duck Channel</a></span>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://theduckchannel.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://theduckchannel.github.io/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

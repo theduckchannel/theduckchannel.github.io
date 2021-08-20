@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux Full Install with bspwm</title>
+      <link>https://theduckchannel.github.io/post/2021/08/20/arch-linux-full-install-with-bspwm/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/2021/08/20/arch-linux-full-install-with-bspwm/</guid>
+      <description>Hi all, in this video i will show how to full install Arch Linux with bspwm desktop environment.
+ The boot mode will be EFI. I’m assuming you already have the usb stick with the Arch Linux ISO. If you use wireless network, please go to the site in the description and see the link to properly configure your network.  I hope you enjoy!
+Links  Download the latest Arch Linux ISO Connect to the Internet - Arch Linux Wiki Yay Arch Linux Wiki - Swap File Duck Channel´s bspwm-install  1.</description>
+    </item>
+    
     <item>
       <title>How to Install LAMP Server on Arch Linux (Apache&#43;PHP&#43;MariaDB) [2021]</title>
       <link>https://theduckchannel.github.io/post/17082021/how-to-install-lamp-server-on-arch-linux-apache&#43;php&#43;mariadb-2021/</link>
@@ -114,19 +125,6 @@ The Arch Linux installation will be only the base system with network and bootlo
 I will use virtual machine, but the procedure is the same and it does not affect.
 I hope you enjoy!
 Bios  Boot the PC and press the manufacturers key to open the BIOS.</description>
-    </item>
-    
-    <item>
-      <title>Arch Linux Samba Server 2021</title>
-      <link>https://theduckchannel.github.io/post/arch-linux-samba-server-2021/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/arch-linux-samba-server-2021/</guid>
-      <description>Hi all, in this video i will show how to install Samba Server on Arch Linux.
-I hope you enjoy!
-Links smb.conf Link git smb.conf
-Commands 1. Install Samba $ sudo pacman -S samba wget 2. smb.conf $ sudo wget -O /etc/samba/smb.conf LinkToSmb.ConfAboveEdit /etc/samba/smb.conf and change:
- Line 26  workgroup = WORKGROUP Create Samba Share In the end off file.  [sambashare]comment = My Samba Sharepath = /sambawritable = yesbrowsable = yescreate mask = 0700directory mask 0700read only = noguest ok = no3.</description>
     </item>
     
   </channel>
