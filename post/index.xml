@@ -104,27 +104,27 @@ $ sudo aptt install samba$ sudo systemctl enable --now smbd$ sudo systemctl st
     </item>
     
     <item>
-      <title>How to Install EndeavourOS with Windows 10 Dual Boot</title>
-      <link>https://theduckchannel.github.io/post/10082021/how-to-install-endeavouros-with-windows-10-dual-boot/</link>
-      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      <title>How to Install Manjaro with Windows 10 Dual Boot</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://theduckchannel.github.io/post/10082021/how-to-install-endeavouros-with-windows-10-dual-boot/</guid>
-      <description>Hi all, in this video i will show how to install EndeavourOS Dual Boot with Windows 10.
- The boot mode will be EFI. I’m assuming you already have the usb stick with the EndeavourOS ISO. You need install Windows 10 first. I will choose plasma as desktop environment.  I hope you enjoy!
-Links  Download EndeavourOS Create EndeavourOS Install Media EndeavourOS Wiki  Steps #1. Bios Considerations</description>
+      <guid>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</guid>
+      <description>Hi all, in this video i will show how to install Manjaro Linux with Windows Dual Boot.
+The boot mode in this case is EFI.
+I&amp;rsquo;m assuming you installed windows 10 first.
+I hope you enjoy!
+Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</description>
     </item>
     
     <item>
-      <title>Install LEMP Stack NGINX MariaDB PHP on Ubuntu 21.04</title>
-      <link>https://theduckchannel.github.io/post/09082021/install-lemp-stack-nginx-mariadb-php-on-ubuntu-21.04/</link>
-      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      <title>How to Install Virt-Manager on Manjaro</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-manjaro/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://theduckchannel.github.io/post/09082021/install-lemp-stack-nginx-mariadb-php-on-ubuntu-21.04/</guid>
-      <description>Hi all, in this video i will show how to install LEMP Stack (Nginx + MariaDB + PHP) on Ubuntu 21.04 desktop/server.
+      <guid>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-manjaro/</guid>
+      <description>Hi all, in this video i will show how to install Virt-Manager on Manjaro.
 I hope you enjoy!
-Links  Ubuntu Download  Steps #1. Update your System
-$ sudo apt update$ sudo apt upgrade#2. Install Nginx
-$ sudo apt install nginx$ sudo chown -R www-data:www-data /usr/share/nginx/html$ sudo systemctl enable --now nginx$ sudo systemctl status nginxPoint your browser to http://localhost</description>
+Links  Manjaro Site for Download  1 Minimum Hardware Requirements  Your system should have &amp;lsquo;virtualization parameters&amp;rsquo; enabled on BIOS. Check the RAM and verify that is at least 4GB. At least 20 Gb of available disk space.  2 Install Virt-Manager $ sudo pacman -S dmidecode inxi virt-manager vde2 ebtables dnsmasq bridge-utilsopenbsd-netcat 3.</description>
     </item>
     
   </channel>

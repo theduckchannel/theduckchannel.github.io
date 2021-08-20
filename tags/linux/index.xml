@@ -79,51 +79,54 @@ I hope you enjoy!
     </item>
     
     <item>
-      <title>How to Install EndeavourOS with Windows 10 Dual Boot</title>
-      <link>https://theduckchannel.github.io/post/10082021/how-to-install-endeavouros-with-windows-10-dual-boot/</link>
-      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      <title>How to Install Manjaro with Windows 10 Dual Boot</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://theduckchannel.github.io/post/10082021/how-to-install-endeavouros-with-windows-10-dual-boot/</guid>
-      <description>Hi all, in this video i will show how to install EndeavourOS Dual Boot with Windows 10.
- The boot mode will be EFI. I’m assuming you already have the usb stick with the EndeavourOS ISO. You need install Windows 10 first. I will choose plasma as desktop environment.  I hope you enjoy!
-Links  Download EndeavourOS Create EndeavourOS Install Media EndeavourOS Wiki  Steps #1. Bios Considerations</description>
-    </item>
-    
-    <item>
-      <title>Install LEMP Stack NGINX MariaDB PHP on Ubuntu 21.04</title>
-      <link>https://theduckchannel.github.io/post/09082021/install-lemp-stack-nginx-mariadb-php-on-ubuntu-21.04/</link>
-      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/09082021/install-lemp-stack-nginx-mariadb-php-on-ubuntu-21.04/</guid>
-      <description>Hi all, in this video i will show how to install LEMP Stack (Nginx + MariaDB + PHP) on Ubuntu 21.04 desktop/server.
+      <guid>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</guid>
+      <description>Hi all, in this video i will show how to install Manjaro Linux with Windows Dual Boot.
+The boot mode in this case is EFI.
+I&amp;rsquo;m assuming you installed windows 10 first.
 I hope you enjoy!
-Links  Ubuntu Download  Steps #1. Update your System
-$ sudo apt update$ sudo apt upgrade#2. Install Nginx
-$ sudo apt install nginx$ sudo chown -R www-data:www-data /usr/share/nginx/html$ sudo systemctl enable --now nginx$ sudo systemctl status nginxPoint your browser to http://localhost</description>
+Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</description>
     </item>
     
     <item>
-      <title>Arch Linux Full Install with Cinnamon</title>
-      <link>https://theduckchannel.github.io/post/08082021/arch-linux-full-install-with-cinnamon/</link>
-      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
+      <title>How to Install Virt-Manager on Manjaro</title>
+      <link>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-manjaro/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://theduckchannel.github.io/post/08082021/arch-linux-full-install-with-cinnamon/</guid>
-      <description>Hi all, in this video i will show how to full install Arch Linux with Cinnamon Desktop Environment.
-  The boot mode will be EFI.
-  I&amp;rsquo;m assuming you already have the usb stick with the Arch Linux ISO.
-  My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.</description>
-    </item>
-    
-    <item>
-      <title>How to Install LEMP Stack on Manjaro</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/</link>
-      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/</guid>
-      <description>Hi all, in this video i will show how to full install LEMP (NGINX+MariaDB+PHP) on Manjaro.
+      <guid>https://theduckchannel.github.io/post/how-to-install-virt-manager-on-manjaro/</guid>
+      <description>Hi all, in this video i will show how to install Virt-Manager on Manjaro.
 I hope you enjoy!
-Links  Manjaro - Download MariaDB NGINX PHP  Steps 1. NGINX $ sudo pacman -Syyu$ sudo pacman -S nginx$ sudo systemctl enable --now nginx$ sudo systemctl status nginxCheck http://localhost in your browser to see default nginx page.
-2. MariaDB $ sudo pacman -S mysql$ sudo mysql_install_db --user=mysql \--basedir=/usr --datadir=/var/lib/mysql$ sudo systemctl enable --now mysqld$ sudo systemctl status mysqld$ mysql_secure_installation3.</description>
+Links  Manjaro Site for Download  1 Minimum Hardware Requirements  Your system should have &amp;lsquo;virtualization parameters&amp;rsquo; enabled on BIOS. Check the RAM and verify that is at least 4GB. At least 20 Gb of available disk space.  2 Install Virt-Manager $ sudo pacman -S dmidecode inxi virt-manager vde2 ebtables dnsmasq bridge-utilsopenbsd-netcat 3.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux Dual Boot Windows 10</title>
+      <link>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</guid>
+      <description>Hi all, in this video i will show how to install Arch Linux Dual Boot with Windows 10.
+The bootloader utilized is Grub and boot mode is uefi.
+The Arch Linux installation will be only the base system with network and bootloader.
+I will use virtual machine, but the procedure is the same and it does not affect.
+I hope you enjoy!
+Bios  Boot the PC and press the manufacturers key to open the BIOS.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux Samba Server 2021</title>
+      <link>https://theduckchannel.github.io/post/arch-linux-samba-server-2021/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/arch-linux-samba-server-2021/</guid>
+      <description>Hi all, in this video i will show how to install Samba Server on Arch Linux.
+I hope you enjoy!
+Links smb.conf Link git smb.conf
+Commands 1. Install Samba $ sudo pacman -S samba wget 2. smb.conf $ sudo wget -O /etc/samba/smb.conf LinkToSmb.ConfAboveEdit /etc/samba/smb.conf and change:
+ Line 26  workgroup = WORKGROUP Create Samba Share In the end off file.  [sambashare]comment = My Samba Sharepath = /sambawritable = yesbrowsable = yescreate mask = 0700directory mask 0700read only = noguest ok = no3.</description>
     </item>
     
   </channel>

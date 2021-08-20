@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PHP on The Duck Channel´s Site</title>
+    <title>php on The Duck Channel´s Site</title>
     <link>https://theduckchannel.github.io/tags/php/</link>
-    <description>Recent content in PHP on The Duck Channel´s Site</description>
+    <description>Recent content in php on The Duck Channel´s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
@@ -19,31 +19,6 @@ I hope you enjoy!
 1. Install Apache $ sudo pacman -S apacheSave an close the file.
 $ sudo systemctl enable --now httpd$ sudo systemctl status httpdEdit /srv/http/index.html and put following lines:
 &amp;lt;html&amp;gt; &amp;lt;title&amp;gt;Welcome&amp;lt;/title&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h2&amp;gt;Welcome to Apache test page!</description>
-    </item>
-    
-    <item>
-      <title>Install LEMP Stack NGINX MariaDB PHP on Ubuntu 21.04</title>
-      <link>https://theduckchannel.github.io/post/09082021/install-lemp-stack-nginx-mariadb-php-on-ubuntu-21.04/</link>
-      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/09082021/install-lemp-stack-nginx-mariadb-php-on-ubuntu-21.04/</guid>
-      <description>Hi all, in this video i will show how to install LEMP Stack (Nginx + MariaDB + PHP) on Ubuntu 21.04 desktop/server.
-I hope you enjoy!
-Links  Ubuntu Download  Steps #1. Update your System
-$ sudo apt update$ sudo apt upgrade#2. Install Nginx
-$ sudo apt install nginx$ sudo chown -R www-data:www-data /usr/share/nginx/html$ sudo systemctl enable --now nginx$ sudo systemctl status nginxPoint your browser to http://localhost</description>
-    </item>
-    
-    <item>
-      <title>How to Install LEMP Stack on Manjaro</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/</link>
-      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-lemp-stack-on-manjaro/</guid>
-      <description>Hi all, in this video i will show how to full install LEMP (NGINX+MariaDB+PHP) on Manjaro.
-I hope you enjoy!
-Links  Manjaro - Download MariaDB NGINX PHP  Steps 1. NGINX $ sudo pacman -Syyu$ sudo pacman -S nginx$ sudo systemctl enable --now nginx$ sudo systemctl status nginxCheck http://localhost in your browser to see default nginx page.
-2. MariaDB $ sudo pacman -S mysql$ sudo mysql_install_db --user=mysql \--basedir=/usr --datadir=/var/lib/mysql$ sudo systemctl enable --now mysqld$ sudo systemctl status mysqld$ mysql_secure_installation3.</description>
     </item>
     
   </channel>
