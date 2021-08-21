@@ -19,6 +19,18 @@
     </item>
     
     <item>
+      <title>Install tkg Gamer Kernel to Speed Booster on Arch Linux</title>
+      <link>https://theduckchannel.github.io/post/2021/08/21/install-tkg-gamer-kernel-to-speed-booster-on-arch-linux/</link>
+      <pubDate>Sat, 21 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/2021/08/21/install-tkg-gamer-kernel-to-speed-booster-on-arch-linux/</guid>
+      <description>Table of Contents  Video Greetings Links Steps  1. Chaotic-AUR 2. Enable Chaotic-AUR 3. Install TKG Kernel 4. Customize Grub   Finish  Video   Greetings Hi all, in this video i will show how to install TKG Gamer Kernel on Arch Linux.
+You only need have one system with Arch Linux fully installed.
+I hope you enjoy!
+Links  Arch Linux Arch Linux Wiki Arch Linux Wiki - Kernel Chaotic-AUR  Steps 1.</description>
+    </item>
+    
+    <item>
       <title>Arch Linux Full Install with bspwm</title>
       <link>https://theduckchannel.github.io/post/2021/08/20/arch-linux-full-install-with-bspwm/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
@@ -109,19 +121,6 @@ I hope you enjoy!
  Manjaro Btrfs  0. Intro Hi all, in this video i show how to install Manjaro with btrfs, snapshots and Grub-Btrfs.
  The boot mode will be efi; I’m assuming you already have the usb stick with the Manjaro Linux ISO. Buggie will be Desktop Environment in this case.  I hope you enjoy!
 1. Install [Subtitle 01] Any moment you can access the site in description and see every command i gave here.</description>
-    </item>
-    
-    <item>
-      <title>How to Install Samba Server on Linux Mint 20.2</title>
-      <link>https://theduckchannel.github.io/post/11082021/how-to-install-samba-server-on-linux-mint-20.2/</link>
-      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/11082021/how-to-install-samba-server-on-linux-mint-20.2/</guid>
-      <description>Hi all, in this video i will show how to install Samba Server on Linux Mint 20.2.
-I hope you enjoy!
-Links  Linux Mint  Steps #1. Update your System
-$ sudo apt update$ sudo apt upgrade#2. Install Samba Server
-$ sudo aptt install samba$ sudo systemctl enable --now smbd$ sudo systemctl status smbd$ sudo ufw allow samba$ sudo usermod -aG sambashare $USER$ groups $USER$ sudo smbpasswd -a $USER#3.</description>
     </item>
     
   </channel>
