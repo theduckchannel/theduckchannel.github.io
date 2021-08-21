@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install Linux Mint 20.2 Dual Boot with Windows 10</title>
+      <link>https://theduckchannel.github.io/post/2021/08/21/how-to-install-linux-mint-20.2-dual-boot-with-windows-10/</link>
+      <pubDate>Sat, 21 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/2021/08/21/how-to-install-linux-mint-20.2-dual-boot-with-windows-10/</guid>
+      <description>Table of Contents  Links 1. Bios Considerations 2. Prepare Windows 3. Install Linux Mint 4. Update and Upgrade 5. Finish  Hi all, in this video i will show how to full install Linux Mint 20.2 Dual Boot with Windows 10.
+ The boot mode will be EFI. I’m assuming you already have the usb stick with the Linux Mint ISO.  I hope you enjoy!</description>
+    </item>
+    
     <item>
       <title>Arch Linux Full Install with bspwm</title>
       <link>https://theduckchannel.github.io/post/2021/08/20/arch-linux-full-install-with-bspwm/</link>
@@ -112,19 +122,6 @@ I hope you enjoy!
 Links  Linux Mint  Steps #1. Update your System
 $ sudo apt update$ sudo apt upgrade#2. Install Samba Server
 $ sudo aptt install samba$ sudo systemctl enable --now smbd$ sudo systemctl status smbd$ sudo ufw allow samba$ sudo usermod -aG sambashare $USER$ groups $USER$ sudo smbpasswd -a $USER#3.</description>
-    </item>
-    
-    <item>
-      <title>How to Install Manjaro with Windows 10 Dual Boot</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</link>
-      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</guid>
-      <description>Hi all, in this video i will show how to install Manjaro Linux with Windows Dual Boot.
-The boot mode in this case is EFI.
-I&amp;rsquo;m assuming you installed windows 10 first.
-I hope you enjoy!
-Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</description>
     </item>
     
   </channel>
