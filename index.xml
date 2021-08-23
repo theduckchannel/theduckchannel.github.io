@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 21 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Enable Chaotic-AUR on Arch Linux</title>
+      <link>https://theduckchannel.github.io/post/2021/08/23/how-to-enable-chaotic-aur-on-arch-linux/</link>
+      <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/2021/08/23/how-to-enable-chaotic-aur-on-arch-linux/</guid>
+      <description>Video   Greetings Hi all, in this video i will show how to enable Chaotic-AUR on Arch Linux.
+Chaotic-AUR is a unofficial user reposity for Arch Linux that has prebuilt binaries from the AUR.
+Several apps and custom kernels are available in this repo, and this includes kernels specially tuned for gamer and desktop use.
+I hope you enjoy!
+Links  Arch Linux Arch Linux Wiki Arch Linux Wiki - Kernel Chaotic-AUR  Steps 1.</description>
+    </item>
+    
     <item>
       <title>How to Install Linux Mint 20.2 Dual Boot with Windows 10</title>
       <link>https://theduckchannel.github.io/post/2021/08/21/how-to-install-linux-mint-20.2-dual-boot-with-windows-10/</link>
@@ -109,18 +122,6 @@ I hope you enjoy!
       <guid>https://theduckchannel.github.io/post/13082021/arch-linux-btrfs-kde-plasma-full-install-2021/</guid>
       <description>Hi all, in this video i will show how to full install Arch Linux with BTRFS filesystem.
  The boot mode will be EFI. I’m assuming you already have the usb stick with the Arch Linux ISO. My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.</description>
-    </item>
-    
-    <item>
-      <title>Manjaro with Btrfs and snapper [2021]</title>
-      <link>https://theduckchannel.github.io/post/13082021/manjaro-with-btrfs-and-snapper-2021/</link>
-      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/13082021/manjaro-with-btrfs-and-snapper-2021/</guid>
-      <description>#Links
- Manjaro Btrfs  0. Intro Hi all, in this video i show how to install Manjaro with btrfs, snapshots and Grub-Btrfs.
- The boot mode will be efi; I’m assuming you already have the usb stick with the Manjaro Linux ISO. Buggie will be Desktop Environment in this case.  I hope you enjoy!
-1. Install [Subtitle 01] Any moment you can access the site in description and see every command i gave here.</description>
     </item>
     
   </channel>

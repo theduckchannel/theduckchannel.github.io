@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 21 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Enable Chaotic-AUR on Arch Linux</title>
+      <link>https://theduckchannel.github.io/post/2021/08/23/how-to-enable-chaotic-aur-on-arch-linux/</link>
+      <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/2021/08/23/how-to-enable-chaotic-aur-on-arch-linux/</guid>
+      <description>Video   Greetings Hi all, in this video i will show how to enable Chaotic-AUR on Arch Linux.
+Chaotic-AUR is a unofficial user reposity for Arch Linux that has prebuilt binaries from the AUR.
+Several apps and custom kernels are available in this repo, and this includes kernels specially tuned for gamer and desktop use.
+I hope you enjoy!
+Links  Arch Linux Arch Linux Wiki Arch Linux Wiki - Kernel Chaotic-AUR  Steps 1.</description>
+    </item>
+    
     <item>
       <title>How to Install Linux Mint 20.2 Dual Boot with Windows 10</title>
       <link>https://theduckchannel.github.io/post/2021/08/21/how-to-install-linux-mint-20.2-dual-boot-with-windows-10/</link>
@@ -109,19 +122,6 @@ I hope you enjoy!
  Manjaro Btrfs  0. Intro Hi all, in this video i show how to install Manjaro with btrfs, snapshots and Grub-Btrfs.
  The boot mode will be efi; I’m assuming you already have the usb stick with the Manjaro Linux ISO. Buggie will be Desktop Environment in this case.  I hope you enjoy!
 1. Install [Subtitle 01] Any moment you can access the site in description and see every command i gave here.</description>
-    </item>
-    
-    <item>
-      <title>How to Install Manjaro with Windows 10 Dual Boot</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</link>
-      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</guid>
-      <description>Hi all, in this video i will show how to install Manjaro Linux with Windows Dual Boot.
-The boot mode in this case is EFI.
-I&amp;rsquo;m assuming you installed windows 10 first.
-I hope you enjoy!
-Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</description>
     </item>
     
   </channel>
