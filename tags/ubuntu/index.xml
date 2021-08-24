@@ -15,7 +15,7 @@
       
       <guid>https://theduckchannel.github.io/post/2021/08/24/install-ubuntu-21.04-with-btrfs-&#43;-snapper-&#43;-grub-btrfs/</guid>
       <description>Table of Contents  Video Greetings Links Steps  1. Install Ubuntu  Start the Ubiquitu Install Partitioning   2. Update and Upgrade 3. Install grub-btrfs 4. Snapper 5. Subvolume for Snapshots 6. Start the Services 7. Create your First Snapshot   Finish  Video   Greetings Hi all, in this video i will show how to Install Ubuntu 21.04 with btrfs filesystem, snapper and grub-btrfs.
- Snapper is a tool that helps with managing snapshots of btrfs subvolumes.</description>
+ You need have ssd, if you use mechanical hdd, please install ext4.</description>
     </item>
     
     <item>
