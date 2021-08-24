@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/snapper/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/snapper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Ubuntu 21.04 with btrfs &#43; snapper &#43; grub-btrfs</title>
+      <link>https://theduckchannel.github.io/post/2021/08/24/install-ubuntu-21.04-with-btrfs-&#43;-snapper-&#43;-grub-btrfs/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/2021/08/24/install-ubuntu-21.04-with-btrfs-&#43;-snapper-&#43;-grub-btrfs/</guid>
+      <description>Table of Contents  Video Greetings Links Steps  1. Install Ubuntu  Start the Ubiquitu Install Partitioning   2. Update and Upgrade 3. Install grub-btrfs 4. Snapper 5. Subvolume for Snapshots 6. Start the Services 7. Create your First Snapshot   Finish  Video   Greetings Hi all, in this video i will show how to Install Ubuntu 21.04 with btrfs filesystem, snapper and grub-btrfs.
+ Snapper is a tool that helps with managing snapshots of btrfs subvolumes.</description>
+    </item>
+    
     <item>
       <title>Arch Linux Btrfs Kde Plasma Full Install [2021]</title>
       <link>https://theduckchannel.github.io/post/13082021/arch-linux-btrfs-kde-plasma-full-install-2021/</link>

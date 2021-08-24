@@ -3,7 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://theduckchannel.github.io/</loc>
-    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/21.04/</loc>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/btrfs/</loc>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/grub-btrfs/</loc>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/post/2021/08/24/install-ubuntu-21.04-with-btrfs-&#43;-snapper-&#43;-grub-btrfs/</loc>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/linux/</loc>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/post/</loc>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/snapper/</loc>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/</loc>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/ubuntu/</loc>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/arch-linux/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
@@ -20,15 +47,6 @@
     <loc>https://theduckchannel.github.io/tags/kernel/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theduckchannel.github.io/tags/linux/</loc>
-    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/post/</loc>
-    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/</loc>
-    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://theduckchannel.github.io/tags/debian/</loc>
     <lastmod>2021-08-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -42,9 +60,6 @@
     <lastmod>2021-08-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/linux-mint/</loc>
-    <lastmod>2021-08-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/ubuntu/</loc>
     <lastmod>2021-08-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/windows/</loc>
@@ -86,9 +101,6 @@
     <loc>https://theduckchannel.github.io/tags/ntfs3g/</loc>
     <lastmod>2021-08-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theduckchannel.github.io/tags/btrfs/</loc>
-    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://theduckchannel.github.io/post/15082021/how-to-install-linux-mint-20.2-with-btrfs-2021/</loc>
     <lastmod>2021-08-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -96,9 +108,6 @@
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/post/14082021/archcraft-with-btrfs-and-dual-boot-windows-10-2021/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/grub-btrfs/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/install/</loc>
@@ -111,9 +120,6 @@
     <lastmod>2021-08-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/post/13082021/manjaro-with-btrfs-and-snapper-2021/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/snapper/</loc>
     <lastmod>2021-08-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/snapshots/</loc>
