@@ -14,7 +14,7 @@
       <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/11082021/how-to-install-samba-server-on-linux-mint-20.2/</guid>
-      <description>Hi all, in this video i will show how to install Samba Server on Linux Mint 20.2.
+      <description>Video Links Steps 1. Update your System 2. Install Samba Server 3. Create a Share 4. Testing the Server 5. Finish  Video   Hi all, in this video i will show how to install Samba Server on Linux Mint 20.2.
 I hope you enjoy!
 Links  Linux Mint  Steps #1. Update your System
 $ sudo apt update$ sudo apt upgrade#2. Install Samba Server
