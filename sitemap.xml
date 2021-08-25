@@ -3,7 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://theduckchannel.github.io/</loc>
-    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/arch-linux/</loc>
+    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/post/2021/08/25/how-to-install-webmin-on-ubuntu-21.04/</loc>
+    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/kernel/</loc>
+    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/linux/</loc>
+    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/post/</loc>
+    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theduckchannel.github.io/tags/</loc>
+    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/21.04/</loc>
     <lastmod>2021-08-24T00:00:00+00:00</lastmod>
@@ -17,23 +35,11 @@
     <loc>https://theduckchannel.github.io/post/2021/08/24/install-ubuntu-21.04-with-btrfs-&#43;-snapper-&#43;-grub-btrfs/</loc>
     <lastmod>2021-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theduckchannel.github.io/tags/linux/</loc>
-    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/post/</loc>
-    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://theduckchannel.github.io/tags/snapper/</loc>
-    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/</loc>
     <lastmod>2021-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/ubuntu/</loc>
     <lastmod>2021-08-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/arch-linux/</loc>
-    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/chaotic-aur/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
@@ -42,9 +48,6 @@
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/post/2021/08/23/how-to-enable-chaotic-aur-on-arch-linux/</loc>
-    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theduckchannel.github.io/tags/kernel/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theduckchannel.github.io/tags/debian/</loc>

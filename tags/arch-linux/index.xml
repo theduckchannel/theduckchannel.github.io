@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 23 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install Webmin on Ubuntu 21.04</title>
+      <link>https://theduckchannel.github.io/post/2021/08/25/how-to-install-webmin-on-ubuntu-21.04/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/2021/08/25/how-to-install-webmin-on-ubuntu-21.04/</guid>
+      <description>Video Greetings Links Steps  1. Update and Upgrade 2. Install Dependencies 3. Install Webmin 4. Finish    Video   Greetings Hi all, in this video i will show how to Install Webmin on Ubuntu 21.04.
+Webmin is a web-based interface for system administration for Unix. Using any modern web browser, you can setup user accounts, Apache, DNS, file sharing and much more. Webmin removes the need to manually edit Unix configuration files like /etc/passwd, and lets you manage a system from the console or remotely.</description>
+    </item>
+    
     <item>
       <title>How to Enable Chaotic-AUR on Arch Linux</title>
       <link>https://theduckchannel.github.io/post/2021/08/23/how-to-enable-chaotic-aur-on-arch-linux/</link>
@@ -111,20 +121,6 @@ Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and pre
       <description>Hi all, in this video i will show how to install Virt-Manager on Manjaro.
 I hope you enjoy!
 Links  Manjaro Site for Download  1 Minimum Hardware Requirements  Your system should have &amp;lsquo;virtualization parameters&amp;rsquo; enabled on BIOS. Check the RAM and verify that is at least 4GB. At least 20 Gb of available disk space.  2 Install Virt-Manager $ sudo pacman -S dmidecode inxi virt-manager vde2 ebtables dnsmasq bridge-utilsopenbsd-netcat 3.</description>
-    </item>
-    
-    <item>
-      <title>Arch Linux Dual Boot Windows 10</title>
-      <link>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/arch-linux-dual-boot-windows-10/</guid>
-      <description>Hi all, in this video i will show how to install Arch Linux Dual Boot with Windows 10.
-The bootloader utilized is Grub and boot mode is uefi.
-The Arch Linux installation will be only the base system with network and bootloader.
-I will use virtual machine, but the procedure is the same and it does not affect.
-I hope you enjoy!
-Bios  Boot the PC and press the manufacturers key to open the BIOS.</description>
     </item>
     
   </channel>
