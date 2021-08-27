@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 25 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Full Install bspwm on Ubuntu 21.04</title>
+      <link>https://theduckchannel.github.io/post/2021/08/26/full-install-bspwm-on-ubuntu-21.04/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/2021/08/26/full-install-bspwm-on-ubuntu-21.04/</guid>
+      <description>Video Greetings Links Steps  1. Install git 2. Install bspwm 3. Finish    Video   Greetings Ubuntu 21.04 Full Install bspwm Environment
+Hi all, in this video i will show how to Install a full bspwm environment on Ubuntu 21.04.
+bspwm is a tiling window manager that represents windows as the leaves of a full binary tree. bspwm supports multiple monitors and is configured and controlled through messages.</description>
+    </item>
+    
     <item>
       <title>How to Install Webmin on Ubuntu 21.04</title>
       <link>https://theduckchannel.github.io/post/2021/08/25/how-to-install-webmin-on-ubuntu-21.04/</link>
@@ -107,17 +118,6 @@ I hope you enjoy!
       <description>Links  Linux Mint Download Btrfs grub-btrfs Github  0. Intro Hi all, in this video i show how to install Linux Mint 20.2 with btrfs, snapshots and grub-btrfs.
  The boot mode will be efi; I’m assuming you already have the latest usb stick with the Linux Mint ISO.  I hope you enjoy!
 1. Bios Considerations  Reset BIOS to factory default and reboot. Disable fastboot and secure boot in BIOS settings.</description>
-    </item>
-    
-    <item>
-      <title>Archcraft with Btrfs and Dual Boot Windows 10 [2021]</title>
-      <link>https://theduckchannel.github.io/post/14082021/archcraft-with-btrfs-and-dual-boot-windows-10-2021/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/14082021/archcraft-with-btrfs-and-dual-boot-windows-10-2021/</guid>
-      <description>Links  Archcraft Btrfs  0. Intro Hi all, in this video i show how to install Archcraft with btrfs, snapshots, grub-btrfs, dual boot with Windows 10.
- The boot mode will be efi; I’m assuming you already have the latest usb stick with the Archcraft Linux ISO. You need install Windows 10 first.  I hope you enjoy!
-1. Bios Considerations  Reset BIOS to factory default and reboot.</description>
     </item>
     
   </channel>
