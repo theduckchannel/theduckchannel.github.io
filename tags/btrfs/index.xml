@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/btrfs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/btrfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manjaro 21.0 with btrfs &#43; snapper &#43; grub-btrfs</title>
+      <link>https://theduckchannel.github.io/post/2021/08/27/manjaro-21.0-with-btrfs-&#43;-snapper-&#43;-grub-btrfs/</link>
+      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/2021/08/27/manjaro-21.0-with-btrfs-&#43;-snapper-&#43;-grub-btrfs/</guid>
+      <description>Video Greetings Links Steps  1. Editing Calamares 1. /usr/share/calamares/modules/fstab.conf 2. /usr/share/calamares/modules/mount.conf 2. Install  Partitioning   3. Snapper   limits for timeline cleanup  4. Start the Services  5. Update Grub   6. Your First Snapshot 7. Finish    Video   Greetings Manjaro 21.0 Full Install with btrfs + snapper + grub-btrfs
+Hi all, in this video i will show how to install Manjaro 21.</description>
+    </item>
+    
     <item>
       <title>Install Ubuntu 21.04 with btrfs &#43; snapper &#43; grub-btrfs</title>
       <link>https://theduckchannel.github.io/post/2021/08/24/install-ubuntu-21.04-with-btrfs-&#43;-snapper-&#43;-grub-btrfs/</link>
