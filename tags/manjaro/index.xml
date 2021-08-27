@@ -14,8 +14,12 @@
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/2021/08/27/manjaro-21.0-with-btrfs-&#43;-snapper-&#43;-grub-btrfs/</guid>
-      <description>Video Greetings Links Steps  1. Editing Calamares 1. /usr/share/calamares/modules/fstab.conf 2. /usr/share/calamares/modules/mount.conf 2. Install  Partitioning   3. Snapper   limits for timeline cleanup  4. Start the Services  5. Update Grub   6. Your First Snapshot 7. Finish    Video   Greetings Manjaro 21.0 Full Install with btrfs + snapper + grub-btrfs
-Hi all, in this video i will show how to install Manjaro 21.</description>
+      <description>Video   Greetings Manjaro 21.0 Full Install with btrfs + snapper + grub-btrfs
+Hi all, in this video i will show how to install Manjaro 21.0 with btrfs + snapper + grub-btrfs.
+btrfs is a modern copy on write (CoW) filesystem for Linux.
+Snapper is a tool created by openSUSE&amp;rsquo;s Arvin Schnell that helps with managing snapshots of Btrfs subvolumes.
+grub-btrfs include btrfs snapshots in GRUB boot options.
+I hope you enjoy!</description>
     </item>
     
     <item>
