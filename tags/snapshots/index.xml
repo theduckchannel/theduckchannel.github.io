@@ -7,21 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/snapshots/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Manjaro 21.0 with btrfs &#43; snapper &#43; grub-btrfs</title>
-      <link>https://theduckchannel.github.io/post/2021/08/27/manjaro-21.0-with-btrfs-&#43;-snapper-&#43;-grub-btrfs/</link>
-      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/2021/08/27/manjaro-21.0-with-btrfs-&#43;-snapper-&#43;-grub-btrfs/</guid>
-      <description>Video   Greetings Manjaro 21.0 Full Install with btrfs + snapper + grub-btrfs
-Hi all, in this video i will show how to install Manjaro 21.0 with btrfs + snapper + grub-btrfs.
-btrfs is a modern copy on write (CoW) filesystem for Linux.
-Snapper is a tool created by openSUSE&amp;rsquo;s Arvin Schnell that helps with managing snapshots of Btrfs subvolumes.
-grub-btrfs include btrfs snapshots in GRUB boot options.
-I hope you enjoy!</description>
-    </item>
-    
+    <lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/snapshots/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manjaro with Btrfs and snapper [2021]</title>
       <link>https://theduckchannel.github.io/post/13082021/manjaro-with-btrfs-and-snapper-2021/</link>
