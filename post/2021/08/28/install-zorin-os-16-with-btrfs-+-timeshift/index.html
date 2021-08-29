@@ -44,7 +44,7 @@
 <meta itemprop="name" content="Install Zorin OS 16 with Btrfs &#43; Timeshift">
 <meta itemprop="description" content="The Duck Channel Vlog"><meta itemprop="datePublished" content="2021-08-28T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-28T00:00:00+00:00" />
-<meta itemprop="wordCount" content="321"><meta itemprop="image" content="https://theduckchannel.github.io"/>
+<meta itemprop="wordCount" content="301"><meta itemprop="image" content="https://theduckchannel.github.io"/>
 <meta itemprop="keywords" content="zorin os 16,zorin,btrfs,timeshift," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://theduckchannel.github.io"/>
@@ -163,17 +163,17 @@ if (!doNotTrack) {
 <li><a href="#links">Links</a></li>
 <li><a href="#steps">Steps</a>
 <ol>
-<li><a href="#1-hack-ubiquity">1. Hack Ubiquity</a>
+<li><a href="#hack-ubiquity">Hack Ubiquity</a>
 <ol>
 <li><a href="#install-vim">Install vim</a></li>
 <li><a href="#editing-files">Editing files</a></li>
 </ol>
 </li>
-<li><a href="#2-partitioning">2. Partitioning</a></li>
-<li><a href="#3-install">3. Install</a></li>
-<li><a href="#4-update-and-upgrade">4. Update and Upgrade</a></li>
-<li><a href="#5-install-timeshift">5. Install Timeshift</a></li>
-<li><a href="#6-first-snapshot">6. First Snapshot</a></li>
+<li><a href="#partitioning">Partitioning</a></li>
+<li><a href="#install">Install</a></li>
+<li><a href="#update-and-upgrade">Update and Upgrade</a></li>
+<li><a href="#install-timeshift">Install Timeshift</a></li>
+<li><a href="#first-snapshot">First Snapshot</a></li>
 </ol>
 </li>
 </ol>
@@ -188,7 +188,6 @@ if (!doNotTrack) {
 <p>Hi all, in this video i will show how to install <strong>Zorin OS 16</strong> with <strong>btrfs</strong> + <strong>Timeshift</strong> + <strong>grub-btrfs</strong>.</p>
 <p><strong>btrfs</strong> is a modern <strong>copy on write (CoW)</strong> filesystem for Linux.</p>
 <p><strong>Timeshift</strong> is a system restore tool for Linux. Creates filesystem snapshots using BTRFS snapshots.</p>
-<p><strong>grub-btrfs</strong> include btrfs snapshots in <strong>GRUB</strong> boot options.</p>
 <p>I hope you enjoy!</p>
 <h1 id="links">Links</h1>
 <ol>
@@ -197,7 +196,7 @@ if (!doNotTrack) {
 <li><a href="https://github.com/Antynea/grub-btrfs">grub-btrfs Github</a></li>
 </ol>
 <h1 id="steps">Steps</h1>
-<h2 id="1-hack-ubiquity">1. Hack Ubiquity</h2>
+<h2 id="hack-ubiquity">Hack Ubiquity</h2>
 <h3 id="install-vim">Install vim</h3>
 <p>If you use nano editor, skip this step.</p>
 <p>i will use vim, so:</p>
@@ -222,7 +221,7 @@ if (!doNotTrack) {
 <p>And the last, change the line 55 to:</p>
 <p><img src="https://theduckchannel.github.io/2021/08/28/fstab_btrfs_line55.png" alt="fstab.d.btrfs.png"></p>
 <p>Start the installer.</p>
-<h2 id="2-partitioning">2. Partitioning</h2>
+<h2 id="partitioning">Partitioning</h2>
 <p>It is very important, in this stage, you need choose 
 <strong>everything else</strong>. option.</p>
 <p>We will create only three partitions:</p>
@@ -235,16 +234,16 @@ if (!doNotTrack) {
 see the table bellow:</p>
 <p><img src="https://theduckchannel.github.io/2021/08/28/swap_size_table.png" alt="swap_size_table.png"></p>
 <p>If you want learn about btrfs and snapper, you can visit the site in description and i prepared links for your study.</p>
-<h2 id="3-install">3. Install</h2>
+<h2 id="install">Install</h2>
 <p>Now, proceed with installation normally.</p>
 <p>Follow the <a href="#Video">video</a>&hellip;</p>
-<h2 id="4-update-and-upgrade">4. Update and Upgrade</h2>
+<h2 id="update-and-upgrade">Update and Upgrade</h2>
 <p>After the first reboot, perform update and upgrade for your system.</p>
 <pre><code class="language-console" data-lang="console">$ sudo apt update
 $ sudo apt updgrade
-</code></pre><h2 id="5-install-timeshift">5. Install Timeshift</h2>
+</code></pre><h2 id="install-timeshift">Install Timeshift</h2>
 <pre><code class="language-console" data-lang="console">$ sudo apt install timeshift 
-</code></pre><h2 id="6-first-snapshot">6. First Snapshot</h2>
+</code></pre><h2 id="first-snapshot">First Snapshot</h2>
 <p>Start Timeshift and follow the <a href="#Video">video</a>&hellip;</p>
 <p>Create your first snapshot and see the changes.</p>
 

@@ -14,7 +14,7 @@
       <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/2021/08/28/install-zorin-os-16-with-btrfs-&#43;-timeshift/</guid>
-      <description>Video Greetings Links Steps  1. Hack Ubiquity  Install vim Editing files   2. Partitioning 3. Install 4. Update and Upgrade 5. Install Timeshift 6. First Snapshot    Video   Greetings Zorin OS 16 Full Install with btrfs + Timeshift
+      <description>Video Greetings Links Steps  Hack Ubiquity  Install vim Editing files   Partitioning Install Update and Upgrade Install Timeshift First Snapshot    Video   Greetings Zorin OS 16 Full Install with btrfs + Timeshift
 Hi all, in this video i will show how to install Zorin OS 16 with btrfs + Timeshift + grub-btrfs.
 btrfs is a modern copy on write (CoW) filesystem for Linux.</description>
     </item>
