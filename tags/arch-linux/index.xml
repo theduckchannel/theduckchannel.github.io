@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux with btrfs and KDE Plasma</title>
+      <link>https://theduckchannel.github.io/post/2021/09/02/arch-linux-with-btrfs-and-kde-plasma/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/2021/09/02/arch-linux-with-btrfs-and-kde-plasma/</guid>
+      <description>Video Greetings Links Steps  Pre-Install  Update the system clock Partitioning Formatting Mounting Install Base System   Configure the system  Generate fstab Chroot Time zone Localization Network Configuration mkinitcpio Install grub   [$ grub-install &amp;ndash;target=x86_64-efi &amp;ndash;efi-directory=/boot/efi ](#&amp;ndash;grub-install&amp;mdash;targetx86_64-efi&amp;mdash;efi-directorybootefi-)  Root Password Exit, umount and reboot Create New User   Install Xorg Install KDE Plasma Enable AUR Install and Config Snapper   limits for timeline cleanup 1.</description>
+    </item>
+    
     <item>
       <title>Full Install bspwm on Ubuntu 21.04</title>
       <link>https://theduckchannel.github.io/post/2021/08/26/full-install-bspwm-on-ubuntu-21.04/</link>
@@ -108,19 +117,6 @@ I hope you enjoy!
       <guid>https://theduckchannel.github.io/post/13082021/arch-linux-btrfs-kde-plasma-full-install-2021/</guid>
       <description>Hi all, in this video i will show how to full install Arch Linux with BTRFS filesystem.
  The boot mode will be EFI. I’m assuming you already have the usb stick with the Arch Linux ISO. My internet is wired, so if you have wireless network, please go to the website that is in the description of this video and see the link to properly configure your network.</description>
-    </item>
-    
-    <item>
-      <title>How to Install Manjaro with Windows 10 Dual Boot</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</link>
-      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-manjaro-with-windows-10-dual-boot/</guid>
-      <description>Hi all, in this video i will show how to install Manjaro Linux with Windows Dual Boot.
-The boot mode in this case is EFI.
-I&amp;rsquo;m assuming you installed windows 10 first.
-I hope you enjoy!
-Links  Manjaro Site for Download  Steps 1. Prepare the Bios  Boot the PC and press the manufacturers key to open the BIOS. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</description>
     </item>
     
   </channel>

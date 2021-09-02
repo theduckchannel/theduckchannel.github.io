@@ -7,13 +7,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 28 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux</title>
+      <link>https://theduckchannel.github.io/tags/arch-linux/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/arch-linux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>btrfs</title>
       <link>https://theduckchannel.github.io/tags/btrfs/</link>
-      <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/btrfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kernel</title>
+      <link>https://theduckchannel.github.io/tags/kernel/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/kernel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://theduckchannel.github.io/tags/linux/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>snapper</title>
+      <link>https://theduckchannel.github.io/tags/snapper/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/snapper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>snapshots</title>
+      <link>https://theduckchannel.github.io/tags/snapshots/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/tags/snapshots/</guid>
       <description></description>
     </item>
     
@@ -45,56 +90,11 @@
     </item>
     
     <item>
-      <title>Arch Linux</title>
-      <link>https://theduckchannel.github.io/tags/arch-linux/</link>
-      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/arch-linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kernel</title>
-      <link>https://theduckchannel.github.io/tags/kernel/</link>
-      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/kernel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://theduckchannel.github.io/tags/linux/</link>
-      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>21.04</title>
       <link>https://theduckchannel.github.io/tags/21.04/</link>
       <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/tags/21.04/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>grub-btrfs</title>
-      <link>https://theduckchannel.github.io/tags/grub-btrfs/</link>
-      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/grub-btrfs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>snapper</title>
-      <link>https://theduckchannel.github.io/tags/snapper/</link>
-      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/tags/snapper/</guid>
       <description></description>
     </item>
     

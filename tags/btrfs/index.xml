@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 28 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/btrfs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/btrfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux with btrfs and KDE Plasma</title>
+      <link>https://theduckchannel.github.io/post/2021/09/02/arch-linux-with-btrfs-and-kde-plasma/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/2021/09/02/arch-linux-with-btrfs-and-kde-plasma/</guid>
+      <description>Video Greetings Links Steps  Pre-Install  Update the system clock Partitioning Formatting Mounting Install Base System   Configure the system  Generate fstab Chroot Time zone Localization Network Configuration mkinitcpio Install grub   [$ grub-install &amp;ndash;target=x86_64-efi &amp;ndash;efi-directory=/boot/efi ](#&amp;ndash;grub-install&amp;mdash;targetx86_64-efi&amp;mdash;efi-directorybootefi-)  Root Password Exit, umount and reboot Create New User   Install Xorg Install KDE Plasma Enable AUR Install and Config Snapper   limits for timeline cleanup 1.</description>
+    </item>
+    
     <item>
       <title>Install Zorin OS 16 with Btrfs &#43; Timeshift</title>
       <link>https://theduckchannel.github.io/post/2021/08/28/install-zorin-os-16-with-btrfs-&#43;-timeshift/</link>

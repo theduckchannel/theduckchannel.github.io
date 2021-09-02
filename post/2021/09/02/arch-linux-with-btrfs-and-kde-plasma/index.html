@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="The Duck Channel">
+<meta name="description" content="The Duck Channel Vlog" />
+<meta name="keywords" content="linux, arch linux, youtube, tutorial, linus tech tips, ubuntu, endeavouros, linux, Arch Linux, kernel, btrfs, snapper, snapshots" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://theduckchannel.github.io/post/2021/09/02/arch-linux-with-btrfs-and-kde-plasma/" />
+
+
+    <title>
+        
+            Arch Linux with btrfs and KDE Plasma :: The Duck Channel´s Site  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://theduckchannel.github.io/main.031a8efc33f94f55a4071bf4e91596478a5809fc8c148fab113801189cfd2152.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://theduckchannel.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://theduckchannel.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://theduckchannel.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://theduckchannel.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://theduckchannel.github.io/safari-pinned-tab.svg" color="#1b1c1d">
+    <link rel="shortcut icon" href="https://theduckchannel.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1b1c1d">
+    <meta name="theme-color" content="#1b1c1d">
+
+
+
+<meta itemprop="name" content="Arch Linux with btrfs and KDE Plasma">
+<meta itemprop="description" content="The Duck Channel Vlog"><meta itemprop="datePublished" content="2021-09-02T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-09-02T00:00:00+00:00" />
+<meta itemprop="wordCount" content="749"><meta itemprop="image" content="https://theduckchannel.github.io"/>
+<meta itemprop="keywords" content="linux,Arch Linux,kernel,btrfs,snapper,snapshots," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://theduckchannel.github.io"/>
+
+<meta name="twitter:title" content="Arch Linux with btrfs and KDE Plasma"/>
+<meta name="twitter:description" content="The Duck Channel Vlog"/>
+
+
+
+
+    <meta property="og:title" content="Arch Linux with btrfs and KDE Plasma" />
+<meta property="og:description" content="The Duck Channel Vlog" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://theduckchannel.github.io/post/2021/09/02/arch-linux-with-btrfs-and-kde-plasma/" /><meta property="og:image" content="https://theduckchannel.github.io"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-09-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-09-02T00:00:00+00:00" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-09-02 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G93HFQW3P3"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-G93HFQW3P3', { 'anonymize_ip': false });
+}
+</script>
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://theduckchannel.github.io/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://theduckchannel.github.io/about/">About</a></li><li><a href="https://theduckchannel.github.io/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://theduckchannel.github.io/post/2021/09/02/arch-linux-with-btrfs-and-kde-plasma/">Arch Linux with btrfs and KDE Plasma</a></h2>
+            <h4>Published on: September 2, 2021</h4>
+
+            
+            
+            
+
+            <div class="post-content">
+                <ol>
+<li><a href="#video">Video</a></li>
+<li><a href="#greetings">Greetings</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#steps">Steps</a>
+<ol>
+<li><a href="#pre-install">Pre-Install</a>
+<ol>
+<li><a href="#update-the-system-clock">Update the system clock</a></li>
+<li><a href="#partitioning">Partitioning</a></li>
+<li><a href="#formatting">Formatting</a></li>
+<li><a href="#mounting">Mounting</a></li>
+<li><a href="#install-base-system">Install Base System</a></li>
+</ol>
+</li>
+<li><a href="#configure-the-system">Configure the system</a>
+<ol>
+<li><a href="#generate-fstab">Generate fstab</a></li>
+<li><a href="#chroot">Chroot</a></li>
+<li><a href="#time-zone">Time zone</a></li>
+<li><a href="#localization">Localization</a></li>
+<li><a href="#network-configuration">Network Configuration</a></li>
+<li><a href="#mkinitcpio">mkinitcpio</a></li>
+<li><a href="#install-grub">Install grub</a></li>
+</ol>
+</li>
+<li>[$  grub-install &ndash;target=x86_64-efi &ndash;efi-directory=/boot/efi ](#&ndash;grub-install&mdash;targetx86_64-efi&mdash;efi-directorybootefi-)
+<ol>
+<li><a href="#root-password">Root Password</a></li>
+<li><a href="#exit-umount-and-reboot">Exit, umount and reboot</a></li>
+<li><a href="#create-new-user">Create New User</a></li>
+</ol>
+</li>
+<li><a href="#install-xorg">Install Xorg</a></li>
+<li><a href="#install-kde-plasma">Install KDE Plasma</a></li>
+<li><a href="#enable-aur">Enable AUR</a></li>
+<li><a href="#install-and-config-snapper">Install and Config Snapper</a></li>
+</ol>
+</li>
+<li><a href="#limits-for-timeline-cleanup">limits for timeline cleanup</a>
+1. <a href="#start-the-services">Start the Services</a>
+2. <a href="#first-snapshot">First Snapshot</a></li>
+</ol>
+<h1 id="video">Video</h1>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/8deDq1Ivyyk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="greetings">Greetings</h1>
+<p>Arch_Linux_Install_Kde_Plasma_btrfs</p>
+<p>Hi all, in this video i will show how to install <strong>Arch Linux</strong> with <strong>KDE Plasma</strong> and <strong>btrfs</strong>.</p>
+<p><strong>KDE</strong> is a software project currently comprising a desktop environment known as <strong>Plasma</strong>, a collection of libraries and frameworks (KDE Frameworks) and several applications (KDE Applications) as well.</p>
+<p><strong>btrfs</strong> is a modern <strong>copy on write (CoW)</strong> filesystem for Linux.</p>
+<p>I hope you enjoy!</p>
+<h1 id="links">Links</h1>
+<ol>
+<li><a href="https://archlinux.org/download/">Arch Linux - Download</a></li>
+<li><a href="https://wiki.archlinux.org/title/Btrfs">btrfs - ArchWiki</a></li>
+<li><a href="https://github.com/teejee2008/timeshift">Timeshift</a></li>
+</ol>
+<h1 id="steps">Steps</h1>
+<h2 id="pre-install">Pre-Install</h2>
+<h3 id="update-the-system-clock">Update the system clock</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$  timedatectl set-ntp true
+</code></pre></div><h3 id="partitioning">Partitioning</h3>
+<p>We will create as following partition scheme:</p>
+<p><img src="https://theduckchannel.github.io/2021/09/02/partition_scheme.png" alt="partition_scheme"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$  cfdisk /dev/<span style="color:#f92672">[</span>your_device<span style="color:#f92672">]</span>
+</code></pre></div><p>We will create only three partitions using cfdisk utility:</p>
+<ul>
+<li>efi with 512Mb</li>
+<li>Swap</li>
+<li>/ btrfs remanning space</li>
+</ul>
+<p>If you have have doubt about swap space necessary for you, 
+see the table bellow:</p>
+<p><img src="https://theduckchannel.github.io/2021/08/28/swap_size_table.png" alt="swap_size_table.png"></p>
+<p>Follow the <a href="#video">video</a>&hellip;</p>
+<h3 id="formatting">Formatting</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ mksfs.fat -F32 -n <span style="color:#e6db74">&#34;EFI&#34;</span> /dev/sda1
+$ mkswap -L <span style="color:#e6db74">&#34;Swap&#34;</span> /dev/sda2
+$ mkfs.btrfs -f -L <span style="color:#e6db74">&#34;System&#34;</span> /dev/sda3
+</code></pre></div><h3 id="mounting">Mounting</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ mount -t btrfs -o ssd,noatime,autodefrag,compress<span style="color:#f92672">=</span>zstd:5 /dev/sda3 /mnt
+$ btrfs subvolume create /mnt/@
+$ btrfs subvolume create /mnt/@home
+$ btrfs subvolume create /mnt/@snapshots
+$ umount /mnt
+$ mount -t btfs -o ssd,noatime,autodefrag,compress<span style="color:#f92672">=</span>zstd:5,subvol<span style="color:#f92672">=</span>@ /dev/sda3  /mnt
+$ mkdir -p /mnt/<span style="color:#f92672">{</span>boot/efi,home,.snapshots<span style="color:#f92672">}</span>
+$
+$ mount -t btfs -o ssd,noatime,autodefrag,compress<span style="color:#f92672">=</span>zstd:5,subvol<span style="color:#f92672">=</span>@home /dev/sda3 /mnt/home
+$ mount -t btfs -o ssd,noatime,autodefrag,compress<span style="color:#f92672">=</span>zstd:5,subvol<span style="color:#f92672">=</span>@snapshots /dev/sda3 /mnt/snapshots
+$ mount /dev/sda1 /mnt/boot/efi
+$ swapon /dev/sda2
+</code></pre></div><h3 id="install-base-system">Install Base System</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ pacstrap /mnt base base-devel linux-zen linux-zen-headers <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>linux-firmware git vim sudo grub grub-btrfs efibootmgr mtools <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>dosfstools btrfs-progs networkmanager xdg-user-dirs  
+</code></pre></div><p>We will install Zen Kernel, result of a collaborative effort of kernel hackers to provide the best Linux kernel possible for everyday systems.</p>
+<p>Please, add the following package in list above, as your processor.</p>
+<p>| Processor | package |
+| Intel	| intel-ucode |
+| AMD | amd-ucode |</p>
+<h2 id="configure-the-system">Configure the system</h2>
+<h3 id="generate-fstab">Generate fstab</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$  genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+$ cat /mnt/etc/fstab
+</code></pre></div><h3 id="chroot">Chroot</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$  arch-chroot /mnt
+</code></pre></div><h3 id="time-zone">Time zone</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ln -sf /usr/share/zoneinfo/America/Recife /etc/localtime
+$ hwclock --systohc
+</code></pre></div><p>The format for this command is: 
+ln -sf /usr/share/zoneinfo/Region/City /etc/localtime</p>
+<p>Type <strong>timedatectl list-timezones</strong> to choose a list of regions and cities. Then you can adapt this command to your system.</p>
+<h3 id="localization">Localization</h3>
+<p>You can use vim or nano as text editor, if you will use nano, install with <strong>pacman -S nano</strong>.</p>
+<p>Edit <strong>/etc/locale.gen</strong> and uncomment en_US.UTF-8 UTF-8.</p>
+<p>After, type:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$  locale-gen
+</code></pre></div><p>Create the <strong>/etc/locale.conf</strong> file, and set the <strong>LANG</strong> variable accordingly:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">LANG<span style="color:#f92672">=</span>en_US.UTF-8
+</code></pre></div><h3 id="network-configuration">Network Configuration</h3>
+<p>Create the hostname file:</p>
+<pre><code class="language-console" data-lang="console">$ echo &quot;your_Hostname&quot;&gt;/etc/hostname
+</code></pre><p>Add matching entries to <strong>/etc/hosts</strong>:</p>
+<pre><code class="language-console" data-lang="console">127.0.0.1	localhost
+::1		localhost
+127.0.0.1	your_Hostname.localdomain	your_Hostname
+</code></pre><p>Enable Network Manager:</p>
+<pre><code class="language-console" data-lang="console">$ systemctl enable NetworkManager 
+</code></pre><h3 id="mkinitcpio">mkinitcpio</h3>
+<p>Edit <strong>/etc/mkinitcpio.conf</strong> and include <strong>btrfs</strong> on line 7:</p>
+<pre><code class="language-console" data-lang="console">MODULES=(btrfs)  
+</code></pre><p>And type:</p>
+<pre><code class="language-console" data-lang="console">$ mkinitcpio -p linux-zen 
+</code></pre><h3 id="install-grub">Install grub</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$  grub-install --target<span style="color:#f92672">=</span>x86_64-efi --efi-directory<span style="color:#f92672">=</span>/boot/efi <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>--bootloader-id<span style="color:#f92672">=</span>GRUB
+$ grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre></div><h3 id="root-password">Root Password</h3>
+<p>Type the following command and set the password for root:</p>
+<pre><code class="language-console" data-lang="console">$  passwd
+</code></pre><h3 id="exit-umount-and-reboot">Exit, umount and reboot</h3>
+<pre><code class="language-console" data-lang="console">$ exit
+$ umount -a
+$ reboot
+</code></pre><h3 id="create-new-user">Create New User</h3>
+<pre><code class="language-console" data-lang="console">$ useradd -m -G wheel your_username
+$ passwd yourusername
+$ export EDITOR=vim
+$ visudo
+</code></pre><p>Uncomment line 82, save, exit and login as new user.</p>
+<p>Test sudo command:</p>
+<pre><code class="language-console" data-lang="console">$  sudo pacman -Syyu
+</code></pre><h2 id="install-xorg">Install Xorg</h2>
+<pre><code class="language-console" data-lang="console">$ sudo pacman -S xorg
+</code></pre><h2 id="install-kde-plasma">Install KDE Plasma</h2>
+<pre><code class="language-console" data-lang="console">$ sudo pacman -S plasma kde-applications sddm pipewire \
+pipewire-pulse pipewire-alsa pipewire-jack firefox
+$ sudo systemctl enable sddm
+$ reboot
+</code></pre><h2 id="enable-aur">Enable AUR</h2>
+<pre><code class="language-console" data-lang="console">$ git clone https://aur.archlinux.org/yay-bin.git
+$ cd yay-bin
+$ makepkg -si
+$ cd ..
+$ rm -rfv yay-bin/
+</code></pre><h2 id="install-and-config-snapper">Install and Config Snapper</h2>
+<pre><code class="language-console" data-lang="console">$ sudo pacman -S snapper
+$ yay -S snapper-gui
+$ 
+$ sudo umount /.snapshots
+$ sudo rm -rf /.snapshots
+$ sudo snapper -c root create-config /
+$ sudo btrfs subvolume delete /.snapshots
+$ sudo mkdir /.snapshots
+$ sudo chmod a+rx /.snapshots
+$
+
+sudo chmod 750 /.snapshots
+$ sudo chown :wheel /.snapshots
+$ sudo mount -a
+</code></pre><p>Edit <strong>/etc/snapper/configs/root</strong>:</p>
+<p>Put your username on line <strong>21</strong> between the quotation marks.</p>
+<pre><code class="language-console" data-lang="console">ALLOW_USERS=&quot;your_username_here&quot;
+</code></pre><p>Go to line 50 and change to:</p>
+<pre><code class="language-console" data-lang="console"># limits for timeline cleanup
+TIMELINE_MIN_AGE=&quot;1800&quot;
+TIMELINE_LIMIT_HOURLY=&quot;5&quot;
+TIMELINE_LIMIT_DAILY=&quot;7&quot;
+TIMELINE_LIMIT_WEEKLY=&quot;0&quot;
+TIMELINE_LIMIT_MONTHLY=&quot;0&quot;
+TIMELINE_LIMIT_YEARLY=&quot;0&quot;
+</code></pre><p>This parameters are sugestion on <strong>Arch Linux Wiki</strong> with only 5 hourly snapshots, 7 daily ones, no monthly and no yearly ones.</p>
+<h3 id="start-the-services">Start the Services</h3>
+<pre><code class="language-console" data-lang="console">$ sudo systemctl enable --now snapper-timeline.timer
+$ sudo systemctl enable --now snapper-cleanup.timer
+$ sudo systemctl enable --now grub-btrfs.path
+</code></pre><h3 id="first-snapshot">First Snapshot</h3>
+<p>Follow the <a href="#video">video</a>&hellip;</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/linux/">linux</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/arch-linux/">Arch Linux</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/kernel/">kernel</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/btrfs/">btrfs</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/snapper/">snapper</a></span>
+        <span class="tag"><a href="https://theduckchannel.github.io/tags/snapshots/">snapshots</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            <span><a href="https://theduckchannel.github.io">The Duck Channel</a></span>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://theduckchannel.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://theduckchannel.github.io/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

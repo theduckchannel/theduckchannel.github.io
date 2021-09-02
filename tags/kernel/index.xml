@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theduckchannel.github.io/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux with btrfs and KDE Plasma</title>
+      <link>https://theduckchannel.github.io/post/2021/09/02/arch-linux-with-btrfs-and-kde-plasma/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theduckchannel.github.io/post/2021/09/02/arch-linux-with-btrfs-and-kde-plasma/</guid>
+      <description>Video Greetings Links Steps  Pre-Install  Update the system clock Partitioning Formatting Mounting Install Base System   Configure the system  Generate fstab Chroot Time zone Localization Network Configuration mkinitcpio Install grub   [$ grub-install &amp;ndash;target=x86_64-efi &amp;ndash;efi-directory=/boot/efi ](#&amp;ndash;grub-install&amp;mdash;targetx86_64-efi&amp;mdash;efi-directorybootefi-)  Root Password Exit, umount and reboot Create New User   Install Xorg Install KDE Plasma Enable AUR Install and Config Snapper   limits for timeline cleanup 1.</description>
+    </item>
+    
     <item>
       <title>Full Install bspwm on Ubuntu 21.04</title>
       <link>https://theduckchannel.github.io/post/2021/08/26/full-install-bspwm-on-ubuntu-21.04/</link>
@@ -109,15 +118,6 @@ Bios  Boot the PC and press the manufacturers key to open the BIOS.</description
       <description>Commands 1. Set the Keyboard Layout $ loadkeys yourKeyboardLayout The default console keymap is US. Available layouts can be listed with:
 $ ls /usr/share/kbd/keymaps/**/*.map.gz 2. Config the Best Mirrors $ reflector -c &amp;quot;BR&amp;quot; -f 12 -n 10 -l 12 \ --save /etc/pacman.d/mirrorlist --verbose $ pacman -Syy 3. Partitioning the Disk $ fdisk /dev/yourDevice Create the root partition and the swap.
 4. Formatting the partitions use mkfs.ext4, mkswap and mkfs.</description>
-    </item>
-    
-    <item>
-      <title>How to Install Cinnamon Desktop Environment on Arch Linux</title>
-      <link>https://theduckchannel.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theduckchannel.github.io/post/how-to-install-cinnamon-desktop-environment-on-arch-linux/</guid>
-      <description>   </description>
     </item>
     
   </channel>
