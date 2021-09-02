@@ -14,7 +14,12 @@
       <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theduckchannel.github.io/post/2021/09/02/arch-linux-with-btrfs-and-kde-plasma/</guid>
-      <description>Video Greetings Links Steps  Pre-Install  Update the system clock Partitioning Formatting Mounting Install Base System   Configure the system  Generate fstab Chroot Time zone Localization Network Configuration mkinitcpio Install grub   [$ grub-install &amp;ndash;target=x86_64-efi &amp;ndash;efi-directory=/boot/efi ](#&amp;ndash;grub-install&amp;mdash;targetx86_64-efi&amp;mdash;efi-directorybootefi-)  Root Password Exit, umount and reboot Create New User   Install Xorg Install KDE Plasma Enable AUR Install and Config Snapper   limits for timeline cleanup 1.</description>
+      <description>Video   Greetings Arch_Linux_Install_Kde_Plasma_btrfs
+Hi all, in this video i will show how to install Arch Linux with KDE Plasma and btrfs.
+KDE is a software project currently comprising a desktop environment known as Plasma, a collection of libraries and frameworks (KDE Frameworks) and several applications (KDE Applications) as well.
+btrfs is a modern copy on write (CoW) filesystem for Linux.
+I hope you enjoy!
+Links  Arch Linux - Download btrfs - ArchWiki Timeshift  Steps Pre-Install Update the system clock $ timedatectl set-ntp truePartitioning We will create as following partition scheme:</description>
     </item>
     
     <item>

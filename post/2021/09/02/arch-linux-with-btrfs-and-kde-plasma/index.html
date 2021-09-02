@@ -44,7 +44,7 @@
 <meta itemprop="name" content="Arch Linux with btrfs and KDE Plasma">
 <meta itemprop="description" content="The Duck Channel Vlog"><meta itemprop="datePublished" content="2021-09-02T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-09-02T00:00:00+00:00" />
-<meta itemprop="wordCount" content="749"><meta itemprop="image" content="https://theduckchannel.github.io"/>
+<meta itemprop="wordCount" content="684"><meta itemprop="image" content="https://theduckchannel.github.io"/>
 <meta itemprop="keywords" content="linux,Arch Linux,kernel,btrfs,snapper,snapshots," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://theduckchannel.github.io"/>
@@ -157,50 +157,7 @@ if (!doNotTrack) {
             
 
             <div class="post-content">
-                <ol>
-<li><a href="#video">Video</a></li>
-<li><a href="#greetings">Greetings</a></li>
-<li><a href="#links">Links</a></li>
-<li><a href="#steps">Steps</a>
-<ol>
-<li><a href="#pre-install">Pre-Install</a>
-<ol>
-<li><a href="#update-the-system-clock">Update the system clock</a></li>
-<li><a href="#partitioning">Partitioning</a></li>
-<li><a href="#formatting">Formatting</a></li>
-<li><a href="#mounting">Mounting</a></li>
-<li><a href="#install-base-system">Install Base System</a></li>
-</ol>
-</li>
-<li><a href="#configure-the-system">Configure the system</a>
-<ol>
-<li><a href="#generate-fstab">Generate fstab</a></li>
-<li><a href="#chroot">Chroot</a></li>
-<li><a href="#time-zone">Time zone</a></li>
-<li><a href="#localization">Localization</a></li>
-<li><a href="#network-configuration">Network Configuration</a></li>
-<li><a href="#mkinitcpio">mkinitcpio</a></li>
-<li><a href="#install-grub">Install grub</a></li>
-</ol>
-</li>
-<li>[$  grub-install &ndash;target=x86_64-efi &ndash;efi-directory=/boot/efi ](#&ndash;grub-install&mdash;targetx86_64-efi&mdash;efi-directorybootefi-)
-<ol>
-<li><a href="#root-password">Root Password</a></li>
-<li><a href="#exit-umount-and-reboot">Exit, umount and reboot</a></li>
-<li><a href="#create-new-user">Create New User</a></li>
-</ol>
-</li>
-<li><a href="#install-xorg">Install Xorg</a></li>
-<li><a href="#install-kde-plasma">Install KDE Plasma</a></li>
-<li><a href="#enable-aur">Enable AUR</a></li>
-<li><a href="#install-and-config-snapper">Install and Config Snapper</a></li>
-</ol>
-</li>
-<li><a href="#limits-for-timeline-cleanup">limits for timeline cleanup</a>
-1. <a href="#start-the-services">Start the Services</a>
-2. <a href="#first-snapshot">First Snapshot</a></li>
-</ol>
-<h1 id="video">Video</h1>
+                <h1 id="video">Video</h1>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/6vVHvOyDVx0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
@@ -221,12 +178,12 @@ if (!doNotTrack) {
 <h1 id="steps">Steps</h1>
 <h2 id="pre-install">Pre-Install</h2>
 <h3 id="update-the-system-clock">Update the system clock</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$  timedatectl set-ntp true
-</code></pre></div><h3 id="partitioning">Partitioning</h3>
+<pre><code class="language-console" data-lang="console">$  timedatectl set-ntp true
+</code></pre><h3 id="partitioning">Partitioning</h3>
 <p>We will create as following partition scheme:</p>
 <p><img src="https://theduckchannel.github.io/2021/09/02/partition_scheme.png" alt="partition_scheme"></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$  cfdisk /dev/<span style="color:#f92672">[</span>your_device<span style="color:#f92672">]</span>
-</code></pre></div><p>We will create only three partitions using cfdisk utility:</p>
+<pre><code class="language-console" data-lang="console">$  cfdisk /dev/[your_device]
+</code></pre><p>We will create only three partitions using cfdisk utility:</p>
 <ul>
 <li>efi with 512Mb</li>
 <li>Swap</li>
@@ -237,51 +194,51 @@ see the table bellow:</p>
 <p><img src="https://theduckchannel.github.io/2021/08/28/swap_size_table.png" alt="swap_size_table.png"></p>
 <p>Follow the <a href="#video">video</a>&hellip;</p>
 <h3 id="formatting">Formatting</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ mksfs.fat -F32 -n <span style="color:#e6db74">&#34;EFI&#34;</span> /dev/sda1
-$ mkswap -L <span style="color:#e6db74">&#34;Swap&#34;</span> /dev/sda2
-$ mkfs.btrfs -f -L <span style="color:#e6db74">&#34;System&#34;</span> /dev/sda3
-</code></pre></div><h3 id="mounting">Mounting</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ mount -t btrfs -o ssd,noatime,autodefrag,compress<span style="color:#f92672">=</span>zstd:5 /dev/sda3 /mnt
+<pre><code class="language-console" data-lang="console">$ mksfs.fat -F32 -n &quot;EFI&quot; /dev/sda1
+$ mkswap -L &quot;Swap&quot; /dev/sda2
+$ mkfs.btrfs -f -L &quot;System&quot; /dev/sda3
+</code></pre><h3 id="mounting">Mounting</h3>
+<pre><code class="language-console" data-lang="console">$ mount -t btrfs -o ssd,noatime,autodefrag,compress=zstd:5 /dev/sda3 /mnt
 $ btrfs subvolume create /mnt/@
 $ btrfs subvolume create /mnt/@home
 $ btrfs subvolume create /mnt/@snapshots
 $ umount /mnt
-$ mount -t btfs -o ssd,noatime,autodefrag,compress<span style="color:#f92672">=</span>zstd:5,subvol<span style="color:#f92672">=</span>@ /dev/sda3  /mnt
-$ mkdir -p /mnt/<span style="color:#f92672">{</span>boot/efi,home,.snapshots<span style="color:#f92672">}</span>
+$ mount -t btfs -o ssd,noatime,autodefrag,compress=zstd:5,subvol=@ /dev/sda3  /mnt
+$ mkdir -p /mnt/{boot/efi,home,.snapshots}
 $
-$ mount -t btfs -o ssd,noatime,autodefrag,compress<span style="color:#f92672">=</span>zstd:5,subvol<span style="color:#f92672">=</span>@home /dev/sda3 /mnt/home
-$ mount -t btfs -o ssd,noatime,autodefrag,compress<span style="color:#f92672">=</span>zstd:5,subvol<span style="color:#f92672">=</span>@snapshots /dev/sda3 /mnt/snapshots
+$ mount -t btfs -o ssd,noatime,autodefrag,compress=zstd:5,subvol=@home /dev/sda3 /mnt/home
+$ mount -t btfs -o ssd,noatime,autodefrag,compress=zstd:5,subvol=@snapshots /dev/sda3 /mnt/snapshots
 $ mount /dev/sda1 /mnt/boot/efi
 $ swapon /dev/sda2
-</code></pre></div><h3 id="install-base-system">Install Base System</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ pacstrap /mnt base base-devel linux-zen linux-zen-headers <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>linux-firmware git vim sudo grub grub-btrfs efibootmgr mtools <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>dosfstools btrfs-progs networkmanager xdg-user-dirs  
-</code></pre></div><p>We will install Zen Kernel, result of a collaborative effort of kernel hackers to provide the best Linux kernel possible for everyday systems.</p>
+</code></pre><h3 id="install-base-system">Install Base System</h3>
+<pre><code class="language-console" data-lang="console">$ pacstrap /mnt base base-devel linux-zen linux-zen-headers \
+linux-firmware git vim sudo grub grub-btrfs efibootmgr mtools \
+dosfstools btrfs-progs networkmanager xdg-user-dirs  
+</code></pre><p>We will install Zen Kernel, result of a collaborative effort of kernel hackers to provide the best Linux kernel possible for everyday systems.</p>
 <p>Please, add the following package in list above, as your processor.</p>
 <p>| Processor | package |
 | Intel	| intel-ucode |
 | AMD | amd-ucode |</p>
 <h2 id="configure-the-system">Configure the system</h2>
 <h3 id="generate-fstab">Generate fstab</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$  genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+<pre><code class="language-console" data-lang="console">$  genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
 $ cat /mnt/etc/fstab
-</code></pre></div><h3 id="chroot">Chroot</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$  arch-chroot /mnt
-</code></pre></div><h3 id="time-zone">Time zone</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ln -sf /usr/share/zoneinfo/America/Recife /etc/localtime
+</code></pre><h3 id="chroot">Chroot</h3>
+<pre><code class="language-console" data-lang="console">$  arch-chroot /mnt
+</code></pre><h3 id="time-zone">Time zone</h3>
+<pre><code class="language-console" data-lang="console">$ ln -sf /usr/share/zoneinfo/America/Recife /etc/localtime
 $ hwclock --systohc
-</code></pre></div><p>The format for this command is: 
+</code></pre><p>The format for this command is: 
 ln -sf /usr/share/zoneinfo/Region/City /etc/localtime</p>
 <p>Type <strong>timedatectl list-timezones</strong> to choose a list of regions and cities. Then you can adapt this command to your system.</p>
 <h3 id="localization">Localization</h3>
 <p>You can use vim or nano as text editor, if you will use nano, install with <strong>pacman -S nano</strong>.</p>
 <p>Edit <strong>/etc/locale.gen</strong> and uncomment en_US.UTF-8 UTF-8.</p>
 <p>After, type:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$  locale-gen
-</code></pre></div><p>Create the <strong>/etc/locale.conf</strong> file, and set the <strong>LANG</strong> variable accordingly:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">LANG<span style="color:#f92672">=</span>en_US.UTF-8
-</code></pre></div><h3 id="network-configuration">Network Configuration</h3>
+<pre><code class="language-console" data-lang="console">$  locale-gen
+</code></pre><p>Create the <strong>/etc/locale.conf</strong> file, and set the <strong>LANG</strong> variable accordingly:</p>
+<pre><code class="language-console" data-lang="console">LANG=en_US.UTF-8
+</code></pre><h3 id="network-configuration">Network Configuration</h3>
 <p>Create the hostname file:</p>
 <pre><code class="language-console" data-lang="console">$ echo &quot;your_Hostname&quot;&gt;/etc/hostname
 </code></pre><p>Add matching entries to <strong>/etc/hosts</strong>:</p>
@@ -296,10 +253,10 @@ ln -sf /usr/share/zoneinfo/Region/City /etc/localtime</p>
 </code></pre><p>And type:</p>
 <pre><code class="language-console" data-lang="console">$ mkinitcpio -p linux-zen 
 </code></pre><h3 id="install-grub">Install grub</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$  grub-install --target<span style="color:#f92672">=</span>x86_64-efi --efi-directory<span style="color:#f92672">=</span>/boot/efi <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>--bootloader-id<span style="color:#f92672">=</span>GRUB
+<pre><code class="language-console" data-lang="console">$  grub-install --target=x86_64-efi --efi-directory=/boot/efi \
+--bootloader-id=GRUB
 $ grub-mkconfig -o /boot/grub/grub.cfg
-</code></pre></div><h3 id="root-password">Root Password</h3>
+</code></pre><h3 id="root-password">Root Password</h3>
 <p>Type the following command and set the password for root:</p>
 <pre><code class="language-console" data-lang="console">$  passwd
 </code></pre><h3 id="exit-umount-and-reboot">Exit, umount and reboot</h3>
